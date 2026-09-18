@@ -8,9 +8,13 @@ Pipeline:
   1. Fetch the live Google Trends RSS stream.
   2. Safely parse the XML tree for the top 9 trending titles.
   3. Compile each title into a semantic, crawlable HTML dashboard card.
-  4. Read template.html, substitute <!-- TREND_CARDS_PLACEHOLDER -->,
-     and write a production-ready index.html to the project root.
+  4. Read template.html, substitute <!-- TREND_CARDS_PLACEHOLDER --> with the
+     compiled macro-trend cards, and write index.html to the project root.
   5. Emit a matching sitemap.xml with a fresh <lastmod>.
+
+This engine handles the MACRO trends only (the daily global board). The
+per-keyword MICRO trend generator is client-side JavaScript living in
+template.html and needs no build step.
 
 Why pre-render instead of client-side fetch? Google AdSense and search
 crawlers must see real text in the delivered HTML source. Baking the cards

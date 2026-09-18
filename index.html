@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ==================== SEO ==================== -->
-  <title>TrendPulse — Today's Trending Social Media Hashtags, Updated Daily</title>
-  <meta name="description" content="TrendPulse tracks the internet's top trending topics every 24 hours and turns each one into a copy-ready hashtag string for Instagram, TikTok, X and YouTube. Free, no signup." />
-  <meta name="keywords" content="trending hashtags, social media trends, viral hashtags today, instagram hashtags, tiktok hashtags, trending topics" />
+  <title>TrendPulse — Live Social Media Tag Generator &amp; Daily Trending Hashtags</title>
+  <meta name="description" content="Generate live, data-backed hashtags and YouTube tags from real global traffic. Enter any keyword, pick a timeframe and platform, and get copy-ready tag strings. Plus the top 9 trending searches, updated daily." />
+  <meta name="keywords" content="hashtag generator, youtube tag generator, trending hashtags, social media tags, viral hashtags today, instagram hashtags, tiktok hashtags" />
   <meta name="author" content="TrendPulse" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <link rel="canonical" href="https://trendpulse.vercel.app/" />
@@ -16,15 +16,15 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="TrendPulse" />
   <meta property="og:url" content="https://trendpulse.vercel.app/" />
-  <meta property="og:title" content="TrendPulse — Today's Trending Social Media Hashtags" />
-  <meta property="og:description" content="The internet's top trending topics, refreshed every 24 hours and packaged as copy-ready hashtag strings for creators." />
+  <meta property="og:title" content="TrendPulse — Live Social Media Tag Generator" />
+  <meta property="og:description" content="Turn any keyword into platform-ready hashtags and YouTube tags, ranked by real global traffic data." />
   <meta property="og:image" content="https://trendpulse.vercel.app/og-image.png" />
   <meta property="og:locale" content="en_US" />
 
   <!-- ==================== Twitter Card ==================== -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="TrendPulse — Today's Trending Social Media Hashtags" />
-  <meta name="twitter:description" content="Top trending topics, refreshed daily, packaged as copy-ready hashtag strings." />
+  <meta name="twitter:title" content="TrendPulse — Live Social Media Tag Generator" />
+  <meta name="twitter:description" content="Turn any keyword into platform-ready hashtags and YouTube tags, ranked by real global traffic data." />
   <meta name="twitter:image" content="https://trendpulse.vercel.app/og-image.png" />
 
   <meta name="theme-color" content="#0f172a" />
@@ -34,10 +34,13 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
+    "@type": "WebApplication",
     "name": "TrendPulse",
     "url": "https://trendpulse.vercel.app/",
-    "description": "Daily-updated trending social media topics converted into copy-ready hashtag strings.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "description": "Live social media tag generator that converts real global traffic data into platform-ready hashtags and YouTube tags.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
     "inLanguage": "en"
   }
   </script>
@@ -57,6 +60,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://wikimedia.org" />
+  <link rel="preconnect" href="https://en.wikipedia.org" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- ====================================================================
@@ -78,7 +83,7 @@
     ::-webkit-scrollbar-track { background: #0f172a; }
     ::-webkit-scrollbar-thumb { background: #312e81; border-radius: 9999px; }
 
-    /* AdSense slot shell — keeps layout stable before ads load (avoids CLS). */
+    /* AdSense slot shell — reserves height so ads don't cause layout shift. */
     .adsense-slot {
       display: flex;
       flex-direction: column;
@@ -92,6 +97,15 @@
       border-radius: 1.5rem;
       background: linear-gradient(90deg, rgba(15,23,42,.8), rgba(30,27,75,.6), rgba(15,23,42,.8));
     }
+
+    .spinner {
+      width: 1.1rem; height: 1.1rem;
+      border: 2px solid rgba(255,255,255,.35);
+      border-top-color: #fff;
+      border-radius: 9999px;
+      animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
   </style>
 </head>
 
@@ -104,13 +118,13 @@
         <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-800 text-lg font-black text-white shadow-lg shadow-indigo-900/40">TP</span>
         <span>
           <span class="block text-lg font-extrabold tracking-tight text-white">Trend<span class="text-indigo-400">Pulse</span></span>
-          <span class="block text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">Updated daily</span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">Live tag generator</span>
         </span>
       </a>
 
       <nav class="hidden items-center gap-6 text-sm font-medium text-slate-300 sm:flex" aria-label="Primary">
-        <a class="transition hover:text-indigo-300" href="#trends">Trends</a>
-        <a class="transition hover:text-indigo-300" href="#how-it-works">How it works</a>
+        <a class="transition hover:text-indigo-300" href="#generator">Generator</a>
+        <a class="transition hover:text-indigo-300" href="#trends">Daily trends</a>
         <a class="transition hover:text-indigo-300" href="#faq">FAQ</a>
         <a class="transition hover:text-indigo-300" href="/privacy.html">Privacy</a>
       </nav>
@@ -126,40 +140,144 @@
   </header>
 
   <!-- ==================== HERO ==================== -->
-  <section class="mx-auto max-w-7xl px-5 pb-10 pt-14 text-center sm:pt-20">
-    <span class="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-300">
-      Refreshed every 24 hours
+  <section class="mx-auto max-w-7xl px-5 pb-8 pt-14 text-center sm:pt-20">
+    <span class="inline-flex items-center gap-2 rounded-full border border-fuchsia-500/30 bg-fuchsia-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-fuchsia-300">
+      Powered by live global traffic data
     </span>
-    <h1 class="mx-auto mt-6 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl">
-      Today's trending topics,<br class="hidden sm:block" />
-      <span class="bg-gradient-to-r from-indigo-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent">packaged as hashtags.</span>
+    <h1 class="mx-auto mt-6 max-w-4xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl">
+      Any keyword into<br class="hidden sm:block" />
+      <span class="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-indigo-400 bg-clip-text text-transparent">tags that actually rank.</span>
     </h1>
     <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
-      TrendPulse reads the live trending-search stream once a day, converts every topic into a
-      ready-to-paste hashtag string, and pre-renders the whole page as static HTML. No signup,
-      no paywall, no research required — just copy and post.
+      TrendPulse queries real global pageview traffic, finds the high-volume topics connected to your
+      keyword, and rewrites them as platform-compliant hashtags or YouTube tags. No signup, no paywall.
     </p>
     <p class="mt-4 text-sm text-slate-500">
-      Last refreshed: <time id="last-updated" datetime="2026-09-18T15:03:43Z">18 September 2026, 15:03 UTC</time>
+      Daily trend board refreshed: <time id="last-updated" datetime="2026-09-18T15:38:04Z">18 September 2026, 15:38 UTC</time>
     </p>
   </section>
 
   <!-- ==================== TOP AD SLOT ==================== -->
-  <section class="mx-auto max-w-7xl px-5 pb-12">
+  <section class="mx-auto max-w-7xl px-5 pb-10">
     <div class="adsense-slot">
       <p class="text-xs font-bold uppercase tracking-[0.3em] text-indigo-300">Advertisement</p>
-      <p class="text-base font-semibold text-slate-300">AdSense Leaderboard — Top of Grid</p>
+      <p class="text-base font-semibold text-slate-300">AdSense Leaderboard — Above the Fold</p>
       <p class="max-w-md text-xs text-slate-500">
         Paste your responsive <code class="rounded bg-slate-800 px-1 py-0.5 text-indigo-300">&lt;ins class="adsbygoogle"&gt;</code> unit here.
       </p>
     </div>
   </section>
 
-  <!-- ==================== TRENDS GRID ==================== -->
+  <!-- ==================== INTERACTIVE GENERATOR ==================== -->
+  <section id="generator" class="mx-auto max-w-5xl px-5 pb-16">
+    <div class="rounded-3xl border border-white/10 bg-slate-900/60 p-6 shadow-2xl shadow-slate-950/50 backdrop-blur sm:p-8">
+
+      <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Live tag generator</h2>
+      <p class="mt-2 text-sm leading-relaxed text-slate-400">
+        Enter a topic, choose how fresh the data should be, and pick where you're posting.
+        Results are ranked by real pageview volume from the last reporting window.
+      </p>
+
+      <!-- INPUT DASHBOARD -->
+      <form id="gen-form" class="mt-6 grid gap-4 sm:grid-cols-12" novalidate>
+        <div class="sm:col-span-12">
+          <label for="keyword" class="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">Keyword or topic</label>
+          <input id="keyword" name="keyword" type="text" autocomplete="off" required
+                 placeholder="e.g. artificial intelligence, marathon, sourdough"
+                 class="w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-base text-white placeholder-slate-600 outline-none transition focus:border-fuchsia-500/60 focus:ring-2 focus:ring-fuchsia-500/30" />
+        </div>
+
+        <div class="sm:col-span-4">
+          <label for="timeframe" class="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">Timeframe</label>
+          <select id="timeframe" name="timeframe"
+                  class="w-full appearance-none rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-base text-white outline-none transition focus:border-fuchsia-500/60 focus:ring-2 focus:ring-fuchsia-500/30">
+            <option value="hourly">Right now (48h)</option>
+            <option value="daily" selected>Today (7 days)</option>
+            <option value="weekly">This week (30 days)</option>
+            <option value="monthly">This month (90 days)</option>
+          </select>
+        </div>
+
+        <div class="sm:col-span-4">
+          <label for="platform" class="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">Platform</label>
+          <select id="platform" name="platform"
+                  class="w-full appearance-none rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-base text-white outline-none transition focus:border-fuchsia-500/60 focus:ring-2 focus:ring-fuchsia-500/30">
+            <option value="instagram" selected>Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="tiktok">TikTok</option>
+            <option value="x">X / Twitter</option>
+            <option value="youtube">YouTube (comma tags)</option>
+          </select>
+        </div>
+
+        <div class="flex items-end sm:col-span-4">
+          <button id="generate-btn" type="submit"
+                  class="flex w-full items-center justify-center gap-2 rounded-xl bg-fuchsia-500 px-5 py-3 text-base font-bold text-white shadow-lg shadow-fuchsia-900/40 transition hover:bg-fuchsia-400 focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:cursor-not-allowed disabled:opacity-60">
+            <span id="btn-label">Generate Live Tags</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- QUICK PICKS -->
+      <div class="mt-4 flex flex-wrap items-center gap-2">
+        <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">Try:</span>
+        <button type="button" class="js-example rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 transition hover:border-fuchsia-400/40 hover:text-white">artificial intelligence</button>
+        <button type="button" class="js-example rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 transition hover:border-fuchsia-400/40 hover:text-white">formula one</button>
+        <button type="button" class="js-example rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 transition hover:border-fuchsia-400/40 hover:text-white">skincare</button>
+        <button type="button" class="js-example rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 transition hover:border-fuchsia-400/40 hover:text-white">video game</button>
+      </div>
+
+      <!-- STATUS / ERROR -->
+      <div id="gen-status" class="mt-6 hidden rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-300"></div>
+
+      <!-- RESULTS -->
+      <div id="gen-results" class="mt-6 hidden">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <h3 class="text-lg font-bold text-white">Generated tags</h3>
+          <span id="result-meta" class="text-xs font-medium text-slate-500"></span>
+        </div>
+
+        <!-- Live traffic table -->
+        <div class="mt-4 overflow-hidden rounded-2xl border border-white/10">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-white/5 text-[11px] uppercase tracking-widest text-slate-400">
+              <tr>
+                <th scope="col" class="px-4 py-2.5 font-bold">Live topic</th>
+                <th scope="col" class="px-4 py-2.5 text-right font-bold">Views</th>
+                <th scope="col" class="px-4 py-2.5 text-right font-bold">Velocity</th>
+              </tr>
+            </thead>
+            <tbody id="traffic-body" class="divide-y divide-white/5 text-slate-300"></tbody>
+          </table>
+        </div>
+
+        <!-- Output string -->
+        <label for="tag-output" class="mt-6 mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">
+          <span id="output-label">Hashtag string</span>
+        </label>
+        <textarea id="tag-output" rows="4" readonly
+                  class="w-full resize-y rounded-xl border border-white/10 bg-slate-950/70 p-4 font-mono text-sm leading-relaxed text-indigo-200 outline-none focus:border-fuchsia-500/60"></textarea>
+
+        <div class="mt-3 flex flex-wrap gap-3">
+          <button id="copy-output" type="button"
+                  data-label="Copy to Clipboard"
+                  class="rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-indigo-900/40 transition-all duration-200 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-900">
+            Copy to Clipboard
+          </button>
+          <span id="tag-count" class="self-center text-xs font-medium text-slate-500"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SEO STATIC ZONE ==================== -->
   <main id="trends" class="mx-auto max-w-7xl px-5 pb-16">
     <div class="mb-8">
-      <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Today's trending board</h2>
-      <p class="mt-1 text-sm text-slate-400">Nine topics, each with a one-click hashtag string.</p>
+      <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Today's global macro trends</h2>
+      <p class="mt-1 text-sm text-slate-400">
+        The nine highest-ranking global searches of the day, pre-rendered every morning. Tap any card to copy its hashtag set.
+      </p>
     </div>
 
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -426,75 +544,71 @@
     </div>
   </main>
 
-  <!-- ==================== HOW IT WORKS (crawlable text content) ==================== -->
+  <!-- ==================== HOW IT WORKS ==================== -->
   <section id="how-it-works" class="mx-auto max-w-7xl px-5 pb-16">
     <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">How TrendPulse works</h2>
     <p class="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">
-      Most hashtag tools ask you to sign up, then hand you the same recycled list every week.
-      TrendPulse takes the opposite approach: it is a fully automated static site with no accounts
-      and no database. Here is the entire pipeline, start to finish.
+      TrendPulse combines two different kinds of trend data. Understanding the difference is what makes
+      the output useful rather than generic.
     </p>
 
-    <div class="mt-8 grid gap-5 sm:grid-cols-3">
+    <div class="mt-8 grid gap-5 sm:grid-cols-2">
       <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
-        <div class="grid h-10 w-10 place-items-center rounded-xl bg-indigo-500/15 text-lg">1</div>
-        <h3 class="mt-4 font-bold text-white">Collect</h3>
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-fuchsia-500/15 text-lg">⚡</div>
+        <h3 class="mt-4 font-bold text-white">Micro trends — live, on demand</h3>
         <p class="mt-2 text-sm leading-relaxed text-slate-400">
-          A dependency-free Python script reads the public Google Trends RSS stream and pulls the
-          nine highest-ranking search topics of the day. No API keys, no paid data provider.
+          When you type a keyword, your browser queries a public encyclopedia search index for the
+          articles most related to it, then pulls the actual pageview counts for each one over your
+          chosen window. Topics are ranked by genuine traffic volume, and a velocity figure compares
+          recent days against earlier ones so you can see what is accelerating rather than merely large.
+          Every request is made directly from your browser, so there is no server to rate-limit or ban.
         </p>
       </article>
       <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
-        <div class="grid h-10 w-10 place-items-center rounded-xl bg-indigo-500/15 text-lg">2</div>
-        <h3 class="mt-4 font-bold text-white">Pre-render</h3>
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-indigo-500/15 text-lg">🌍</div>
+        <h3 class="mt-4 font-bold text-white">Macro trends — baked in daily</h3>
         <p class="mt-2 text-sm leading-relaxed text-slate-400">
-          Each topic is normalised into a clean hashtag set and compiled into semantic HTML. The
-          cards are baked directly into the page, so search crawlers read finished text instead of
-          waiting on JavaScript.
-        </p>
-      </article>
-      <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
-        <div class="grid h-10 w-10 place-items-center rounded-xl bg-indigo-500/15 text-lg">3</div>
-        <h3 class="mt-4 font-bold text-white">Publish</h3>
-        <p class="mt-2 text-sm leading-relaxed text-slate-400">
-          A scheduled job commits the regenerated page every morning, which triggers a fresh
-          production deploy automatically. The result is a static file served from a global CDN.
+          Separately, a scheduled Python job reads the global trending-search feed once every 24 hours
+          and writes the nine biggest topics straight into this page as static HTML. Because that content
+          is pre-rendered rather than loaded by JavaScript, search engines index it immediately — which is
+          also why the board above loads instantly with no spinner.
         </p>
       </article>
     </div>
   </section>
 
-  <!-- ==================== HOW TO USE ==================== -->
+  <!-- ==================== GUIDE ==================== -->
   <section id="guide" class="mx-auto max-w-7xl px-5 pb-16">
-    <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Getting the most out of trending hashtags</h2>
+    <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Choosing tags that actually help</h2>
     <div class="mt-4 grid gap-6 lg:grid-cols-2">
       <div class="space-y-4 text-sm leading-relaxed text-slate-400">
         <p>
-          Trending hashtags work because they attach your post to a conversation that already has
-          momentum. The catch is that momentum decays fast — a topic that peaks on Tuesday morning
-          is often cold by Wednesday night. That is why this board is rebuilt daily rather than
-          curated once and left to rot.
+          Trending tags work because they attach your post to a conversation that already has momentum.
+          The catch is that momentum decays fast — a topic peaking on Tuesday morning is often cold by
+          Wednesday night. That is why the generator lets you narrow the window: a 48-hour view surfaces
+          what is spiking right now, while a 90-day view surfaces durable interest that will still be
+          searched next month.
         </p>
         <p>
-          A practical rule: mix breadth with specificity. Broad tags like
-          <span class="font-semibold text-indigo-300">#trending</span> give you reach but enormous
-          competition, while the topic-specific tag from each card gives you a much smaller, far
-          more relevant audience. Using both in the same post is usually stronger than using either
-          alone.
+          Read the velocity column rather than just the view count. A topic with two million views and
+          flat velocity is saturated; creators have already covered it from every angle. A topic with
+          eighty thousand views and sharply rising velocity is where you can still be early, and being
+          early is most of the advantage.
         </p>
       </div>
       <div class="space-y-4 text-sm leading-relaxed text-slate-400">
         <p>
-          Relevance still matters more than volume. Platforms increasingly down-rank posts whose
-          hashtags do not match the actual content, so only borrow a trend you can genuinely tie
-          back to your subject. A forced connection reads as spam to both the algorithm and your
-          audience.
+          Mix breadth with specificity. Broad amplifiers give reach but enormous competition, while the
+          topic-specific tags pulled from live data give a smaller, far more relevant audience. Using
+          both in one post generally outperforms either alone — which is why the generator returns a
+          blend rather than a single category.
         </p>
         <p>
-          Finally, watch placement and count. Short-form video platforms tend to reward three to
-          five tightly focused tags in the caption, while photo feeds tolerate larger sets. Copy a
-          string from any card below, trim it to fit the platform you are posting on, and add one
-          or two tags of your own for niche context.
+          Relevance still beats volume. Platforms increasingly down-rank posts whose tags do not match
+          the content, so only keep a suggestion you can genuinely tie to your subject. Delete the rest;
+          a tight set of eight honest tags will outperform thirty borrowed ones. On YouTube in particular,
+          tags are a minor ranking signal compared with your title and thumbnail — treat them as
+          disambiguation, not as a growth strategy on their own.
         </p>
       </div>
     </div>
@@ -505,42 +619,45 @@
     <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Frequently asked questions</h2>
     <div class="mt-6 space-y-4">
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur" open>
-        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">How often is the data updated?</summary>
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Where does the live data come from?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
-          Once every 24 hours. A scheduled job runs shortly after midnight UTC, regenerates the page
-          from the latest trending-search feed, and redeploys the site. The exact timestamp of the
-          most recent run is shown under the headline at the top of this page.
+          From the public Wikimedia search and pageviews APIs. Wikipedia is one of the largest free
+          sources of global attention data: when a subject spikes in the news, its article traffic spikes
+          with it, usually within hours. The generator reads those figures directly in your browser and
+          converts the leading topics into tag strings.
         </p>
       </details>
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
-        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Where do the trends come from?</summary>
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Why do the numbers stop a day or two ago?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
-          They are sourced from Google's publicly available trending-searches RSS feed, which
-          reflects the search topics rising fastest in a given region. If that feed is briefly
-          unreachable, the site falls back to a stable set of evergreen topics so the page never
-          breaks.
+          Pageview statistics are published in batches and typically lag real time by roughly 24 to 48
+          hours. The generator deliberately ends its query before that boundary so a window never
+          contains empty days that would distort the ranking.
         </p>
       </details>
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
-        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Do I need an account to copy hashtags?</summary>
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">What happens if the API is throttled or offline?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
-          No. There is no signup, no login and no paywall. Copying happens entirely in your browser
-          using the native Clipboard API — nothing you click is sent to a server.
+          The generator degrades gracefully. If the live request fails, times out, or returns nothing
+          usable, it falls back to a structured set of high-volume evergreen fields built from your
+          keyword and the platform you selected, and clearly labels the output as offline mode. You
+          always get a usable string.
         </p>
       </details>
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
-        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Which platforms do these hashtags work on?</summary>
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">How are YouTube tags different?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
-          The strings are plain text and work anywhere hashtags are supported, including Instagram,
-          TikTok, X, YouTube Shorts, Threads and LinkedIn. Trim the set to suit each platform's
-          conventions rather than pasting the full string everywhere.
+          YouTube Studio expects a comma-separated list of natural phrases rather than hashtags, so
+          selecting YouTube returns lowercase multi-word phrases with no hash symbols, trimmed to stay
+          within the 500-character field limit. Every other platform returns hash-prefixed tags.
         </p>
       </details>
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
         <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Does TrendPulse collect my personal data?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
-          The site itself stores nothing and has no accounts or contact forms. Third-party
-          advertising partners may set cookies, which is explained in full on our
+          The site has no accounts, no database and no contact forms, and your keywords are never sent to
+          us — they go directly from your browser to the public data API. Third-party advertising partners
+          may set cookies, which is explained on our
           <a href="/privacy.html" class="font-semibold text-indigo-300 underline decoration-indigo-500/40 underline-offset-2 hover:text-indigo-200">Privacy Policy</a> page.
         </p>
       </details>
@@ -565,11 +682,12 @@
         <div class="text-center sm:text-left">
           <p class="text-lg font-extrabold tracking-tight text-white">Trend<span class="text-indigo-400">Pulse</span></p>
           <p class="mt-1 max-w-sm text-sm text-slate-500">
-            Automated trend intelligence for creators. Rebuilt from live data every single day.
+            Live tag generation backed by real traffic data, plus a daily global trend board.
           </p>
         </div>
         <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-400" aria-label="Footer">
           <a class="transition hover:text-indigo-300" href="/">Home</a>
+          <a class="transition hover:text-indigo-300" href="/#generator">Generator</a>
           <a class="transition hover:text-indigo-300" href="/#how-it-works">How it works</a>
           <a class="transition hover:text-indigo-300" href="/#faq">FAQ</a>
           <a class="transition hover:text-indigo-300" href="/privacy.html">Privacy Policy</a>
@@ -578,10 +696,11 @@
 
       <div class="mt-8 border-t border-white/5 pt-6 text-center text-xs leading-relaxed text-slate-600">
         <p>© <span id="year">2026</span> TrendPulse. All rights reserved.</p>
-        <p class="mt-2 mx-auto max-w-2xl">
+        <p class="mt-2 mx-auto max-w-3xl">
           TrendPulse is an independent project and is not affiliated with, endorsed by, or sponsored by
-          Google, Instagram, TikTok, X, or any other platform referenced on this site. Trend data is
-          derived from publicly available sources and is provided for informational purposes only.
+          Google, Wikimedia, Instagram, TikTok, YouTube, X, or any other platform referenced on this site.
+          Live topic data is retrieved from the public Wikimedia APIs; daily trend data is derived from
+          publicly available sources. All figures are provided for informational purposes only.
         </p>
       </div>
     </div>
@@ -593,14 +712,16 @@
     Copied to clipboard
   </div>
 
-  <!-- ==================== GLOBAL CLIPBOARD HELPER ==================== -->
+  <!-- ==================================================================
+       GLOBAL CLIPBOARD HELPER
+       Used by both the generator and the Python-baked static cards.
+       ================================================================== -->
   <script>
   (function () {
     'use strict';
 
     var REVERT_MS = 2000;
 
-    /* Shared Tailwind class strings for the copy button's three visual states. */
     var BTN_BASE = 'mt-5 w-full rounded-xl px-4 py-2.5 text-sm font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900';
     var BTN_IDLE = BTN_BASE + ' bg-indigo-600 text-white shadow-lg shadow-indigo-900/40 hover:bg-indigo-500 focus:ring-indigo-400';
     var BTN_DONE = BTN_BASE + ' bg-emerald-600 text-white shadow-lg shadow-emerald-900/40 focus:ring-emerald-400';
@@ -640,9 +761,13 @@
       });
     }
 
+    window.TP_showToast = showToast;
+    window.TP_writeClipboard = writeClipboard;
+
     /**
-     * Global copy helper invoked inline from each pre-rendered card:
-     *   onclick="copyTags(this, '#tag1 #tag2 #tag3 #tag4')"
+     * Global copy helper used inline by the pre-rendered static cards:
+     *   onclick="copyTags(this, '#tag1 #tag2')"
+     * Swaps to emerald-600 + "✨ Copied!" and reverts after 2 seconds.
      */
     window.copyTags = function (button, text) {
       if (!button || button.dataset.busy === '1') return;
@@ -654,7 +779,7 @@
       writeClipboard(text).then(function () {
         button.className = BTN_DONE;
         button.textContent = '✨ Copied!';
-        showToast('Hashtags copied to clipboard');
+        showToast('Copied to clipboard');
       }).catch(function () {
         button.className = BTN_FAIL;
         button.textContent = '⚠️ Copy failed';
@@ -668,9 +793,384 @@
       });
     };
 
-    /* Keep the footer copyright year accurate without a rebuild. */
     var yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
+  })();
+  </script>
+
+  <!-- ==================================================================
+       LIVE DATA ENGINE
+       Wikimedia search + pageviews -> ranked topics -> platform strings.
+       All calls are client-side (origin=*), so there is no server to
+       time out and no shared IP to get banned.
+       ================================================================== -->
+  <script>
+  (function () {
+    'use strict';
+
+    var WIKI_API = 'https://en.wikipedia.org/w/api.php';
+    var PAGEVIEWS_API = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/';
+
+    var MAX_CANDIDATES = 10;   // articles to price out
+    var MAX_TOPICS = 8;        // topics kept in the final string
+    var FETCH_TIMEOUT = 9000;  // ms per request
+    var YT_CHAR_LIMIT = 480;   // YouTube tag field caps at 500
+
+    /* Pageview data lags real time by 1-2 days. */
+    var DATA_LAG_DAYS = 2;
+
+    var TIMEFRAMES = {
+      hourly:  { days: 2,  label: 'last 48 hours' },
+      daily:   { days: 7,  label: 'last 7 days' },
+      weekly:  { days: 30, label: 'last 30 days' },
+      monthly: { days: 90, label: 'last 90 days' }
+    };
+
+    /* Velocity amplifiers injected per timeframe. */
+    var VELOCITY_TAGS = {
+      hourly:  ['trendingnow', 'breaking', 'happeningnow'],
+      daily:   ['trendingtoday', 'todaystrend', 'viral'],
+      weekly:  ['trendingthisweek', 'weeklytrends', 'trending'],
+      monthly: ['trendingnow', 'monthlyroundup', 'trending']
+    };
+
+    var VELOCITY_PHRASES = {
+      hourly:  ['trending now', 'breaking news', 'happening now'],
+      daily:   ['trending today', 'today trending', 'viral video'],
+      weekly:  ['trending this week', 'weekly trends', 'trending'],
+      monthly: ['trending this month', 'monthly roundup', 'trending']
+    };
+
+    /* Platform-specific algorithmic amplifiers. */
+    var PLATFORM_TAGS = {
+      instagram: ['reels', 'explorepage', 'instagood'],
+      facebook:  ['facebookreels', 'fbviral', 'sharethis'],
+      tiktok:    ['fyp', 'foryoupage', 'tiktokviral'],
+      x:         ['news', 'thread'],
+      youtube:   ['shorts', 'viral video', 'youtube shorts']
+    };
+
+    var PLATFORM_LABELS = {
+      instagram: 'Instagram', facebook: 'Facebook', tiktok: 'TikTok',
+      x: 'X / Twitter', youtube: 'YouTube'
+    };
+
+    var els = {
+      form: document.getElementById('gen-form'),
+      keyword: document.getElementById('keyword'),
+      timeframe: document.getElementById('timeframe'),
+      platform: document.getElementById('platform'),
+      button: document.getElementById('generate-btn'),
+      btnLabel: document.getElementById('btn-label'),
+      status: document.getElementById('gen-status'),
+      results: document.getElementById('gen-results'),
+      meta: document.getElementById('result-meta'),
+      body: document.getElementById('traffic-body'),
+      output: document.getElementById('tag-output'),
+      outputLabel: document.getElementById('output-label'),
+      copy: document.getElementById('copy-output'),
+      count: document.getElementById('tag-count')
+    };
+
+    /* ------------------------- utilities ------------------------- */
+
+    function ymd(date) {
+      var m = String(date.getUTCMonth() + 1).padStart(2, '0');
+      var d = String(date.getUTCDate()).padStart(2, '0');
+      return '' + date.getUTCFullYear() + m + d;
+    }
+
+    function dateRange(days) {
+      var end = new Date(Date.now() - DATA_LAG_DAYS * 86400000);
+      var start = new Date(end.getTime() - (days - 1) * 86400000);
+      return { start: ymd(start), end: ymd(end) };
+    }
+
+    function fetchJSON(url) {
+      var controller = new AbortController();
+      var timer = window.setTimeout(function () { controller.abort(); }, FETCH_TIMEOUT);
+      return fetch(url, { signal: controller.signal, headers: { 'Accept': 'application/json' } })
+        .then(function (response) {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.json();
+        })
+        .finally(function () { window.clearTimeout(timer); });
+    }
+
+    function formatNumber(n) {
+      if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+      if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+      return String(n);
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+
+    /* Strip Wikipedia disambiguation: "Mercury (planet)" -> "Mercury" */
+    function cleanTitle(title) {
+      return String(title).replace(/\s*\([^)]*\)\s*$/, '').trim();
+    }
+
+    /* "Artificial Intelligence" -> "artificialintelligence" */
+    function toHashtag(phrase) {
+      var cleaned = String(phrase)
+        .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')  // strip accents
+        .replace(/[^a-zA-Z0-9\s]/g, ' ');
+      return cleaned.split(/\s+/).filter(Boolean).join('').toLowerCase();
+    }
+
+    /* Natural phrase for YouTube: lowercase, punctuation removed, spaces kept. */
+    function toPhrase(text) {
+      return String(text)
+        .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-zA-Z0-9\s]/g, ' ')
+        .split(/\s+/).filter(Boolean).join(' ').toLowerCase();
+    }
+
+    function dedupe(list) {
+      var seen = Object.create(null);
+      var out = [];
+      for (var i = 0; i < list.length; i++) {
+        var v = list[i];
+        if (v && v.length > 1 && !seen[v]) { seen[v] = 1; out.push(v); }
+      }
+      return out;
+    }
+
+    /* ------------------------- live data ------------------------- */
+
+    /* Step 1: find the articles most related to the keyword. */
+    function searchTopics(keyword) {
+      var url = WIKI_API +
+        '?action=query&list=search&format=json&origin=*' +
+        '&srlimit=' + MAX_CANDIDATES +
+        '&srnamespace=0&srqiprofile=popular_inclinks_pv' +
+        '&srsearch=' + encodeURIComponent(keyword);
+
+      return fetchJSON(url).then(function (data) {
+        var hits = (data && data.query && data.query.search) || [];
+        return hits.map(function (hit) { return hit.title; });
+      });
+    }
+
+    /* Step 2: real traffic for one article over the window. */
+    function fetchTraffic(title, range) {
+      var article = encodeURIComponent(String(title).replace(/ /g, '_'));
+      var url = PAGEVIEWS_API + article + '/daily/' + range.start + '/' + range.end;
+
+      return fetchJSON(url).then(function (data) {
+        var items = (data && data.items) || [];
+        if (!items.length) return null;
+
+        var series = items.map(function (i) { return i.views || 0; });
+        var total = series.reduce(function (a, b) { return a + b; }, 0);
+        if (!total) return null;
+
+        // Velocity: mean of the most recent third vs the earliest third.
+        var slice = Math.max(1, Math.floor(series.length / 3));
+        var recent = series.slice(-slice);
+        var earlier = series.slice(0, slice);
+        var recentAvg = recent.reduce(function (a, b) { return a + b; }, 0) / recent.length;
+        var earlierAvg = earlier.reduce(function (a, b) { return a + b; }, 0) / earlier.length;
+        var velocity = earlierAvg > 0 ? ((recentAvg - earlierAvg) / earlierAvg) * 100 : 0;
+
+        return { title: cleanTitle(title), views: total, velocity: velocity };
+      }).catch(function () { return null; });
+    }
+
+    /* Step 3: rank candidates by real volume. */
+    function rankTopics(keyword, timeframe) {
+      var range = dateRange(TIMEFRAMES[timeframe].days);
+
+      return searchTopics(keyword).then(function (titles) {
+        if (!titles.length) throw new Error('No matching topics found');
+        return Promise.all(titles.map(function (t) { return fetchTraffic(t, range); }));
+      }).then(function (results) {
+        var valid = results.filter(Boolean);
+        if (!valid.length) throw new Error('No traffic data returned');
+        valid.sort(function (a, b) { return b.views - a.views; });
+        return valid.slice(0, MAX_TOPICS);
+      });
+    }
+
+    /* ------------------- platform transformation ------------------- */
+
+    function buildTags(keyword, topics, timeframe, platform) {
+      var isYouTube = platform === 'youtube';
+      var amplifiers = PLATFORM_TAGS[platform] || [];
+      var velocity = isYouTube ? VELOCITY_PHRASES[timeframe] : VELOCITY_TAGS[timeframe];
+      var convert = isYouTube ? toPhrase : toHashtag;
+
+      var parts = [convert(keyword)];
+
+      topics.forEach(function (topic) {
+        parts.push(convert(topic.title));
+      });
+
+      velocity.forEach(function (v) { parts.push(convert(v)); });
+      amplifiers.forEach(function (a) { parts.push(convert(a)); });
+
+      var unique = dedupe(parts);
+
+      if (isYouTube) {
+        // Comma-separated phrases, trimmed to YouTube's field limit.
+        var out = [];
+        var length = 0;
+        for (var i = 0; i < unique.length; i++) {
+          var next = unique[i];
+          var added = next.length + (out.length ? 2 : 0);
+          if (length + added > YT_CHAR_LIMIT) break;
+          out.push(next);
+          length += added;
+        }
+        return { text: out.join(', '), count: out.length };
+      }
+
+      var tags = unique.map(function (t) { return '#' + t; });
+      return { text: tags.join(' '), count: tags.length };
+    }
+
+    /* Offline fallback: structured high-volume fields from the keyword. */
+    function fallbackTopics(keyword) {
+      var base = cleanTitle(keyword);
+      return [
+        base + ' news', base + ' 2026', base + ' explained',
+        base + ' guide', 'best ' + base, base + ' tips',
+        base + ' update', base + ' review'
+      ].map(function (phrase) {
+        return { title: phrase, views: null, velocity: null, offline: true };
+      });
+    }
+
+    /* ---------------------------- UI ---------------------------- */
+
+    function setStatus(message, tone) {
+      if (!message) { els.status.classList.add('hidden'); return; }
+      var tones = {
+        info: 'border-white/10 bg-white/5 text-slate-300',
+        warn: 'border-amber-500/30 bg-amber-500/10 text-amber-200',
+        error: 'border-rose-500/30 bg-rose-500/10 text-rose-200'
+      };
+      els.status.className = 'mt-6 rounded-xl border px-4 py-3 text-sm ' + (tones[tone] || tones.info);
+      els.status.innerHTML = message;
+      els.status.classList.remove('hidden');
+    }
+
+    function setBusy(busy) {
+      els.button.disabled = busy;
+      els.btnLabel.innerHTML = busy
+        ? '<span class="flex items-center gap-2"><span class="spinner"></span> Fetching live data…</span>'
+        : 'Generate Live Tags';
+    }
+
+    function renderTable(topics) {
+      els.body.innerHTML = topics.map(function (t) {
+        var views = t.views === null ? '<span class="text-slate-600">—</span>' : formatNumber(t.views);
+        var vel;
+        if (t.velocity === null) {
+          vel = '<span class="text-slate-600">—</span>';
+        } else {
+          var up = t.velocity >= 0;
+          var cls = up ? 'text-emerald-400' : 'text-slate-500';
+          vel = '<span class="' + cls + ' font-semibold">' + (up ? '▲' : '▼') + ' ' +
+                Math.abs(t.velocity).toFixed(0) + '%</span>';
+        }
+        return '<tr>' +
+          '<td class="px-4 py-2.5 font-medium text-slate-200">' + escapeHtml(t.title) + '</td>' +
+          '<td class="px-4 py-2.5 text-right font-mono text-xs">' + views + '</td>' +
+          '<td class="px-4 py-2.5 text-right text-xs">' + vel + '</td>' +
+        '</tr>';
+      }).join('');
+    }
+
+    function renderResults(keyword, topics, timeframe, platform, offline) {
+      var result = buildTags(keyword, topics, timeframe, platform);
+
+      renderTable(topics);
+      els.output.value = result.text;
+      els.outputLabel.textContent = platform === 'youtube'
+        ? 'YouTube tags (comma-separated — paste into YouTube Studio)'
+        : 'Hashtag string';
+      els.count.textContent = result.count + ' tags · ' + result.text.length + ' characters';
+      els.meta.textContent = PLATFORM_LABELS[platform] + ' · ' + TIMEFRAMES[timeframe].label +
+        (offline ? ' · offline mode' : ' · live data');
+      els.results.classList.remove('hidden');
+    }
+
+    function generate(event) {
+      if (event) event.preventDefault();
+
+      var keyword = els.keyword.value.trim();
+      var timeframe = els.timeframe.value;
+      var platform = els.platform.value;
+
+      if (keyword.length < 2) {
+        setStatus('Please enter a keyword with at least two characters.', 'error');
+        els.keyword.focus();
+        return;
+      }
+
+      setBusy(true);
+      setStatus('Querying live global traffic for <strong>' + escapeHtml(keyword) + '</strong>…', 'info');
+      els.results.classList.add('hidden');
+
+      rankTopics(keyword, timeframe).then(function (topics) {
+        setStatus('');
+        renderResults(keyword, topics, timeframe, platform, false);
+      }).catch(function (error) {
+        // Graceful degradation — always produce a usable string.
+        setStatus(
+          '<strong>Live data unavailable</strong> (' + escapeHtml(error.message || 'network error') +
+          '). Showing structured high-volume fields built from your keyword instead.', 'warn');
+        renderResults(keyword, fallbackTopics(keyword), timeframe, platform, true);
+      }).finally(function () {
+        setBusy(false);
+      });
+    }
+
+    /* Copy button — 2-second emerald success state. */
+    function copyOutput() {
+      var button = els.copy;
+      if (button.dataset.busy === '1' || !els.output.value) return;
+
+      var original = button.getAttribute('data-label');
+      var IDLE = 'rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-indigo-900/40 transition-all duration-200 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-900';
+      var DONE = 'rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-emerald-900/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-900';
+      var FAIL = 'rounded-xl bg-rose-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-rose-900/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 focus:ring-offset-slate-900';
+
+      button.dataset.busy = '1';
+
+      window.TP_writeClipboard(els.output.value).then(function () {
+        button.className = DONE;
+        button.textContent = '✨ Copied!';
+        window.TP_showToast('Tags copied to clipboard');
+      }).catch(function () {
+        button.className = FAIL;
+        button.textContent = '⚠️ Copy failed';
+        window.TP_showToast('Your browser blocked clipboard access');
+      }).then(function () {
+        window.setTimeout(function () {
+          button.className = IDLE;
+          button.textContent = original;
+          button.dataset.busy = '0';
+        }, 2000);
+      });
+    }
+
+    /* --------------------------- events --------------------------- */
+
+    els.form.addEventListener('submit', generate);
+    els.copy.addEventListener('click', copyOutput);
+
+    Array.prototype.forEach.call(document.querySelectorAll('.js-example'), function (chip) {
+      chip.addEventListener('click', function () {
+        els.keyword.value = chip.textContent.trim();
+        generate();
+      });
+    });
   })();
   </script>
 </body>
