@@ -1,0 +1,76 @@
+name: TrendPulse Daily Pre-Render
+
+# ---------------------------------------------------------------------------
+# Regenerates the static site once every 24 hours:
+#   template.html + live trends  ->  index.html (+ sitemap.xml, trends.json)
+#
+# IMPORTANT (Vercel optimization): the commit message intentionally does NOT
+# contain "[skip ci]" / "[Skip CI]" so Vercel detects the push and triggers a
+# fresh production build automatically.
+# ---------------------------------------------------------------------------
+
+on:
+  schedule:
+    # 00:34 UTC every day.
+    - cron: '34 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trendpulse-prerender
+  cancel-in-progress: false
+
+jobs:
+  prerender:
+    name: Pre-render site and redeploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run pre-render engine
+        run: python scraper.py
+
+      - name: Verify generated output
+        run: |
+          set -e
+          test -s index.html || { echo "::error::index.html was not generated"; exit 1; }
+          if grep -q "TREND_CARDS_PLACEHOLDER" index.html; then
+            echo "::error::Placeholder was not replaced in index.html"
+            exit 1
+          fi
+          echo "Rendered cards: $(grep -c '<article' index.html)"
+
+      - name: Commit and push regenerated site
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -e
+          git config user.name "trendpulse-bot"
+          git config user.email "trendpulse-bot@users.noreply.github.com"
+
+          git add index.html sitemap.xml trends.json
+
+          if git diff --cached --quiet; then
+            echo "No content changes — nothing to commit."
+            exit 0
+          fi
+
+          # Standard commit message (NO [skip ci]) so Vercel rebuilds.
+          git commit -m "Automated data update: regenerate index.html ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+
+          git pull --rebase --autostash origin "$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"

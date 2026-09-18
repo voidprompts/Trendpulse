@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-09-18T16:01:43Z",
+  "source": "fallback",
+  "count": 9,
+  "trends": [
+    {
+      "id": 1,
+      "category": "General Viral",
+      "topic": "Artificial Intelligence",
+      "tags": [
+        "artificialintelligence",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "General Viral",
+      "topic": "Premier League",
+      "tags": [
+        "premierleague",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "General Viral",
+      "topic": "Crypto Market",
+      "tags": [
+        "cryptomarket",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "General Viral",
+      "topic": "Box Office Weekend",
+      "tags": [
+        "boxofficeweekend",
+        "boxoffice",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "General Viral",
+      "topic": "Tech Layoffs",
+      "tags": [
+        "techlayoffs",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "Space Launch",
+      "tags": [
+        "spacelaunch",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "Fitness Challenge",
+      "tags": [
+        "fitnesschallenge",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "General Viral",
+      "topic": "Street Food Tour",
+      "tags": [
+        "streetfoodtour",
+        "streetfood",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "General Viral",
+      "topic": "Travel Deals",
+      "tags": [
+        "traveldeals",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    }
+  ]
+}

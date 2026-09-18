@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ==================== SEO ==================== -->
+  <title>TrendPulse — Live Social Media Tag Generator &amp; Daily Trending Hashtags</title>
+  <meta name="description" content="Generate live, data-backed hashtags and YouTube tags from real global traffic. Enter any keyword, pick a timeframe and platform, and get copy-ready tag strings. Plus the top 9 trending searches, updated daily." />
+  <meta name="keywords" content="hashtag generator, youtube tag generator, trending hashtags, social media tags, viral hashtags today, instagram hashtags, tiktok hashtags" />
+  <meta name="author" content="TrendPulse" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://trendpulse.vercel.app/" />
+
+  <!-- ==================== Open Graph ==================== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TrendPulse" />
+  <meta property="og:url" content="https://trendpulse.vercel.app/" />
+  <meta property="og:title" content="TrendPulse — Live Social Media Tag Generator" />
+  <meta property="og:description" content="Turn any keyword into platform-ready hashtags and YouTube tags, ranked by real global traffic data." />
+  <meta property="og:image" content="https://trendpulse.vercel.app/og-image.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ==================== Twitter Card ==================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TrendPulse — Live Social Media Tag Generator" />
+  <meta name="twitter:description" content="Turn any keyword into platform-ready hashtags and YouTube tags, ranked by real global traffic data." />
+  <meta name="twitter:image" content="https://trendpulse.vercel.app/og-image.png" />
+
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text y='72' x='50' text-anchor='middle' font-size='58' font-family='sans-serif' font-weight='bold' fill='white'>T</text></svg>" />
+
+  <!-- ==================== Structured data ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "TrendPulse",
+    "url": "https://trendpulse.vercel.app/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "description": "Live social media tag generator that converts real global traffic data into platform-ready hashtags and YouTube tags.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { abyss: '#0f172a', midnight: '#1e1b4b' },
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://suggestqueries.google.com" />
+  <link rel="preconnect" href="https://clients1.google.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ====================================================================
+       GOOGLE ADSENSE: after approval, uncomment and insert your publisher ID.
+       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+       ==================================================================== -->
+
+  <style>
+    body {
+      background-color: #0f172a;
+      background-image:
+        radial-gradient(60rem 40rem at 12% -10%, rgba(79, 70, 229, .28), transparent 60%),
+        radial-gradient(50rem 35rem at 95% 0%, rgba(30, 27, 75, .85), transparent 65%),
+        linear-gradient(180deg, #0f172a 0%, #131a35 45%, #1e1b4b 100%);
+      background-attachment: fixed;
+    }
+    ::selection { background: #4f46e5; color: #fff; }
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #312e81; border-radius: 9999px; }
+
+    /* AdSense slot shell — reserves height so ads don't cause layout shift. */
+    .adsense-slot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: .4rem;
+      min-height: 120px;
+      padding: 1.75rem;
+      text-align: center;
+      border: 2px dashed rgba(129, 140, 248, .3);
+      border-radius: 1.5rem;
+      background: linear-gradient(90deg, rgba(15,23,42,.8), rgba(30,27,75,.6), rgba(15,23,42,.8));
+    }
+
+    .spinner {
+      width: 1.1rem; height: 1.1rem;
+      border: 2px solid rgba(255,255,255,.35);
+      border-top-color: #fff;
+      border-radius: 9999px;
+      animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+
+<body class="min-h-screen font-sans text-slate-200 antialiased">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="sticky top-0 z-40 border-b border-white/5 bg-slate-950/70 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4">
+      <a href="/" class="flex items-center gap-3">
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-800 text-lg font-black text-white shadow-lg shadow-indigo-900/40">TP</span>
+        <span>
+          <span class="block text-lg font-extrabold tracking-tight text-white">Trend<span class="text-indigo-400">Pulse</span></span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">Live tag generator</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-6 text-sm font-medium text-slate-300 sm:flex" aria-label="Primary">
+        <a class="transition hover:text-indigo-300" href="#generator">Generator</a>
+        <a class="transition hover:text-indigo-300" href="#trends">Daily trends</a>
+        <a class="transition hover:text-indigo-300" href="#faq">FAQ</a>
+        <a class="transition hover:text-indigo-300" href="/privacy.html">Privacy</a>
+      </nav>
+
+      <div class="flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1.5">
+        <span class="relative flex h-2 w-2">
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+        </span>
+        <span class="text-xs font-semibold text-emerald-300">Live</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="mx-auto max-w-7xl px-5 pb-8 pt-14 text-center sm:pt-20">
+    <span class="inline-flex items-center gap-2 rounded-full border border-fuchsia-500/30 bg-fuchsia-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-fuchsia-300">
+      Powered by live YouTube search data
+    </span>
+    <h1 class="mx-auto mt-6 max-w-4xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl">
+      Any keyword into<br class="hidden sm:block" />
+      <span class="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-indigo-400 bg-clip-text text-transparent">tags that actually rank.</span>
+    </h1>
+    <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
+      TrendPulse reads the live YouTube search autocomplete stream — the actual phrases viewers are
+      typing right now — and rewrites them as platform-compliant hashtags or YouTube tags. No signup, no paywall.
+    </p>
+    <p class="mt-4 text-sm text-slate-500">
+      Daily trend board refreshed: <time id="last-updated" datetime="<!-- UPDATED_ISO -->"><!-- UPDATED_HUMAN --></time>
+    </p>
+  </section>
+
+  <!-- ==================== TOP AD SLOT ==================== -->
+  <section class="mx-auto max-w-7xl px-5 pb-10">
+    <div class="adsense-slot">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-indigo-300">Advertisement</p>
+      <p class="text-base font-semibold text-slate-300">AdSense Leaderboard — Above the Fold</p>
+      <p class="max-w-md text-xs text-slate-500">
+        Paste your responsive <code class="rounded bg-slate-800 px-1 py-0.5 text-indigo-300">&lt;ins class="adsbygoogle"&gt;</code> unit here.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE GENERATOR ==================== -->
+  <section id="generator" class="mx-auto max-w-5xl px-5 pb-16">
+    <div class="rounded-3xl border border-white/10 bg-slate-900/60 p-6 shadow-2xl shadow-slate-950/50 backdrop-blur sm:p-8">
+
+      <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Live tag generator</h2>
+      <p class="mt-2 text-sm leading-relaxed text-slate-400">
+        Enter a topic, choose a velocity profile, and pick where you're posting. Suggestions come
+        straight from YouTube's live autocomplete index, ranked by search position.
+      </p>
+
+      <!-- INPUT DASHBOARD -->
+      <form id="gen-form" class="mt-6 grid gap-4 sm:grid-cols-12" novalidate>
+        <div class="sm:col-span-12">
+          <label for="keyword" class="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">Keyword or topic</label>
+          <input id="keyword" name="keyword" type="text" autocomplete="off" required
+                 placeholder="e.g. artificial intelligence, marathon, sourdough"
+                 class="w-full rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-base text-white placeholder-slate-600 outline-none transition focus:border-fuchsia-500/60 focus:ring-2 focus:ring-fuchsia-500/30" />
+        </div>
+
+        <div class="sm:col-span-4">
+          <label for="timeframe" class="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">Timeframe</label>
+          <select id="timeframe" name="timeframe"
+                  class="w-full appearance-none rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-base text-white outline-none transition focus:border-fuchsia-500/60 focus:ring-2 focus:ring-fuchsia-500/30">
+            <option value="hourly">Hourly — breaking right now</option>
+            <option value="daily" selected>Daily — today's momentum</option>
+            <option value="weekly">Weekly — this week</option>
+            <option value="monthly">Monthly — evergreen</option>
+          </select>
+        </div>
+
+        <div class="sm:col-span-4">
+          <label for="platform" class="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">Platform</label>
+          <select id="platform" name="platform"
+                  class="w-full appearance-none rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-base text-white outline-none transition focus:border-fuchsia-500/60 focus:ring-2 focus:ring-fuchsia-500/30">
+            <option value="instagram" selected>Instagram</option>
+            <option value="youtube">YouTube (comma tags)</option>
+            <option value="facebook">Facebook</option>
+            <option value="all">All platforms</option>
+          </select>
+        </div>
+
+        <div class="flex items-end sm:col-span-4">
+          <button id="generate-btn" type="submit"
+                  class="flex w-full items-center justify-center gap-2 rounded-xl bg-fuchsia-500 px-5 py-3 text-base font-bold text-white shadow-lg shadow-fuchsia-900/40 transition hover:bg-fuchsia-400 focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:ring-offset-2 focus:ring-offset-slate-900 disabled:cursor-not-allowed disabled:opacity-60">
+            <span id="btn-label">Generate Live Tags</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- QUICK PICKS -->
+      <div class="mt-4 flex flex-wrap items-center gap-2">
+        <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">Try:</span>
+        <button type="button" class="js-example rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 transition hover:border-fuchsia-400/40 hover:text-white">artificial intelligence</button>
+        <button type="button" class="js-example rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 transition hover:border-fuchsia-400/40 hover:text-white">formula one</button>
+        <button type="button" class="js-example rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 transition hover:border-fuchsia-400/40 hover:text-white">skincare</button>
+        <button type="button" class="js-example rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-slate-300 transition hover:border-fuchsia-400/40 hover:text-white">video game</button>
+      </div>
+
+      <!-- STATUS / ERROR -->
+      <div id="gen-status" class="mt-6 hidden rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-300"></div>
+
+      <!-- RESULTS -->
+      <div id="gen-results" class="mt-6 hidden">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <h3 class="text-lg font-bold text-white">Generated tags</h3>
+          <span id="result-meta" class="text-xs font-medium text-slate-500"></span>
+        </div>
+
+        <!-- Live traffic table -->
+        <div class="mt-4 overflow-hidden rounded-2xl border border-white/10">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-white/5 text-[11px] uppercase tracking-widest text-slate-400">
+              <tr>
+                <th scope="col" class="px-4 py-2.5 font-bold">Live search phrase</th>
+                <th scope="col" class="px-4 py-2.5 text-right font-bold">Rank</th>
+                <th scope="col" class="px-4 py-2.5 text-right font-bold">Signal</th>
+              </tr>
+            </thead>
+            <tbody id="traffic-body" class="divide-y divide-white/5 text-slate-300"></tbody>
+          </table>
+        </div>
+
+        <!-- Output string -->
+        <label for="tag-output" class="mt-6 mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">
+          <span id="output-label">Hashtag string</span>
+        </label>
+        <textarea id="tag-output" rows="4" readonly
+                  class="w-full resize-y rounded-xl border border-white/10 bg-slate-950/70 p-4 font-mono text-sm leading-relaxed text-indigo-200 outline-none focus:border-fuchsia-500/60"></textarea>
+
+        <div class="mt-3 flex flex-wrap gap-3">
+          <button id="copy-output" type="button"
+                  data-label="Copy to Clipboard"
+                  class="rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-indigo-900/40 transition-all duration-200 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-900">
+            Copy to Clipboard
+          </button>
+          <span id="tag-count" class="self-center text-xs font-medium text-slate-500"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SEO STATIC ZONE ==================== -->
+  <main id="trends" class="mx-auto max-w-7xl px-5 pb-16">
+    <div class="mb-8">
+      <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Today's global macro trends</h2>
+      <p class="mt-1 text-sm text-slate-400">
+        The nine highest-ranking global searches of the day, pre-rendered every morning. Tap any card to copy its hashtag set.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- TREND_CARDS_PLACEHOLDER -->
+    </div>
+  </main>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section id="how-it-works" class="mx-auto max-w-7xl px-5 pb-16">
+    <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">How TrendPulse works</h2>
+    <p class="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400">
+      TrendPulse combines two different kinds of trend data. Understanding the difference is what makes
+      the output useful rather than generic.
+    </p>
+
+    <div class="mt-8 grid gap-5 sm:grid-cols-2">
+      <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-fuchsia-500/15 text-lg">⚡</div>
+        <h3 class="mt-4 font-bold text-white">Micro trends — live, on demand</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-400">
+          When you type a keyword, your browser reads YouTube's own search autocomplete index — the
+          same predictions that appear under the search bar on YouTube itself. These are generated
+          from what real viewers are typing right now, which is why they surface social-native
+          material that never reaches a news feed: audio memes, creator drama, challenge formats and
+          edit styles. Suggestions are ordered by YouTube's own ranking, so position one is the
+          highest-demand completion for your term.
+        </p>
+      </article>
+      <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-indigo-500/15 text-lg">🌍</div>
+        <h3 class="mt-4 font-bold text-white">Macro trends — baked in daily</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-400">
+          Separately, a scheduled Python job reads the global trending-search feed once every 24 hours
+          and writes the nine biggest topics straight into this page as static HTML. Because that content
+          is pre-rendered rather than loaded by JavaScript, search engines index it immediately — which is
+          also why the board above loads instantly with no spinner.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==================== GUIDE ==================== -->
+  <section id="guide" class="mx-auto max-w-7xl px-5 pb-16">
+    <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Choosing tags that actually help</h2>
+    <div class="mt-4 grid gap-6 lg:grid-cols-2">
+      <div class="space-y-4 text-sm leading-relaxed text-slate-400">
+        <p>
+          Trending tags work because they attach your post to a conversation that already has momentum.
+          The catch is that momentum decays fast — a topic peaking on Tuesday morning is often cold by
+          Wednesday night. The timeframe selector controls how aggressively the output leans on
+          fast-decay amplifiers: hourly and daily inject high-velocity modifiers such as
+          <span class="font-semibold text-indigo-300">#shorts</span>,
+          <span class="font-semibold text-indigo-300">#reels</span> and
+          <span class="font-semibold text-indigo-300">#viral</span>, while weekly and monthly keep the
+          set calmer and more evergreen.
+        </p>
+        <p>
+          Read the ranking rather than treating every suggestion equally. The top completions are where
+          demand is concentrated, but they are also where competition is fiercest. The long-tail phrases
+          further down often convert better precisely because fewer creators target them — a specific
+          four-word phrase with modest volume can outperform a saturated one-word term.
+        </p>
+      </div>
+      <div class="space-y-4 text-sm leading-relaxed text-slate-400">
+        <p>
+          Mix breadth with specificity. Broad amplifiers give reach but enormous competition, while the
+          topic-specific tags pulled from live data give a smaller, far more relevant audience. Using
+          both in one post generally outperforms either alone — which is why the generator returns a
+          blend rather than a single category.
+        </p>
+        <p>
+          Relevance still beats volume. Platforms increasingly down-rank posts whose tags do not match
+          the content, so only keep a suggestion you can genuinely tie to your subject. Delete the rest;
+          a tight set of eight honest tags will outperform thirty borrowed ones. On YouTube in particular,
+          tags are a minor ranking signal compared with your title and thumbnail — treat them as
+          disambiguation, not as a growth strategy on their own.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section id="faq" class="mx-auto max-w-7xl px-5 pb-16">
+    <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Frequently asked questions</h2>
+    <div class="mt-6 space-y-4">
+      <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur" open>
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Where does the live data come from?</summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-400">
+          From YouTube's public search autocomplete service — the predictions that drop down when you
+          start typing in YouTube's search bar. They are derived from genuine viewer search behaviour
+          and update continuously, which makes them one of the fastest free signals available for
+          social-native trends. Because the request is made by your browser rather than by a server,
+          there is no proxy to pay for and no shared IP address to get rate-limited.
+        </p>
+      </details>
+      <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Why are there no exact search volumes?</summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-400">
+          The autocomplete service returns ranked phrases, not numeric counts — that data is not public.
+          What it gives you instead is ordering: the phrases at the top are the ones most people are
+          actually completing. The signal column reflects that rank, so treat the top three as your
+          highest-demand terms and the rest as long-tail support.
+        </p>
+      </details>
+      <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">What happens if the API is throttled or offline?</summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-400">
+          The generator degrades gracefully. It tries two separate mirrors of the autocomplete service,
+          and if both fail, time out, or return nothing usable, it falls back to a structured set of
+          high-volume viral fields built from your keyword and clearly labels the output as offline
+          mode. You always get a usable string.
+        </p>
+      </details>
+      <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">How are YouTube tags different?</summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-400">
+          YouTube Studio expects a comma-separated list of natural phrases rather than hashtags, so
+          selecting YouTube returns lowercase multi-word phrases with no hash symbols, trimmed to stay
+          within the 500-character field limit. Instagram and Facebook return camelCase hashtags such
+          as <span class="font-semibold text-indigo-300">#TrendingAudioMeme</span>, which are easier to
+          read and are treated identically by the platforms.
+        </p>
+      </details>
+      <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Does TrendPulse collect my personal data?</summary>
+        <p class="mt-3 text-sm leading-relaxed text-slate-400">
+          The site has no accounts, no database and no contact forms, and your keywords are never sent to
+          us — they go directly from your browser to the public autocomplete service. Third-party advertising partners
+          may set cookies, which is explained on our
+          <a href="/privacy.html" class="font-semibold text-indigo-300 underline decoration-indigo-500/40 underline-offset-2 hover:text-indigo-200">Privacy Policy</a> page.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER AD SLOT ==================== -->
+  <section class="mx-auto max-w-7xl px-5 pb-12">
+    <div class="adsense-slot">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-indigo-300">Advertisement</p>
+      <p class="text-base font-semibold text-slate-300">AdSense Footer Banner</p>
+      <p class="max-w-md text-xs text-slate-500">
+        Secondary responsive ad unit. Keep at least one screen of content between ad slots.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-white/5 bg-slate-950/60">
+    <div class="mx-auto max-w-7xl px-5 py-10">
+      <div class="flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-start">
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-extrabold tracking-tight text-white">Trend<span class="text-indigo-400">Pulse</span></p>
+          <p class="mt-1 max-w-sm text-sm text-slate-500">
+            Live tag generation backed by real traffic data, plus a daily global trend board.
+          </p>
+        </div>
+        <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm font-medium text-slate-400" aria-label="Footer">
+          <a class="transition hover:text-indigo-300" href="/">Home</a>
+          <a class="transition hover:text-indigo-300" href="/#generator">Generator</a>
+          <a class="transition hover:text-indigo-300" href="/#how-it-works">How it works</a>
+          <a class="transition hover:text-indigo-300" href="/#faq">FAQ</a>
+          <a class="transition hover:text-indigo-300" href="/privacy.html">Privacy Policy</a>
+        </nav>
+      </div>
+
+      <div class="mt-8 border-t border-white/5 pt-6 text-center text-xs leading-relaxed text-slate-600">
+        <p>© <span id="year">2026</span> TrendPulse. All rights reserved.</p>
+        <p class="mt-2 mx-auto max-w-3xl">
+          TrendPulse is an independent project and is not affiliated with, endorsed by, or sponsored by
+          Google, Wikimedia, Instagram, TikTok, YouTube, X, or any other platform referenced on this site.
+          Live suggestion data is retrieved from public search autocomplete services; daily trend data is
+          derived from publicly available sources. All output is provided for informational purposes only.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== TOAST ==================== -->
+  <div id="toast" role="status" aria-live="polite"
+       class="pointer-events-none fixed bottom-6 left-1/2 z-50 -translate-x-1/2 translate-y-4 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white opacity-0 shadow-2xl shadow-emerald-900/40 transition-all duration-300">
+    Copied to clipboard
+  </div>
+
+  <!-- ==================================================================
+       GLOBAL CLIPBOARD HELPER
+       Used by both the generator and the Python-baked static cards.
+       ================================================================== -->
+  <script>
+  (function () {
+    'use strict';
+
+    var REVERT_MS = 2000;
+
+    var BTN_BASE = 'mt-5 w-full rounded-xl px-4 py-2.5 text-sm font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900';
+    var BTN_IDLE = BTN_BASE + ' bg-indigo-600 text-white shadow-lg shadow-indigo-900/40 hover:bg-indigo-500 focus:ring-indigo-400';
+    var BTN_DONE = BTN_BASE + ' bg-emerald-600 text-white shadow-lg shadow-emerald-900/40 focus:ring-emerald-400';
+    var BTN_FAIL = BTN_BASE + ' bg-rose-600 text-white shadow-lg shadow-rose-900/40 focus:ring-rose-400';
+
+    function showToast(message) {
+      var toast = document.getElementById('toast');
+      if (!toast) return;
+      toast.textContent = message;
+      toast.classList.remove('opacity-0', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      window.clearTimeout(showToast._timer);
+      showToast._timer = window.setTimeout(function () {
+        toast.classList.add('opacity-0', 'translate-y-4');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, REVERT_MS);
+    }
+
+    /* Clipboard write with a legacy fallback for insecure contexts (file://). */
+    function writeClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      }
+      return new Promise(function (resolve, reject) {
+        var area = document.createElement('textarea');
+        area.value = text;
+        area.setAttribute('readonly', '');
+        area.style.position = 'fixed';
+        area.style.top = '-1000px';
+        area.style.opacity = '0';
+        document.body.appendChild(area);
+        area.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        document.body.removeChild(area);
+        ok ? resolve() : reject(new Error('Clipboard unavailable'));
+      });
+    }
+
+    window.TP_showToast = showToast;
+    window.TP_writeClipboard = writeClipboard;
+
+    /**
+     * Global copy helper used inline by the pre-rendered static cards:
+     *   onclick="copyTags(this, '#tag1 #tag2')"
+     * Swaps to emerald-600 + "✨ Copied!" and reverts after 2 seconds.
+     */
+    window.copyTags = function (button, text) {
+      if (!button || button.dataset.busy === '1') return;
+
+      var original = button.getAttribute('data-label') || button.textContent.trim();
+      button.setAttribute('data-label', original);
+      button.dataset.busy = '1';
+
+      writeClipboard(text).then(function () {
+        button.className = BTN_DONE;
+        button.textContent = '✨ Copied!';
+        showToast('Copied to clipboard');
+      }).catch(function () {
+        button.className = BTN_FAIL;
+        button.textContent = '⚠️ Copy failed';
+        showToast('Your browser blocked clipboard access');
+      }).then(function () {
+        window.setTimeout(function () {
+          button.className = BTN_IDLE;
+          button.textContent = original;
+          button.dataset.busy = '0';
+        }, REVERT_MS);
+      });
+    };
+
+    var yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  })();
+  </script>
+
+  <!-- ==================================================================
+       LIVE DATA ENGINE — YouTube Search Autocomplete
+       -----------------------------------------------------------------
+       The autocomplete endpoint does NOT send Access-Control-Allow-Origin,
+       so fetch()/XHR is blocked by the browser. It DOES support JSONP when
+       client=youtube, so we inject a script element and capture the callback.
+       This is the only way to read it client-side with no proxy, no API key,
+       no server to time out, and no shared IP to get rate-limited.
+       ================================================================== -->
+  <script>
+  (function () {
+    'use strict';
+
+    /* Mirrors of the same autocomplete service; tried in order. */
+    var ENDPOINTS = [
+      'https://suggestqueries.google.com/complete/search',
+      'https://clients1.google.com/complete/search'
+    ];
+
+    var JSONP_TIMEOUT = 6000;   // ms per endpoint attempt
+    var MAX_TOPICS = 10;        // suggestions kept from the live stream
+    var MAX_TAGS = 24;          // hard cap on emitted tags
+    var YT_CHAR_LIMIT = 480;    // YouTube Studio caps the tag field at 500
+
+    var TIMEFRAMES = {
+      hourly:  { label: 'hourly · breaking', fast: true },
+      daily:   { label: 'daily · today',     fast: true },
+      weekly:  { label: 'weekly',            fast: false },
+      monthly: { label: 'monthly · evergreen', fast: false }
+    };
+
+    /* Velocity modifiers. Hourly/Daily get the fast-paced set. */
+    var VELOCITY_TAGS = {
+      hourly:  ['shorts', 'reels', 'viral', 'trendingnow', 'breaking'],
+      daily:   ['shorts', 'reels', 'viral', 'trendingtoday', 'fyp'],
+      weekly:  ['trendingthisweek', 'weeklytrends'],
+      monthly: ['trending', 'evergreen']
+    };
+
+    var VELOCITY_PHRASES = {
+      hourly:  ['shorts', 'viral video', 'trending now', 'breaking'],
+      daily:   ['shorts', 'viral video', 'trending today'],
+      weekly:  ['trending this week', 'weekly trends'],
+      monthly: ['trending', 'evergreen']
+    };
+
+    /* Platform amplifiers. */
+    var PLATFORM_TAGS = {
+      instagram: ['reels', 'explorepage', 'instagood'],
+      facebook:  ['facebookreels', 'fbviral'],
+      youtube:   ['shorts', 'youtube shorts'],
+      all:       ['reels', 'shorts', 'fyp', 'explorepage']
+    };
+
+    var PLATFORM_LABELS = {
+      instagram: 'Instagram', youtube: 'YouTube',
+      facebook: 'Facebook', all: 'All platforms'
+    };
+
+    /* Stop words stripped from the head/tail of live phrases. */
+    var STOP_WORDS = {
+      'the':1,'a':1,'an':1,'and':1,'or':1,'but':1,'of':1,'to':1,'in':1,'on':1,
+      'at':1,'for':1,'with':1,'is':1,'are':1,'was':1,'were':1,'be':1,'been':1,
+      'do':1,'does':1,'did':1,'how':1,'what':1,'why':1,'when':1,'where':1,
+      'who':1,'which':1,'that':1,'this':1,'it':1,'its':1,'my':1,'your':1,
+      'you':1,'i':1,'me':1,'we':1,'they':1,'vs':1,'v':1,'near':1,'from':1,
+      'by':1,'as':1,'into':1,'about':1,'can':1,'will':1,'just':1,'so':1
+    };
+
+    var els = {
+      form: document.getElementById('gen-form'),
+      keyword: document.getElementById('keyword'),
+      timeframe: document.getElementById('timeframe'),
+      platform: document.getElementById('platform'),
+      button: document.getElementById('generate-btn'),
+      btnLabel: document.getElementById('btn-label'),
+      status: document.getElementById('gen-status'),
+      results: document.getElementById('gen-results'),
+      meta: document.getElementById('result-meta'),
+      body: document.getElementById('traffic-body'),
+      output: document.getElementById('tag-output'),
+      outputLabel: document.getElementById('output-label'),
+      copy: document.getElementById('copy-output'),
+      count: document.getElementById('tag-count')
+    };
+
+    /* ------------------------- utilities ------------------------- */
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+
+    /* Strip punctuation, symbols and emoji while PRESERVING letters and digits
+       from every script. Latin accents are folded (Café -> Cafe) because
+       platforms treat #Cafe and #Café inconsistently, but non-Latin scripts
+       (Japanese, Cyrillic, Arabic, Hindi...) are kept intact — #アニメ is a
+       valid, widely used hashtag and must not be silently deleted. */
+    var UNICODE_OK = (function () {
+      // Regex LITERAL, not new RegExp('...'): in a string literal the
+      // backslash in \p{L} is eaten before the regex engine ever sees it.
+      try { return /[^\p{L}\p{N}\s]/gu; }
+      catch (e) { return null; }   // very old browser: fall back to ASCII
+    })();
+
+    function normalize(text) {
+      var value = String(text);
+
+      // Fold Latin accents only: decompose, drop combining marks.
+      value = value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+
+      value = UNICODE_OK
+        ? value.replace(UNICODE_OK, ' ')
+        : value.replace(/[^a-zA-Z0-9\s]/g, ' ');
+
+      return value.replace(/\s+/g, ' ').trim();
+    }
+
+    /* Drop stop words from both ends, keeping interior words intact. */
+    function stripStopWords(phrase) {
+      var words = normalize(phrase).toLowerCase().split(' ').filter(Boolean);
+      while (words.length && STOP_WORDS[words[0]]) words.shift();
+      while (words.length && STOP_WORDS[words[words.length - 1]]) words.pop();
+      return words;
+    }
+
+    /* "trending audio meme" -> "TrendingAudioMeme" */
+    function toCamelCase(phrase) {
+      var words = stripStopWords(phrase);
+      if (!words.length) return '';
+      return words.map(function (w) {
+        // Use the full first code point so surrogate pairs are never split.
+        var first = String.fromCodePoint(w.codePointAt(0));
+        return first.toUpperCase() + w.slice(first.length);
+      }).join('');
+    }
+
+    /* "Trending Audio Meme" -> "trending audio meme" (YouTube tag phrase) */
+    function toPhrase(text) {
+      var words = stripStopWords(text);
+      return words.join(' ');
+    }
+
+    function dedupe(list) {
+      var seen = Object.create(null);
+      var out = [];
+      for (var i = 0; i < list.length; i++) {
+        var value = list[i];
+        if (!value) continue;
+        var key = value.toLowerCase();
+        if (key.length > 1 && !seen[key]) { seen[key] = 1; out.push(value); }
+      }
+      return out;
+    }
+
+    /* ---------------------- JSONP transport ---------------------- */
+
+    var jsonpSeq = 0;
+
+    /**
+     * Load the autocomplete endpoint via script injection.
+     * client=youtube makes the service emit a JSONP envelope, and the
+     * jsonp= parameter lets us name our own global callback.
+     */
+    function jsonpRequest(endpoint, keyword) {
+      return new Promise(function (resolve, reject) {
+        var name = '__tpAc' + (++jsonpSeq) + '_' + Date.now();
+        var script = document.createElement('script');
+        var done = false;
+
+        function cleanup() {
+          if (script.parentNode) script.parentNode.removeChild(script);
+          try { delete window[name]; } catch (e) { window[name] = undefined; }
+          window.clearTimeout(timer);
+        }
+
+        var timer = window.setTimeout(function () {
+          if (done) return;
+          done = true;
+          cleanup();
+          reject(new Error('timeout'));
+        }, JSONP_TIMEOUT);
+
+        window[name] = function (data) {
+          if (done) return;
+          done = true;
+          cleanup();
+          resolve(data);
+        };
+
+        script.onerror = function () {
+          if (done) return;
+          done = true;
+          cleanup();
+          reject(new Error('network blocked'));
+        };
+
+        script.src = endpoint +
+          '?client=youtube' +
+          '&ds=yt' +
+          '&hl=en' +
+          '&gs_ri=youtube' +
+          '&jsonp=' + encodeURIComponent(name) +
+          '&q=' + encodeURIComponent(keyword);
+
+        script.async = true;
+        document.head.appendChild(script);
+      });
+    }
+
+    /**
+     * Response shape: ["query", [["suggestion",0,[433]], ...], {...}]
+     * Pull element [1], then the first item of each inner array.
+     */
+    function parseSuggestions(payload) {
+      if (!payload || !Array.isArray(payload) || !Array.isArray(payload[1])) {
+        throw new Error('unexpected response shape');
+      }
+      var rows = payload[1];
+      var phrases = [];
+      for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        var text = Array.isArray(row) ? row[0] : row;
+        if (typeof text === 'string' && text.trim()) phrases.push(text.trim());
+      }
+      if (!phrases.length) throw new Error('no suggestions returned');
+      return phrases;
+    }
+
+    /* Try each mirror in turn before giving up. */
+    function fetchSuggestions(keyword) {
+      var attempt = function (index) {
+        if (index >= ENDPOINTS.length) {
+          return Promise.reject(new Error('all endpoints unreachable'));
+        }
+        return jsonpRequest(ENDPOINTS[index], keyword)
+          .then(parseSuggestions)
+          .catch(function () { return attempt(index + 1); });
+      };
+      return attempt(0);
+    }
+
+    /* ------------------- platform transformation ------------------- */
+
+    function buildTags(keyword, phrases, timeframe, platform) {
+      var isYouTube = platform === 'youtube';
+      var convert = isYouTube ? toPhrase : toCamelCase;
+
+      var parts = [convert(keyword)];
+
+      phrases.slice(0, MAX_TOPICS).forEach(function (phrase) {
+        var value = convert(phrase);
+        if (value) parts.push(value);
+      });
+
+      /* Velocity modifiers — the fast set only for hourly/daily. */
+      var velocity = isYouTube ? VELOCITY_PHRASES[timeframe] : VELOCITY_TAGS[timeframe];
+      velocity.forEach(function (v) {
+        var value = isYouTube ? v : toCamelCase(v).toLowerCase();
+        if (value) parts.push(value);
+      });
+
+      (PLATFORM_TAGS[platform] || []).forEach(function (a) {
+        var value = isYouTube ? a : toCamelCase(a).toLowerCase();
+        if (value) parts.push(value);
+      });
+
+      var unique = dedupe(parts).slice(0, MAX_TAGS);
+
+      if (isYouTube) {
+        var out = [];
+        var length = 0;
+        for (var i = 0; i < unique.length; i++) {
+          var added = unique[i].length + (out.length ? 2 : 0);
+          if (length + added > YT_CHAR_LIMIT) break;
+          out.push(unique[i]);
+          length += added;
+        }
+        return { text: out.join(', '), count: out.length };
+      }
+
+      var tags = unique.map(function (t) { return '#' + t; });
+      return { text: tags.join(' '), count: tags.length };
+    }
+
+    /* Offline fallback: structured high-volume viral fields. */
+    function fallbackPhrases(keyword) {
+      var base = normalize(keyword).toLowerCase() || 'trending';
+      return [
+        base, base + ' compilation', base + ' edit', base + ' reaction',
+        base + ' explained', base + ' 2026', 'best ' + base,
+        base + ' tutorial', base + ' moments', base + ' challenge'
+      ];
+    }
+
+    /* ---------------------------- UI ---------------------------- */
+
+    function setStatus(message, tone) {
+      if (!message) { els.status.classList.add('hidden'); return; }
+      var tones = {
+        info: 'border-white/10 bg-white/5 text-slate-300',
+        warn: 'border-amber-500/30 bg-amber-500/10 text-amber-200',
+        error: 'border-rose-500/30 bg-rose-500/10 text-rose-200'
+      };
+      els.status.className = 'mt-6 rounded-xl border px-4 py-3 text-sm ' + (tones[tone] || tones.info);
+      els.status.innerHTML = message;
+      els.status.classList.remove('hidden');
+    }
+
+    function setBusy(busy) {
+      els.button.disabled = busy;
+      els.btnLabel.innerHTML = busy
+        ? '<span class="flex items-center gap-2"><span class="spinner"></span> Fetching live data…</span>'
+        : 'Generate Live Tags';
+    }
+
+    function renderTable(phrases, offline) {
+      els.body.innerHTML = phrases.slice(0, MAX_TOPICS).map(function (phrase, i) {
+        var signal;
+        if (offline) {
+          signal = '<span class="text-slate-600">fallback</span>';
+        } else if (i < 3) {
+          signal = '<span class="font-semibold text-emerald-400">▲ high</span>';
+        } else if (i < 7) {
+          signal = '<span class="font-semibold text-indigo-300">● medium</span>';
+        } else {
+          signal = '<span class="text-slate-500">○ long tail</span>';
+        }
+        return '<tr>' +
+          '<td class="px-4 py-2.5 font-medium text-slate-200">' + escapeHtml(phrase) + '</td>' +
+          '<td class="px-4 py-2.5 text-right font-mono text-xs text-slate-400">#' + (i + 1) + '</td>' +
+          '<td class="px-4 py-2.5 text-right text-xs">' + signal + '</td>' +
+        '</tr>';
+      }).join('');
+    }
+
+    function renderResults(keyword, phrases, timeframe, platform, offline) {
+      var result = buildTags(keyword, phrases, timeframe, platform);
+
+      renderTable(phrases, offline);
+      els.output.value = result.text;
+      els.outputLabel.textContent = platform === 'youtube'
+        ? 'YouTube tags (comma-separated — paste into YouTube Studio)'
+        : 'Hashtag string';
+      els.count.textContent = result.count + ' tags · ' + result.text.length + ' characters';
+      els.meta.textContent = PLATFORM_LABELS[platform] + ' · ' + TIMEFRAMES[timeframe].label +
+        (offline ? ' · offline mode' : ' · live autocomplete');
+      els.results.classList.remove('hidden');
+    }
+
+    function generate(event) {
+      if (event) event.preventDefault();
+
+      var keyword = els.keyword.value.trim();
+      var timeframe = els.timeframe.value;
+      var platform = els.platform.value;
+
+      if (keyword.length < 2) {
+        setStatus('Please enter a keyword with at least two characters.', 'error');
+        els.keyword.focus();
+        return;
+      }
+
+      setBusy(true);
+      setStatus('Reading the live YouTube search stream for <strong>' +
+                escapeHtml(keyword) + '</strong>…', 'info');
+      els.results.classList.add('hidden');
+
+      fetchSuggestions(keyword).then(function (phrases) {
+        setStatus('');
+        renderResults(keyword, phrases, timeframe, platform, false);
+      }).catch(function (error) {
+        setStatus(
+          '<strong>Live stream unavailable</strong> (' + escapeHtml(error.message || 'network error') +
+          '). Showing structured high-volume viral fields built from your keyword instead.', 'warn');
+        renderResults(keyword, fallbackPhrases(keyword), timeframe, platform, true);
+      }).then(function () {
+        setBusy(false);
+      });
+    }
+
+    /* Copy button — 2-second emerald success state. */
+    function copyOutput() {
+      var button = els.copy;
+      if (button.dataset.busy === '1' || !els.output.value) return;
+
+      var original = button.getAttribute('data-label');
+      var IDLE = 'rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-indigo-900/40 transition-all duration-200 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-900';
+      var DONE = 'rounded-xl bg-emerald-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-emerald-900/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-900';
+      var FAIL = 'rounded-xl bg-rose-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-rose-900/40 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 focus:ring-offset-slate-900';
+
+      button.dataset.busy = '1';
+
+      window.TP_writeClipboard(els.output.value).then(function () {
+        button.className = DONE;
+        button.textContent = '✨ Copied!';
+        window.TP_showToast('Tags copied to clipboard');
+      }).catch(function () {
+        button.className = FAIL;
+        button.textContent = '⚠️ Copy failed';
+        window.TP_showToast('Your browser blocked clipboard access');
+      }).then(function () {
+        window.setTimeout(function () {
+          button.className = IDLE;
+          button.textContent = original;
+          button.dataset.busy = '0';
+        }, 2000);
+      });
+    }
+
+    /* --------------------------- events --------------------------- */
+
+    els.form.addEventListener('submit', generate);
+    els.copy.addEventListener('click', copyOutput);
+
+    Array.prototype.forEach.call(document.querySelectorAll('.js-example'), function (chip) {
+      chip.addEventListener('click', function () {
+        els.keyword.value = chip.textContent.trim();
+        generate();
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
