@@ -1,0 +1,39 @@
+# ============================================================
+#  TrendPulse — robots.txt
+#  Allow all reputable crawlers, including ad and SEO bots.
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# Google AdSense crawler — required for ad serving and approval.
+User-agent: Mediapartners-Google
+Allow: /
+
+# Google AdsBot crawlers — landing page quality checks.
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# Core search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Keep build/config artifacts out of the index.
+Disallow: /template.html
+Disallow: /scraper.py
+Disallow: /.github/
+
+# Sitemap
+Sitemap: https://trendpulse.vercel.app/sitemap.xml

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:55:39Z",
+  "generated_at": "2026-09-18T15:03:43Z",
   "source": "fallback",
   "count": 9,
   "trends": [
@@ -9,9 +9,9 @@
       "topic": "Artificial Intelligence",
       "tags": [
         "artificialintelligence",
-        "ai",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
@@ -20,9 +20,9 @@
       "topic": "Premier League",
       "tags": [
         "premierleague",
-        "football",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
@@ -31,9 +31,9 @@
       "topic": "Crypto Market",
       "tags": [
         "cryptomarket",
-        "crypto",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
@@ -42,7 +42,7 @@
       "topic": "Box Office Weekend",
       "tags": [
         "boxofficeweekend",
-        "movies",
+        "boxoffice",
         "viral",
         "trending"
       ]
@@ -53,9 +53,9 @@
       "topic": "Tech Layoffs",
       "tags": [
         "techlayoffs",
-        "tech",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
@@ -64,9 +64,9 @@
       "topic": "Space Launch",
       "tags": [
         "spacelaunch",
-        "space",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
@@ -75,9 +75,9 @@
       "topic": "Fitness Challenge",
       "tags": [
         "fitnesschallenge",
-        "fitness",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
@@ -86,7 +86,7 @@
       "topic": "Street Food Tour",
       "tags": [
         "streetfoodtour",
-        "foodie",
+        "streetfood",
         "viral",
         "trending"
       ]
@@ -97,9 +97,9 @@
       "topic": "Travel Deals",
       "tags": [
         "traveldeals",
-        "travel",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
