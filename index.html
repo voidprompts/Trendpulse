@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendPulse — Daily Social Media Trends &amp; Hashtags</title>
+  <meta name="description" content="TrendPulse tracks the top trending topics every 24 hours and turns them into copy-ready hashtag strings for creators." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Tailwind CSS (CDN build — zero build step, zero cost) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            abyss: '#0f172a',
+            midnight: '#1e1b4b'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          keyframes: {
+            floatUp: {
+              '0%': { opacity: '0', transform: 'translateY(12px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            floatUp: 'floatUp .45s ease-out both'
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Reserved: Google AdSense verification script goes here once approved.
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+
+  <style>
+    body {
+      background-color: #0f172a;
+      background-image:
+        radial-gradient(60rem 40rem at 12% -10%, rgba(79, 70, 229, .28), transparent 60%),
+        radial-gradient(50rem 35rem at 95% 0%, rgba(30, 27, 75, .85), transparent 65%),
+        linear-gradient(180deg, #0f172a 0%, #131a35 45%, #1e1b4b 100%);
+      background-attachment: fixed;
+    }
+    ::selection { background: #4f46e5; color: #fff; }
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #312e81; border-radius: 9999px; }
+  </style>
+</head>
+
+<body class="min-h-screen font-sans text-slate-200 antialiased">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="sticky top-0 z-40 border-b border-white/5 bg-slate-950/70 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4">
+      <a href="#" class="flex items-center gap-3">
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-800 text-lg font-black shadow-lg shadow-indigo-900/40">TP</span>
+        <span>
+          <span class="block text-lg font-extrabold tracking-tight text-white">Trend<span class="text-indigo-400">Pulse</span></span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.18em] text-slate-400">Auto-updated daily</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-6 text-sm font-medium text-slate-300 sm:flex">
+        <a class="transition hover:text-indigo-300" href="#trends">Trends</a>
+        <a class="transition hover:text-indigo-300" href="#about">How it works</a>
+      </nav>
+
+      <div class="flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1.5">
+        <span class="relative flex h-2 w-2">
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+        </span>
+        <span class="text-xs font-semibold text-emerald-300">Live feed</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="mx-auto max-w-7xl px-5 pb-10 pt-14 text-center sm:pt-20">
+    <span class="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-indigo-300">
+      Refreshed every 24 hours
+    </span>
+    <h1 class="mx-auto mt-6 max-w-3xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl">
+      The internet's hottest topics,<br class="hidden sm:block" />
+      <span class="bg-gradient-to-r from-indigo-400 via-violet-400 to-fuchsia-400 bg-clip-text text-transparent">packaged as hashtags.</span>
+    </h1>
+    <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
+      TrendPulse scrapes live trending searches, converts them into creator-ready hashtag strings,
+      and redeploys itself automatically. One click to copy — zero research required.
+    </p>
+
+    <dl class="mx-auto mt-10 grid max-w-3xl grid-cols-3 gap-3 sm:gap-6">
+      <div class="rounded-2xl border border-white/5 bg-white/5 p-4 backdrop-blur">
+        <dt class="text-[11px] font-semibold uppercase tracking-widest text-slate-400">Topics</dt>
+        <dd id="stat-topics" class="mt-1 text-2xl font-extrabold text-white">—</dd>
+      </div>
+      <div class="rounded-2xl border border-white/5 bg-white/5 p-4 backdrop-blur">
+        <dt class="text-[11px] font-semibold uppercase tracking-widest text-slate-400">Hashtags</dt>
+        <dd id="stat-tags" class="mt-1 text-2xl font-extrabold text-white">—</dd>
+      </div>
+      <div class="rounded-2xl border border-white/5 bg-white/5 p-4 backdrop-blur">
+        <dt class="text-[11px] font-semibold uppercase tracking-widest text-slate-400">Updated</dt>
+        <dd id="stat-updated" class="mt-1 text-sm font-bold text-white sm:text-base">—</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ==================== AD SLOT ==================== -->
+  <section class="mx-auto max-w-7xl px-5 pb-12">
+    <div id="ad-slot"
+         class="flex min-h-[132px] flex-col items-center justify-center gap-2 rounded-3xl border-2 border-dashed border-indigo-400/30 bg-gradient-to-r from-slate-900/80 via-indigo-950/60 to-slate-900/80 p-8 text-center shadow-inner shadow-indigo-950/40">
+      <p class="text-xs font-bold uppercase tracking-[0.3em] text-indigo-300">Advertisement</p>
+      <p class="text-base font-semibold text-slate-300">Google AdSense / Sponsored Banner Placement</p>
+      <p class="max-w-md text-xs text-slate-500">Reserved 728×90 / responsive ad unit. Drop your AdSense
+        <code class="rounded bg-slate-800 px-1 py-0.5 text-indigo-300">&lt;ins class="adsbygoogle"&gt;</code> tag inside this container.</p>
+    </div>
+  </section>
+
+  <!-- ==================== TRENDS ==================== -->
+  <main id="trends" class="mx-auto max-w-7xl px-5 pb-20">
+    <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Today's trending board</h2>
+        <p class="mt-1 text-sm text-slate-400">Tap any card to copy its full hashtag string.</p>
+      </div>
+      <button id="refresh-btn"
+              class="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:border-indigo-400/40 hover:bg-indigo-500/10 hover:text-white">
+        ↻ Refresh data
+      </button>
+    </div>
+
+    <!-- LOADING STATE -->
+    <div id="loading-state" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Skeleton cards injected by JS -->
+    </div>
+
+    <!-- DATA GRID -->
+    <div id="trend-grid" class="hidden grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+
+    <!-- FALLBACK / ERROR UI -->
+    <div id="fallback-state"
+         class="hidden rounded-3xl border border-rose-500/25 bg-rose-950/20 p-10 text-center backdrop-blur">
+      <div class="mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-rose-500/15 text-2xl">⚠️</div>
+      <h3 class="mt-5 text-xl font-bold text-white">Trend data unavailable</h3>
+      <p class="mx-auto mt-2 max-w-lg text-sm leading-relaxed text-slate-400">
+        We couldn't load <code class="rounded bg-slate-800 px-1.5 py-0.5 text-rose-300">trends.json</code>.
+        The automation job may not have run yet, or the file is missing from the deployment root.
+        Run <code class="rounded bg-slate-800 px-1.5 py-0.5 text-indigo-300">python scraper.py</code> locally, or trigger the
+        GitHub Action manually to regenerate it.
+      </p>
+      <p id="fallback-reason" class="mt-3 text-xs font-mono text-rose-400/80"></p>
+      <button id="retry-btn"
+              class="mt-6 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-indigo-900/40 transition hover:bg-indigo-500">
+        Try again
+      </button>
+    </div>
+  </main>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="mx-auto max-w-7xl px-5 pb-24">
+    <div class="grid gap-5 sm:grid-cols-3">
+      <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-indigo-500/15 text-lg">🐍</div>
+        <h3 class="mt-4 font-bold text-white">1. Scrape</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-400">A dependency-free Python script reads the live trends RSS stream and writes <code class="text-indigo-300">trends.json</code>.</p>
+      </article>
+      <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-indigo-500/15 text-lg">⏰</div>
+        <h3 class="mt-4 font-bold text-white">2. Schedule</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-400">GitHub Actions runs the scraper on a 24-hour cron and commits the refreshed dataset back to the branch.</p>
+      </article>
+      <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-indigo-500/15 text-lg">▲</div>
+        <h3 class="mt-4 font-bold text-white">3. Deploy</h3>
+        <p class="mt-2 text-sm leading-relaxed text-slate-400">The push (no <code class="text-indigo-300">[skip ci]</code>) triggers a fresh Vercel production build — fully hands-off.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-white/5 bg-slate-950/60">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-8 text-sm text-slate-500 sm:flex-row">
+      <p>© <span id="year"></span> TrendPulse — automated trend intelligence.</p>
+      <p>Built with Python · GitHub Actions · Vercel</p>
+    </div>
+  </footer>
+
+  <!-- ==================== TOAST ==================== -->
+  <div id="toast"
+       class="pointer-events-none fixed bottom-6 left-1/2 z-50 -translate-x-1/2 translate-y-4 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white opacity-0 shadow-2xl shadow-emerald-900/40 transition-all duration-300">
+    Hashtags copied to clipboard
+  </div>
+
+  <script>
+  (function () {
+    'use strict';
+
+    const DATA_URL = 'trends.json';
+    const SKELETON_COUNT = 6;
+    const REVERT_MS = 2000;
+
+    const els = {
+      loading: document.getElementById('loading-state'),
+      grid: document.getElementById('trend-grid'),
+      fallback: document.getElementById('fallback-state'),
+      reason: document.getElementById('fallback-reason'),
+      retry: document.getElementById('retry-btn'),
+      refresh: document.getElementById('refresh-btn'),
+      toast: document.getElementById('toast'),
+      statTopics: document.getElementById('stat-topics'),
+      statTags: document.getElementById('stat-tags'),
+      statUpdated: document.getElementById('stat-updated')
+    };
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ---------------- Button style tokens ---------------- */
+    const BTN_BASE = 'mt-5 w-full rounded-xl px-4 py-2.5 text-sm font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-900';
+    const BTN_IDLE = BTN_BASE + ' bg-indigo-600 text-white shadow-lg shadow-indigo-900/40 hover:bg-indigo-500 focus:ring-indigo-400';
+    const BTN_DONE = BTN_BASE + ' bg-emerald-600 text-white shadow-lg shadow-emerald-900/40 focus:ring-emerald-400';
+
+    /* ---------------- Utilities ---------------- */
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+
+    function hashtagString(tags) {
+      return tags
+        .map(function (t) { return '#' + String(t).replace(/^#+/, '').trim(); })
+        .filter(function (t) { return t.length > 1; })
+        .join(' ');
+    }
+
+    function showToast(message) {
+      els.toast.textContent = message;
+      els.toast.classList.remove('opacity-0', 'translate-y-4');
+      els.toast.classList.add('opacity-100', 'translate-y-0');
+      window.clearTimeout(showToast._t);
+      showToast._t = window.setTimeout(function () {
+        els.toast.classList.add('opacity-0', 'translate-y-4');
+        els.toast.classList.remove('opacity-100', 'translate-y-0');
+      }, REVERT_MS);
+    }
+
+    function formatDate(iso) {
+      if (!iso) return 'Just now';
+      const d = new Date(iso);
+      if (isNaN(d.getTime())) return 'Just now';
+      return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+    }
+
+    /* ---------------- Clipboard ---------------- */
+    async function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+      // Legacy fallback for non-secure contexts (file://, old browsers).
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      if (!ok) throw new Error('execCommand copy rejected');
+    }
+
+    function handleCopy(button) {
+      const payload = button.dataset.hashtags || '';
+      const original = button.textContent;
+
+      copyText(payload).then(function () {
+        button.className = BTN_DONE;
+        button.textContent = '✨ Copied!';
+        showToast('Hashtags copied to clipboard');
+      }).catch(function () {
+        button.className = BTN_BASE + ' bg-rose-600 text-white focus:ring-rose-400';
+        button.textContent = '⚠️ Copy failed';
+        showToast('Clipboard blocked by the browser');
+      }).finally(function () {
+        button.disabled = true;
+        window.setTimeout(function () {
+          button.className = BTN_IDLE;
+          button.textContent = original;
+          button.disabled = false;
+        }, REVERT_MS);
+      });
+    }
+
+    /* ---------------- Rendering ---------------- */
+    function renderSkeletons() {
+      let html = '';
+      for (let i = 0; i < SKELETON_COUNT; i++) {
+        html +=
+          '<div class="animate-pulse rounded-3xl border border-white/5 bg-white/5 p-6">' +
+            '<div class="h-3 w-24 rounded-full bg-slate-700/70"></div>' +
+            '<div class="mt-4 h-6 w-3/4 rounded-lg bg-slate-700/70"></div>' +
+            '<div class="mt-5 flex flex-wrap gap-2">' +
+              '<div class="h-6 w-20 rounded-full bg-slate-700/60"></div>' +
+              '<div class="h-6 w-16 rounded-full bg-slate-700/60"></div>' +
+              '<div class="h-6 w-24 rounded-full bg-slate-700/60"></div>' +
+              '<div class="h-6 w-14 rounded-full bg-slate-700/60"></div>' +
+            '</div>' +
+            '<div class="mt-6 h-10 w-full rounded-xl bg-slate-700/60"></div>' +
+          '</div>';
+      }
+      els.loading.innerHTML = html;
+    }
+
+    function cardMarkup(item, index) {
+      const tags = Array.isArray(item.tags) ? item.tags : [];
+      const badges = tags.map(function (tag) {
+        return '<span class="rounded-full border border-indigo-400/25 bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-300">#' +
+          escapeHtml(String(tag).replace(/^#+/, '')) + '</span>';
+      }).join('');
+
+      return '' +
+        '<article class="group flex animate-floatUp flex-col rounded-3xl border border-white/5 bg-slate-900/60 p-6 shadow-xl shadow-slate-950/40 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-indigo-400/40 hover:shadow-indigo-950/50" style="animation-delay:' + (index * 45) + 'ms">' +
+          '<div class="flex items-center justify-between gap-3">' +
+            '<span class="rounded-full bg-indigo-500/15 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-indigo-300">' + escapeHtml(item.category || 'General Viral') + '</span>' +
+            '<span class="text-xs font-mono text-slate-600">#' + String(index + 1).padStart(2, '0') + '</span>' +
+          '</div>' +
+          '<h3 class="mt-4 text-xl font-bold leading-snug text-white transition group-hover:text-indigo-200">' + escapeHtml(item.topic || 'Untitled topic') + '</h3>' +
+          '<div class="mt-4 flex flex-wrap gap-2">' + badges + '</div>' +
+          '<div class="mt-auto">' +
+            '<button type="button" class="' + BTN_IDLE + ' js-copy" data-hashtags="' + escapeHtml(hashtagString(tags)) + '">Copy Hashtag String</button>' +
+          '</div>' +
+        '</article>';
+    }
+
+    function renderTrends(items, meta) {
+      els.grid.innerHTML = items.map(cardMarkup).join('');
+      els.grid.classList.remove('hidden');
+      els.grid.classList.add('grid');
+      els.loading.classList.add('hidden');
+      els.fallback.classList.add('hidden');
+
+      const tagTotal = items.reduce(function (sum, item) {
+        return sum + (Array.isArray(item.tags) ? item.tags.length : 0);
+      }, 0);
+      els.statTopics.textContent = items.length;
+      els.statTags.textContent = tagTotal;
+      els.statUpdated.textContent = formatDate(meta && meta.generated_at);
+    }
+
+    function showFallback(reason) {
+      els.loading.classList.add('hidden');
+      els.grid.classList.add('hidden');
+      els.grid.classList.remove('grid');
+      els.fallback.classList.remove('hidden');
+      els.reason.textContent = reason ? String(reason) : '';
+      els.statTopics.textContent = '0';
+      els.statTags.textContent = '0';
+      els.statUpdated.textContent = 'Unavailable';
+    }
+
+    function normalize(raw) {
+      // Supports both { trends: [...] } and a bare [...] array.
+      const list = Array.isArray(raw) ? raw : (raw && Array.isArray(raw.trends) ? raw.trends : null);
+      if (!list || list.length === 0) throw new Error('trends.json contained no usable entries');
+      return list;
+    }
+
+    /* ---------------- Data loading ---------------- */
+    async function loadTrends() {
+      els.loading.classList.remove('hidden');
+      els.grid.classList.add('hidden');
+      els.fallback.classList.add('hidden');
+      renderSkeletons();
+
+      try {
+        const response = await fetch(DATA_URL + '?v=' + Date.now(), { cache: 'no-store' });
+        if (!response.ok) throw new Error('HTTP ' + response.status + ' while fetching trends.json');
+        const raw = await response.json();
+        renderTrends(normalize(raw), Array.isArray(raw) ? null : raw);
+      } catch (error) {
+        showFallback(error && error.message ? error.message : 'Unknown error');
+      }
+    }
+
+    /* ---------------- Events ---------------- */
+    document.addEventListener('click', function (event) {
+      const button = event.target.closest('.js-copy');
+      if (button) handleCopy(button);
+    });
+    els.retry.addEventListener('click', loadTrends);
+    els.refresh.addEventListener('click', loadTrends);
+
+    loadTrends();
+  })();
+  </script>
+</body>
+</html>

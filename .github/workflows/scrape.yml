@@ -1,0 +1,72 @@
+name: TrendPulse Daily Scrape
+
+# ---------------------------------------------------------------------------
+# Runs the zero-dependency Python scraper once every 24 hours, commits the
+# refreshed trends.json and pushes it back to the production branch.
+#
+# IMPORTANT (Vercel optimization): the commit message intentionally does NOT
+# contain "[skip ci]" / "[Skip CI]" so Vercel detects the push and triggers a
+# fresh production build automatically.
+# ---------------------------------------------------------------------------
+
+on:
+  schedule:
+    # 00:34 UTC every day.
+    - cron: '34 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trendpulse-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    name: Scrape trends and redeploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run scraper
+        run: python scraper.py
+
+      - name: Show generated data
+        run: |
+          echo "----- trends.json -----"
+          head -c 2000 trends.json || true
+          echo ""
+
+      - name: Commit and push updated trends.json
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -e
+          git config user.name "trendpulse-bot"
+          git config user.email "trendpulse-bot@users.noreply.github.com"
+
+          git add trends.json
+
+          if git diff --cached --quiet; then
+            echo "No changes in trends.json — nothing to commit."
+            exit 0
+          fi
+
+          # Standard commit message (NO [skip ci]) so Vercel rebuilds.
+          git commit -m "Automated data update: refresh trends.json ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+
+          git pull --rebase --autostash origin "$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"
