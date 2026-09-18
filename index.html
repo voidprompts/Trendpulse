@@ -153,7 +153,7 @@
       typing right now — and rewrites them as platform-compliant hashtags or YouTube tags. No signup, no paywall.
     </p>
     <p class="mt-4 text-sm text-slate-500">
-      Daily trend board refreshed: <time id="last-updated" datetime="2026-09-18T15:53:15Z">18 September 2026, 15:53 UTC</time>
+      Daily trend board refreshed: <time id="last-updated" datetime="2026-09-18T16:01:43Z">18 September 2026, 16:01 UTC</time>
     </p>
   </section>
 
@@ -899,13 +899,29 @@
         .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     }
 
-    /* Remove accents and any non-alphanumeric characters. */
+    /* Strip punctuation, symbols and emoji while PRESERVING letters and digits
+       from every script. Latin accents are folded (Café -> Cafe) because
+       platforms treat #Cafe and #Café inconsistently, but non-Latin scripts
+       (Japanese, Cyrillic, Arabic, Hindi...) are kept intact — #アニメ is a
+       valid, widely used hashtag and must not be silently deleted. */
+    var UNICODE_OK = (function () {
+      // Regex LITERAL, not new RegExp('...'): in a string literal the
+      // backslash in \p{L} is eaten before the regex engine ever sees it.
+      try { return /[^\p{L}\p{N}\s]/gu; }
+      catch (e) { return null; }   // very old browser: fall back to ASCII
+    })();
+
     function normalize(text) {
-      return String(text)
-        .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-zA-Z0-9\s]/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
+      var value = String(text);
+
+      // Fold Latin accents only: decompose, drop combining marks.
+      value = value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+
+      value = UNICODE_OK
+        ? value.replace(UNICODE_OK, ' ')
+        : value.replace(/[^a-zA-Z0-9\s]/g, ' ');
+
+      return value.replace(/\s+/g, ' ').trim();
     }
 
     /* Drop stop words from both ends, keeping interior words intact. */
@@ -921,7 +937,9 @@
       var words = stripStopWords(phrase);
       if (!words.length) return '';
       return words.map(function (w) {
-        return w.charAt(0).toUpperCase() + w.slice(1);
+        // Use the full first code point so surrogate pairs are never split.
+        var first = String.fromCodePoint(w.codePointAt(0));
+        return first.toUpperCase() + w.slice(first.length);
       }).join('');
     }
 
