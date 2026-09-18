@@ -60,8 +60,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://wikimedia.org" />
-  <link rel="preconnect" href="https://en.wikipedia.org" />
+  <link rel="preconnect" href="https://suggestqueries.google.com" />
+  <link rel="preconnect" href="https://clients1.google.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- ====================================================================
@@ -142,15 +142,15 @@
   <!-- ==================== HERO ==================== -->
   <section class="mx-auto max-w-7xl px-5 pb-8 pt-14 text-center sm:pt-20">
     <span class="inline-flex items-center gap-2 rounded-full border border-fuchsia-500/30 bg-fuchsia-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-fuchsia-300">
-      Powered by live global traffic data
+      Powered by live YouTube search data
     </span>
     <h1 class="mx-auto mt-6 max-w-4xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl">
       Any keyword into<br class="hidden sm:block" />
       <span class="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-indigo-400 bg-clip-text text-transparent">tags that actually rank.</span>
     </h1>
     <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
-      TrendPulse queries real global pageview traffic, finds the high-volume topics connected to your
-      keyword, and rewrites them as platform-compliant hashtags or YouTube tags. No signup, no paywall.
+      TrendPulse reads the live YouTube search autocomplete stream — the actual phrases viewers are
+      typing right now — and rewrites them as platform-compliant hashtags or YouTube tags. No signup, no paywall.
     </p>
     <p class="mt-4 text-sm text-slate-500">
       Daily trend board refreshed: <time id="last-updated" datetime="<!-- UPDATED_ISO -->"><!-- UPDATED_HUMAN --></time>
@@ -174,8 +174,8 @@
 
       <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-3xl">Live tag generator</h2>
       <p class="mt-2 text-sm leading-relaxed text-slate-400">
-        Enter a topic, choose how fresh the data should be, and pick where you're posting.
-        Results are ranked by real pageview volume from the last reporting window.
+        Enter a topic, choose a velocity profile, and pick where you're posting. Suggestions come
+        straight from YouTube's live autocomplete index, ranked by search position.
       </p>
 
       <!-- INPUT DASHBOARD -->
@@ -191,10 +191,10 @@
           <label for="timeframe" class="mb-1.5 block text-xs font-bold uppercase tracking-widest text-slate-400">Timeframe</label>
           <select id="timeframe" name="timeframe"
                   class="w-full appearance-none rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-base text-white outline-none transition focus:border-fuchsia-500/60 focus:ring-2 focus:ring-fuchsia-500/30">
-            <option value="hourly">Right now (48h)</option>
-            <option value="daily" selected>Today (7 days)</option>
-            <option value="weekly">This week (30 days)</option>
-            <option value="monthly">This month (90 days)</option>
+            <option value="hourly">Hourly — breaking right now</option>
+            <option value="daily" selected>Daily — today's momentum</option>
+            <option value="weekly">Weekly — this week</option>
+            <option value="monthly">Monthly — evergreen</option>
           </select>
         </div>
 
@@ -203,10 +203,9 @@
           <select id="platform" name="platform"
                   class="w-full appearance-none rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-base text-white outline-none transition focus:border-fuchsia-500/60 focus:ring-2 focus:ring-fuchsia-500/30">
             <option value="instagram" selected>Instagram</option>
-            <option value="facebook">Facebook</option>
-            <option value="tiktok">TikTok</option>
-            <option value="x">X / Twitter</option>
             <option value="youtube">YouTube (comma tags)</option>
+            <option value="facebook">Facebook</option>
+            <option value="all">All platforms</option>
           </select>
         </div>
 
@@ -242,9 +241,9 @@
           <table class="w-full text-left text-sm">
             <thead class="bg-white/5 text-[11px] uppercase tracking-widest text-slate-400">
               <tr>
-                <th scope="col" class="px-4 py-2.5 font-bold">Live topic</th>
-                <th scope="col" class="px-4 py-2.5 text-right font-bold">Views</th>
-                <th scope="col" class="px-4 py-2.5 text-right font-bold">Velocity</th>
+                <th scope="col" class="px-4 py-2.5 font-bold">Live search phrase</th>
+                <th scope="col" class="px-4 py-2.5 text-right font-bold">Rank</th>
+                <th scope="col" class="px-4 py-2.5 text-right font-bold">Signal</th>
               </tr>
             </thead>
             <tbody id="traffic-body" class="divide-y divide-white/5 text-slate-300"></tbody>
@@ -298,11 +297,12 @@
         <div class="grid h-10 w-10 place-items-center rounded-xl bg-fuchsia-500/15 text-lg">⚡</div>
         <h3 class="mt-4 font-bold text-white">Micro trends — live, on demand</h3>
         <p class="mt-2 text-sm leading-relaxed text-slate-400">
-          When you type a keyword, your browser queries a public encyclopedia search index for the
-          articles most related to it, then pulls the actual pageview counts for each one over your
-          chosen window. Topics are ranked by genuine traffic volume, and a velocity figure compares
-          recent days against earlier ones so you can see what is accelerating rather than merely large.
-          Every request is made directly from your browser, so there is no server to rate-limit or ban.
+          When you type a keyword, your browser reads YouTube's own search autocomplete index — the
+          same predictions that appear under the search bar on YouTube itself. These are generated
+          from what real viewers are typing right now, which is why they surface social-native
+          material that never reaches a news feed: audio memes, creator drama, challenge formats and
+          edit styles. Suggestions are ordered by YouTube's own ranking, so position one is the
+          highest-demand completion for your term.
         </p>
       </article>
       <article class="rounded-3xl border border-white/5 bg-white/5 p-6 backdrop-blur">
@@ -326,15 +326,18 @@
         <p>
           Trending tags work because they attach your post to a conversation that already has momentum.
           The catch is that momentum decays fast — a topic peaking on Tuesday morning is often cold by
-          Wednesday night. That is why the generator lets you narrow the window: a 48-hour view surfaces
-          what is spiking right now, while a 90-day view surfaces durable interest that will still be
-          searched next month.
+          Wednesday night. The timeframe selector controls how aggressively the output leans on
+          fast-decay amplifiers: hourly and daily inject high-velocity modifiers such as
+          <span class="font-semibold text-indigo-300">#shorts</span>,
+          <span class="font-semibold text-indigo-300">#reels</span> and
+          <span class="font-semibold text-indigo-300">#viral</span>, while weekly and monthly keep the
+          set calmer and more evergreen.
         </p>
         <p>
-          Read the velocity column rather than just the view count. A topic with two million views and
-          flat velocity is saturated; creators have already covered it from every angle. A topic with
-          eighty thousand views and sharply rising velocity is where you can still be early, and being
-          early is most of the advantage.
+          Read the ranking rather than treating every suggestion equally. The top completions are where
+          demand is concentrated, but they are also where competition is fiercest. The long-tail phrases
+          further down often convert better precisely because fewer creators target them — a specific
+          four-word phrase with modest volume can outperform a saturated one-word term.
         </p>
       </div>
       <div class="space-y-4 text-sm leading-relaxed text-slate-400">
@@ -362,27 +365,29 @@
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur" open>
         <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Where does the live data come from?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
-          From the public Wikimedia search and pageviews APIs. Wikipedia is one of the largest free
-          sources of global attention data: when a subject spikes in the news, its article traffic spikes
-          with it, usually within hours. The generator reads those figures directly in your browser and
-          converts the leading topics into tag strings.
+          From YouTube's public search autocomplete service — the predictions that drop down when you
+          start typing in YouTube's search bar. They are derived from genuine viewer search behaviour
+          and update continuously, which makes them one of the fastest free signals available for
+          social-native trends. Because the request is made by your browser rather than by a server,
+          there is no proxy to pay for and no shared IP address to get rate-limited.
         </p>
       </details>
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
-        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Why do the numbers stop a day or two ago?</summary>
+        <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Why are there no exact search volumes?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
-          Pageview statistics are published in batches and typically lag real time by roughly 24 to 48
-          hours. The generator deliberately ends its query before that boundary so a window never
-          contains empty days that would distort the ranking.
+          The autocomplete service returns ranked phrases, not numeric counts — that data is not public.
+          What it gives you instead is ordering: the phrases at the top are the ones most people are
+          actually completing. The signal column reflects that rank, so treat the top three as your
+          highest-demand terms and the rest as long-tail support.
         </p>
       </details>
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
         <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">What happens if the API is throttled or offline?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
-          The generator degrades gracefully. If the live request fails, times out, or returns nothing
-          usable, it falls back to a structured set of high-volume evergreen fields built from your
-          keyword and the platform you selected, and clearly labels the output as offline mode. You
-          always get a usable string.
+          The generator degrades gracefully. It tries two separate mirrors of the autocomplete service,
+          and if both fail, time out, or return nothing usable, it falls back to a structured set of
+          high-volume viral fields built from your keyword and clearly labels the output as offline
+          mode. You always get a usable string.
         </p>
       </details>
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
@@ -390,14 +395,16 @@
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
           YouTube Studio expects a comma-separated list of natural phrases rather than hashtags, so
           selecting YouTube returns lowercase multi-word phrases with no hash symbols, trimmed to stay
-          within the 500-character field limit. Every other platform returns hash-prefixed tags.
+          within the 500-character field limit. Instagram and Facebook return camelCase hashtags such
+          as <span class="font-semibold text-indigo-300">#TrendingAudioMeme</span>, which are easier to
+          read and are treated identically by the platforms.
         </p>
       </details>
       <details class="group rounded-2xl border border-white/5 bg-white/5 p-5 backdrop-blur">
         <summary class="cursor-pointer list-none font-semibold text-white marker:hidden">Does TrendPulse collect my personal data?</summary>
         <p class="mt-3 text-sm leading-relaxed text-slate-400">
           The site has no accounts, no database and no contact forms, and your keywords are never sent to
-          us — they go directly from your browser to the public data API. Third-party advertising partners
+          us — they go directly from your browser to the public autocomplete service. Third-party advertising partners
           may set cookies, which is explained on our
           <a href="/privacy.html" class="font-semibold text-indigo-300 underline decoration-indigo-500/40 underline-offset-2 hover:text-indigo-200">Privacy Policy</a> page.
         </p>
@@ -440,8 +447,8 @@
         <p class="mt-2 mx-auto max-w-3xl">
           TrendPulse is an independent project and is not affiliated with, endorsed by, or sponsored by
           Google, Wikimedia, Instagram, TikTok, YouTube, X, or any other platform referenced on this site.
-          Live topic data is retrieved from the public Wikimedia APIs; daily trend data is derived from
-          publicly available sources. All figures are provided for informational purposes only.
+          Live suggestion data is retrieved from public search autocomplete services; daily trend data is
+          derived from publicly available sources. All output is provided for informational purposes only.
         </p>
       </div>
     </div>
@@ -540,60 +547,72 @@
   </script>
 
   <!-- ==================================================================
-       LIVE DATA ENGINE
-       Wikimedia search + pageviews -> ranked topics -> platform strings.
-       All calls are client-side (origin=*), so there is no server to
-       time out and no shared IP to get banned.
+       LIVE DATA ENGINE — YouTube Search Autocomplete
+       -----------------------------------------------------------------
+       The autocomplete endpoint does NOT send Access-Control-Allow-Origin,
+       so fetch()/XHR is blocked by the browser. It DOES support JSONP when
+       client=youtube, so we inject a script element and capture the callback.
+       This is the only way to read it client-side with no proxy, no API key,
+       no server to time out, and no shared IP to get rate-limited.
        ================================================================== -->
   <script>
   (function () {
     'use strict';
 
-    var WIKI_API = 'https://en.wikipedia.org/w/api.php';
-    var PAGEVIEWS_API = 'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/';
+    /* Mirrors of the same autocomplete service; tried in order. */
+    var ENDPOINTS = [
+      'https://suggestqueries.google.com/complete/search',
+      'https://clients1.google.com/complete/search'
+    ];
 
-    var MAX_CANDIDATES = 10;   // articles to price out
-    var MAX_TOPICS = 8;        // topics kept in the final string
-    var FETCH_TIMEOUT = 9000;  // ms per request
-    var YT_CHAR_LIMIT = 480;   // YouTube tag field caps at 500
-
-    /* Pageview data lags real time by 1-2 days. */
-    var DATA_LAG_DAYS = 2;
+    var JSONP_TIMEOUT = 6000;   // ms per endpoint attempt
+    var MAX_TOPICS = 10;        // suggestions kept from the live stream
+    var MAX_TAGS = 24;          // hard cap on emitted tags
+    var YT_CHAR_LIMIT = 480;    // YouTube Studio caps the tag field at 500
 
     var TIMEFRAMES = {
-      hourly:  { days: 2,  label: 'last 48 hours' },
-      daily:   { days: 7,  label: 'last 7 days' },
-      weekly:  { days: 30, label: 'last 30 days' },
-      monthly: { days: 90, label: 'last 90 days' }
+      hourly:  { label: 'hourly · breaking', fast: true },
+      daily:   { label: 'daily · today',     fast: true },
+      weekly:  { label: 'weekly',            fast: false },
+      monthly: { label: 'monthly · evergreen', fast: false }
     };
 
-    /* Velocity amplifiers injected per timeframe. */
+    /* Velocity modifiers. Hourly/Daily get the fast-paced set. */
     var VELOCITY_TAGS = {
-      hourly:  ['trendingnow', 'breaking', 'happeningnow'],
-      daily:   ['trendingtoday', 'todaystrend', 'viral'],
-      weekly:  ['trendingthisweek', 'weeklytrends', 'trending'],
-      monthly: ['trendingnow', 'monthlyroundup', 'trending']
+      hourly:  ['shorts', 'reels', 'viral', 'trendingnow', 'breaking'],
+      daily:   ['shorts', 'reels', 'viral', 'trendingtoday', 'fyp'],
+      weekly:  ['trendingthisweek', 'weeklytrends'],
+      monthly: ['trending', 'evergreen']
     };
 
     var VELOCITY_PHRASES = {
-      hourly:  ['trending now', 'breaking news', 'happening now'],
-      daily:   ['trending today', 'today trending', 'viral video'],
-      weekly:  ['trending this week', 'weekly trends', 'trending'],
-      monthly: ['trending this month', 'monthly roundup', 'trending']
+      hourly:  ['shorts', 'viral video', 'trending now', 'breaking'],
+      daily:   ['shorts', 'viral video', 'trending today'],
+      weekly:  ['trending this week', 'weekly trends'],
+      monthly: ['trending', 'evergreen']
     };
 
-    /* Platform-specific algorithmic amplifiers. */
+    /* Platform amplifiers. */
     var PLATFORM_TAGS = {
       instagram: ['reels', 'explorepage', 'instagood'],
-      facebook:  ['facebookreels', 'fbviral', 'sharethis'],
-      tiktok:    ['fyp', 'foryoupage', 'tiktokviral'],
-      x:         ['news', 'thread'],
-      youtube:   ['shorts', 'viral video', 'youtube shorts']
+      facebook:  ['facebookreels', 'fbviral'],
+      youtube:   ['shorts', 'youtube shorts'],
+      all:       ['reels', 'shorts', 'fyp', 'explorepage']
     };
 
     var PLATFORM_LABELS = {
-      instagram: 'Instagram', facebook: 'Facebook', tiktok: 'TikTok',
-      x: 'X / Twitter', youtube: 'YouTube'
+      instagram: 'Instagram', youtube: 'YouTube',
+      facebook: 'Facebook', all: 'All platforms'
+    };
+
+    /* Stop words stripped from the head/tail of live phrases. */
+    var STOP_WORDS = {
+      'the':1,'a':1,'an':1,'and':1,'or':1,'but':1,'of':1,'to':1,'in':1,'on':1,
+      'at':1,'for':1,'with':1,'is':1,'are':1,'was':1,'were':1,'be':1,'been':1,
+      'do':1,'does':1,'did':1,'how':1,'what':1,'why':1,'when':1,'where':1,
+      'who':1,'which':1,'that':1,'this':1,'it':1,'its':1,'my':1,'your':1,
+      'you':1,'i':1,'me':1,'we':1,'they':1,'vs':1,'v':1,'near':1,'from':1,
+      'by':1,'as':1,'into':1,'about':1,'can':1,'will':1,'just':1,'so':1
     };
 
     var els = {
@@ -615,156 +634,177 @@
 
     /* ------------------------- utilities ------------------------- */
 
-    function ymd(date) {
-      var m = String(date.getUTCMonth() + 1).padStart(2, '0');
-      var d = String(date.getUTCDate()).padStart(2, '0');
-      return '' + date.getUTCFullYear() + m + d;
-    }
-
-    function dateRange(days) {
-      var end = new Date(Date.now() - DATA_LAG_DAYS * 86400000);
-      var start = new Date(end.getTime() - (days - 1) * 86400000);
-      return { start: ymd(start), end: ymd(end) };
-    }
-
-    function fetchJSON(url) {
-      var controller = new AbortController();
-      var timer = window.setTimeout(function () { controller.abort(); }, FETCH_TIMEOUT);
-      return fetch(url, { signal: controller.signal, headers: { 'Accept': 'application/json' } })
-        .then(function (response) {
-          if (!response.ok) throw new Error('HTTP ' + response.status);
-          return response.json();
-        })
-        .finally(function () { window.clearTimeout(timer); });
-    }
-
-    function formatNumber(n) {
-      if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
-      if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
-      return String(n);
-    }
-
     function escapeHtml(value) {
       return String(value)
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     }
 
-    /* Strip Wikipedia disambiguation: "Mercury (planet)" -> "Mercury" */
-    function cleanTitle(title) {
-      return String(title).replace(/\s*\([^)]*\)\s*$/, '').trim();
-    }
-
-    /* "Artificial Intelligence" -> "artificialintelligence" */
-    function toHashtag(phrase) {
-      var cleaned = String(phrase)
-        .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')  // strip accents
-        .replace(/[^a-zA-Z0-9\s]/g, ' ');
-      return cleaned.split(/\s+/).filter(Boolean).join('').toLowerCase();
-    }
-
-    /* Natural phrase for YouTube: lowercase, punctuation removed, spaces kept. */
-    function toPhrase(text) {
+    /* Remove accents and any non-alphanumeric characters. */
+    function normalize(text) {
       return String(text)
         .normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
         .replace(/[^a-zA-Z0-9\s]/g, ' ')
-        .split(/\s+/).filter(Boolean).join(' ').toLowerCase();
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    /* Drop stop words from both ends, keeping interior words intact. */
+    function stripStopWords(phrase) {
+      var words = normalize(phrase).toLowerCase().split(' ').filter(Boolean);
+      while (words.length && STOP_WORDS[words[0]]) words.shift();
+      while (words.length && STOP_WORDS[words[words.length - 1]]) words.pop();
+      return words;
+    }
+
+    /* "trending audio meme" -> "TrendingAudioMeme" */
+    function toCamelCase(phrase) {
+      var words = stripStopWords(phrase);
+      if (!words.length) return '';
+      return words.map(function (w) {
+        return w.charAt(0).toUpperCase() + w.slice(1);
+      }).join('');
+    }
+
+    /* "Trending Audio Meme" -> "trending audio meme" (YouTube tag phrase) */
+    function toPhrase(text) {
+      var words = stripStopWords(text);
+      return words.join(' ');
     }
 
     function dedupe(list) {
       var seen = Object.create(null);
       var out = [];
       for (var i = 0; i < list.length; i++) {
-        var v = list[i];
-        if (v && v.length > 1 && !seen[v]) { seen[v] = 1; out.push(v); }
+        var value = list[i];
+        if (!value) continue;
+        var key = value.toLowerCase();
+        if (key.length > 1 && !seen[key]) { seen[key] = 1; out.push(value); }
       }
       return out;
     }
 
-    /* ------------------------- live data ------------------------- */
+    /* ---------------------- JSONP transport ---------------------- */
 
-    /* Step 1: find the articles most related to the keyword. */
-    function searchTopics(keyword) {
-      var url = WIKI_API +
-        '?action=query&list=search&format=json&origin=*' +
-        '&srlimit=' + MAX_CANDIDATES +
-        '&srnamespace=0&srqiprofile=popular_inclinks_pv' +
-        '&srsearch=' + encodeURIComponent(keyword);
+    var jsonpSeq = 0;
 
-      return fetchJSON(url).then(function (data) {
-        var hits = (data && data.query && data.query.search) || [];
-        return hits.map(function (hit) { return hit.title; });
+    /**
+     * Load the autocomplete endpoint via script injection.
+     * client=youtube makes the service emit a JSONP envelope, and the
+     * jsonp= parameter lets us name our own global callback.
+     */
+    function jsonpRequest(endpoint, keyword) {
+      return new Promise(function (resolve, reject) {
+        var name = '__tpAc' + (++jsonpSeq) + '_' + Date.now();
+        var script = document.createElement('script');
+        var done = false;
+
+        function cleanup() {
+          if (script.parentNode) script.parentNode.removeChild(script);
+          try { delete window[name]; } catch (e) { window[name] = undefined; }
+          window.clearTimeout(timer);
+        }
+
+        var timer = window.setTimeout(function () {
+          if (done) return;
+          done = true;
+          cleanup();
+          reject(new Error('timeout'));
+        }, JSONP_TIMEOUT);
+
+        window[name] = function (data) {
+          if (done) return;
+          done = true;
+          cleanup();
+          resolve(data);
+        };
+
+        script.onerror = function () {
+          if (done) return;
+          done = true;
+          cleanup();
+          reject(new Error('network blocked'));
+        };
+
+        script.src = endpoint +
+          '?client=youtube' +
+          '&ds=yt' +
+          '&hl=en' +
+          '&gs_ri=youtube' +
+          '&jsonp=' + encodeURIComponent(name) +
+          '&q=' + encodeURIComponent(keyword);
+
+        script.async = true;
+        document.head.appendChild(script);
       });
     }
 
-    /* Step 2: real traffic for one article over the window. */
-    function fetchTraffic(title, range) {
-      var article = encodeURIComponent(String(title).replace(/ /g, '_'));
-      var url = PAGEVIEWS_API + article + '/daily/' + range.start + '/' + range.end;
-
-      return fetchJSON(url).then(function (data) {
-        var items = (data && data.items) || [];
-        if (!items.length) return null;
-
-        var series = items.map(function (i) { return i.views || 0; });
-        var total = series.reduce(function (a, b) { return a + b; }, 0);
-        if (!total) return null;
-
-        // Velocity: mean of the most recent third vs the earliest third.
-        var slice = Math.max(1, Math.floor(series.length / 3));
-        var recent = series.slice(-slice);
-        var earlier = series.slice(0, slice);
-        var recentAvg = recent.reduce(function (a, b) { return a + b; }, 0) / recent.length;
-        var earlierAvg = earlier.reduce(function (a, b) { return a + b; }, 0) / earlier.length;
-        var velocity = earlierAvg > 0 ? ((recentAvg - earlierAvg) / earlierAvg) * 100 : 0;
-
-        return { title: cleanTitle(title), views: total, velocity: velocity };
-      }).catch(function () { return null; });
+    /**
+     * Response shape: ["query", [["suggestion",0,[433]], ...], {...}]
+     * Pull element [1], then the first item of each inner array.
+     */
+    function parseSuggestions(payload) {
+      if (!payload || !Array.isArray(payload) || !Array.isArray(payload[1])) {
+        throw new Error('unexpected response shape');
+      }
+      var rows = payload[1];
+      var phrases = [];
+      for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        var text = Array.isArray(row) ? row[0] : row;
+        if (typeof text === 'string' && text.trim()) phrases.push(text.trim());
+      }
+      if (!phrases.length) throw new Error('no suggestions returned');
+      return phrases;
     }
 
-    /* Step 3: rank candidates by real volume. */
-    function rankTopics(keyword, timeframe) {
-      var range = dateRange(TIMEFRAMES[timeframe].days);
-
-      return searchTopics(keyword).then(function (titles) {
-        if (!titles.length) throw new Error('No matching topics found');
-        return Promise.all(titles.map(function (t) { return fetchTraffic(t, range); }));
-      }).then(function (results) {
-        var valid = results.filter(Boolean);
-        if (!valid.length) throw new Error('No traffic data returned');
-        valid.sort(function (a, b) { return b.views - a.views; });
-        return valid.slice(0, MAX_TOPICS);
-      });
+    /* Try each mirror in turn before giving up. */
+    function fetchSuggestions(keyword) {
+      var attempt = function (index) {
+        if (index >= ENDPOINTS.length) {
+          return Promise.reject(new Error('all endpoints unreachable'));
+        }
+        return jsonpRequest(ENDPOINTS[index], keyword)
+          .then(parseSuggestions)
+          .catch(function () { return attempt(index + 1); });
+      };
+      return attempt(0);
     }
 
     /* ------------------- platform transformation ------------------- */
 
-    function buildTags(keyword, topics, timeframe, platform) {
+    function buildTags(keyword, phrases, timeframe, platform) {
       var isYouTube = platform === 'youtube';
-      var amplifiers = PLATFORM_TAGS[platform] || [];
-      var velocity = isYouTube ? VELOCITY_PHRASES[timeframe] : VELOCITY_TAGS[timeframe];
-      var convert = isYouTube ? toPhrase : toHashtag;
+      var convert = isYouTube ? toPhrase : toCamelCase;
 
       var parts = [convert(keyword)];
 
-      topics.forEach(function (topic) {
-        parts.push(convert(topic.title));
+      phrases.slice(0, MAX_TOPICS).forEach(function (phrase) {
+        var value = convert(phrase);
+        if (value) parts.push(value);
       });
 
-      velocity.forEach(function (v) { parts.push(convert(v)); });
-      amplifiers.forEach(function (a) { parts.push(convert(a)); });
+      /* Velocity modifiers — the fast set only for hourly/daily. */
+      var velocity = isYouTube ? VELOCITY_PHRASES[timeframe] : VELOCITY_TAGS[timeframe];
+      velocity.forEach(function (v) {
+        var value = isYouTube ? v : toCamelCase(v).toLowerCase();
+        if (value) parts.push(value);
+      });
 
-      var unique = dedupe(parts);
+      (PLATFORM_TAGS[platform] || []).forEach(function (a) {
+        var value = isYouTube ? a : toCamelCase(a).toLowerCase();
+        if (value) parts.push(value);
+      });
+
+      var unique = dedupe(parts).slice(0, MAX_TAGS);
 
       if (isYouTube) {
-        // Comma-separated phrases, trimmed to YouTube's field limit.
         var out = [];
         var length = 0;
         for (var i = 0; i < unique.length; i++) {
-          var next = unique[i];
-          var added = next.length + (out.length ? 2 : 0);
+          var added = unique[i].length + (out.length ? 2 : 0);
           if (length + added > YT_CHAR_LIMIT) break;
-          out.push(next);
+          out.push(unique[i]);
           length += added;
         }
         return { text: out.join(', '), count: out.length };
@@ -774,16 +814,14 @@
       return { text: tags.join(' '), count: tags.length };
     }
 
-    /* Offline fallback: structured high-volume fields from the keyword. */
-    function fallbackTopics(keyword) {
-      var base = cleanTitle(keyword);
+    /* Offline fallback: structured high-volume viral fields. */
+    function fallbackPhrases(keyword) {
+      var base = normalize(keyword).toLowerCase() || 'trending';
       return [
-        base + ' news', base + ' 2026', base + ' explained',
-        base + ' guide', 'best ' + base, base + ' tips',
-        base + ' update', base + ' review'
-      ].map(function (phrase) {
-        return { title: phrase, views: null, velocity: null, offline: true };
-      });
+        base, base + ' compilation', base + ' edit', base + ' reaction',
+        base + ' explained', base + ' 2026', 'best ' + base,
+        base + ' tutorial', base + ' moments', base + ' challenge'
+      ];
     }
 
     /* ---------------------------- UI ---------------------------- */
@@ -807,37 +845,37 @@
         : 'Generate Live Tags';
     }
 
-    function renderTable(topics) {
-      els.body.innerHTML = topics.map(function (t) {
-        var views = t.views === null ? '<span class="text-slate-600">—</span>' : formatNumber(t.views);
-        var vel;
-        if (t.velocity === null) {
-          vel = '<span class="text-slate-600">—</span>';
+    function renderTable(phrases, offline) {
+      els.body.innerHTML = phrases.slice(0, MAX_TOPICS).map(function (phrase, i) {
+        var signal;
+        if (offline) {
+          signal = '<span class="text-slate-600">fallback</span>';
+        } else if (i < 3) {
+          signal = '<span class="font-semibold text-emerald-400">▲ high</span>';
+        } else if (i < 7) {
+          signal = '<span class="font-semibold text-indigo-300">● medium</span>';
         } else {
-          var up = t.velocity >= 0;
-          var cls = up ? 'text-emerald-400' : 'text-slate-500';
-          vel = '<span class="' + cls + ' font-semibold">' + (up ? '▲' : '▼') + ' ' +
-                Math.abs(t.velocity).toFixed(0) + '%</span>';
+          signal = '<span class="text-slate-500">○ long tail</span>';
         }
         return '<tr>' +
-          '<td class="px-4 py-2.5 font-medium text-slate-200">' + escapeHtml(t.title) + '</td>' +
-          '<td class="px-4 py-2.5 text-right font-mono text-xs">' + views + '</td>' +
-          '<td class="px-4 py-2.5 text-right text-xs">' + vel + '</td>' +
+          '<td class="px-4 py-2.5 font-medium text-slate-200">' + escapeHtml(phrase) + '</td>' +
+          '<td class="px-4 py-2.5 text-right font-mono text-xs text-slate-400">#' + (i + 1) + '</td>' +
+          '<td class="px-4 py-2.5 text-right text-xs">' + signal + '</td>' +
         '</tr>';
       }).join('');
     }
 
-    function renderResults(keyword, topics, timeframe, platform, offline) {
-      var result = buildTags(keyword, topics, timeframe, platform);
+    function renderResults(keyword, phrases, timeframe, platform, offline) {
+      var result = buildTags(keyword, phrases, timeframe, platform);
 
-      renderTable(topics);
+      renderTable(phrases, offline);
       els.output.value = result.text;
       els.outputLabel.textContent = platform === 'youtube'
         ? 'YouTube tags (comma-separated — paste into YouTube Studio)'
         : 'Hashtag string';
       els.count.textContent = result.count + ' tags · ' + result.text.length + ' characters';
       els.meta.textContent = PLATFORM_LABELS[platform] + ' · ' + TIMEFRAMES[timeframe].label +
-        (offline ? ' · offline mode' : ' · live data');
+        (offline ? ' · offline mode' : ' · live autocomplete');
       els.results.classList.remove('hidden');
     }
 
@@ -855,19 +893,19 @@
       }
 
       setBusy(true);
-      setStatus('Querying live global traffic for <strong>' + escapeHtml(keyword) + '</strong>…', 'info');
+      setStatus('Reading the live YouTube search stream for <strong>' +
+                escapeHtml(keyword) + '</strong>…', 'info');
       els.results.classList.add('hidden');
 
-      rankTopics(keyword, timeframe).then(function (topics) {
+      fetchSuggestions(keyword).then(function (phrases) {
         setStatus('');
-        renderResults(keyword, topics, timeframe, platform, false);
+        renderResults(keyword, phrases, timeframe, platform, false);
       }).catch(function (error) {
-        // Graceful degradation — always produce a usable string.
         setStatus(
-          '<strong>Live data unavailable</strong> (' + escapeHtml(error.message || 'network error') +
-          '). Showing structured high-volume fields built from your keyword instead.', 'warn');
-        renderResults(keyword, fallbackTopics(keyword), timeframe, platform, true);
-      }).finally(function () {
+          '<strong>Live stream unavailable</strong> (' + escapeHtml(error.message || 'network error') +
+          '). Showing structured high-volume viral fields built from your keyword instead.', 'warn');
+        renderResults(keyword, fallbackPhrases(keyword), timeframe, platform, true);
+      }).then(function () {
         setBusy(false);
       });
     }

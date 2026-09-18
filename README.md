@@ -3,9 +3,10 @@
 Automated, zero-cost, AdSense-ready social-media tag generator.
 
 Two data layers:
-- **Micro trends (live)** — client-side JS queries the public Wikimedia search +
-  pageviews APIs with `origin=*`, ranks topics by real traffic, and emits
-  platform-compliant tag strings. No server, so nothing to time out or IP-ban.
+- **Micro trends (live)** — client-side **JSONP** against YouTube's search
+  autocomplete service. The endpoint sends no CORS headers, so `fetch()` is
+  blocked; `client=youtube` + a custom `jsonp=` callback makes script-tag
+  injection work. No proxy, no API key, no server to IP-ban.
 - **Macro trends (daily)** — Python pre-renders the top 9 global searches into
   static HTML so crawlers receive finished text, not a JavaScript shell.
 
@@ -36,19 +37,23 @@ python -m http.server 8000   # http://localhost:8000
 
 ## Live generator
 
-| Timeframe | Pageview window | Velocity amplifiers |
-|---|---|---|
-| Right now | 48 hours | `#trendingnow #breaking #happeningnow` |
-| Today | 7 days | `#trendingtoday #todaystrend #viral` |
-| This week | 30 days | `#trendingthisweek #weeklytrends` |
-| This month | 90 days | `#trendingnow #monthlyroundup` |
+Source: `suggestqueries.google.com/complete/search` (mirror:
+`clients1.google.com`), params `client=youtube&ds=yt&hl=en&gs_ri=youtube&jsonp=<cb>&q=<kw>`.
+Response is a JSONP envelope: `cb(["kw",[["suggestion",0,[433]],...],{...}])`.
 
-Instagram/Facebook/TikTok/X return `#hashtags`; YouTube returns comma-separated
-phrases capped at 480 chars (Studio's field limit is 500). Queries end 2 days
-back because Wikimedia publishes pageviews with a 24-48h lag.
+| Timeframe | Velocity modifiers injected |
+|---|---|
+| Hourly | `#shorts #reels #viral #trendingnow #breaking` |
+| Daily | `#shorts #reels #viral #trendingtoday #fyp` |
+| Weekly | `#trendingthisweek #weeklytrends` |
+| Monthly | `#trending #evergreen` |
 
-If the API throttles or fails, the generator falls back to structured
-keyword-derived fields and labels the output "offline mode".
+Instagram/Facebook/All emit camelCase hashtags (`#TrendingAudioMeme`);
+YouTube emits comma-separated phrases capped at 480 chars (Studio's limit is 500).
+Leading/trailing stop words are stripped ("how to do the griddy" -> `#Griddy`).
+
+Two mirrors are tried in order; if both fail or time out (6s each), the
+generator emits structured viral fields and labels the output "offline mode".
 
 ## Before requesting AdSense review
 
