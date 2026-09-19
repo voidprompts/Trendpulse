@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-18T16:01:43Z",
-  "source": "fallback",
+  "generated_at": "2026-09-19T04:53:54Z",
+  "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "Artificial Intelligence",
+      "topic": "twiggy",
       "tags": [
-        "artificialintelligence",
+        "twiggy",
         "viral",
         "trending",
         "fyp"
@@ -17,42 +17,42 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "Premier League",
+      "topic": "fanduel promo code",
       "tags": [
-        "premierleague",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 3,
-      "category": "General Viral",
-      "topic": "Crypto Market",
-      "tags": [
-        "cryptomarket",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 4,
-      "category": "General Viral",
-      "topic": "Box Office Weekend",
-      "tags": [
-        "boxofficeweekend",
-        "boxoffice",
+        "fanduelpromocode",
+        "fanduelpromo",
         "viral",
         "trending"
       ]
     },
     {
+      "id": 3,
+      "category": "General Viral",
+      "topic": "bet365 promo code",
+      "tags": [
+        "bet365promocode",
+        "bet365promo",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "General Viral",
+      "topic": "fan duel",
+      "tags": [
+        "fanduel",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
       "id": 5,
       "category": "General Viral",
-      "topic": "Tech Layoffs",
+      "topic": "bet mgm",
       "tags": [
-        "techlayoffs",
+        "betmgm",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "Space Launch",
+      "topic": "kyle tucker",
       "tags": [
-        "spacelaunch",
+        "kyletucker",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "Fitness Challenge",
+      "topic": "max muncy",
       "tags": [
-        "fitnesschallenge",
+        "maxmuncy",
         "viral",
         "trending",
         "fyp"
@@ -83,20 +83,20 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "Street Food Tour",
+      "topic": "mansion",
       "tags": [
-        "streetfoodtour",
-        "streetfood",
+        "mansion",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "Travel Deals",
+      "topic": "padres standings",
       "tags": [
-        "traveldeals",
+        "padresstandings",
         "viral",
         "trending",
         "fyp"
