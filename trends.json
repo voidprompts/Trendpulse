@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-20T05:14:57Z",
+  "generated_at": "2026-09-21T05:18:09Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "cat species",
+      "topic": "ff7 revelation",
       "tags": [
-        "catspecies",
+        "ff7revelation",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "tesla roadster",
+      "topic": "maya joint",
       "tags": [
-        "teslaroadster",
+        "mayajoint",
         "viral",
         "trending",
         "fyp"
@@ -28,20 +28,20 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "blade",
+      "topic": "leon vs queretaro",
       "tags": [
-        "blade",
+        "leonvsqueretaro",
+        "leonvs",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "angels",
+      "topic": "fernando mendoza",
       "tags": [
-        "angels",
+        "fernandomendoza",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "santiago sandoval",
+      "topic": "ohio tornado warnings",
       "tags": [
-        "santiagosandoval",
+        "ohiotornadowarnings",
+        "ohiotornado",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "padres standings",
+      "topic": "jonathan owens",
       "tags": [
-        "padresstandings",
+        "jonathanowens",
         "viral",
         "trending",
         "fyp"
@@ -72,31 +72,31 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "iran war news",
+      "topic": "jennifer garner",
       "tags": [
-        "iranwarnews",
-        "iranwar",
+        "jennifergarner",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "padres game today",
+      "topic": "colts coach",
       "tags": [
-        "padresgametoday",
-        "padresgame",
+        "coltscoach",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "padres",
+      "topic": "presley gerber",
       "tags": [
-        "padres",
+        "presleygerber",
         "viral",
         "trending",
         "fyp"
