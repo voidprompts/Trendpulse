@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-21T05:18:09Z",
+  "generated_at": "2026-09-22T05:16:22Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "ff7 revelation",
+      "topic": "sam richardson",
       "tags": [
-        "ff7revelation",
+        "samrichardson",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "maya joint",
+      "topic": "woody harrelson",
       "tags": [
-        "mayajoint",
+        "woodyharrelson",
         "viral",
         "trending",
         "fyp"
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "leon vs queretaro",
+      "topic": "silent hill townfall",
       "tags": [
-        "leonvsqueretaro",
-        "leonvs",
+        "silenthilltownfall",
+        "silenthill",
         "viral",
         "trending"
       ]
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "fernando mendoza",
+      "topic": "dave franco",
       "tags": [
-        "fernandomendoza",
+        "davefranco",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "ohio tornado warnings",
+      "topic": "bo davidson",
       "tags": [
-        "ohiotornadowarnings",
-        "ohiotornado",
+        "bodavidson",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "jonathan owens",
+      "topic": "powerball",
       "tags": [
-        "jonathanowens",
+        "powerball",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "jennifer garner",
+      "topic": "ari emanuel",
       "tags": [
-        "jennifergarner",
+        "ariemanuel",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "colts coach",
+      "topic": "paige bueckers",
       "tags": [
-        "coltscoach",
+        "paigebueckers",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "presley gerber",
+      "topic": "hurricane polo",
       "tags": [
-        "presleygerber",
+        "hurricanepolo",
         "viral",
         "trending",
         "fyp"
