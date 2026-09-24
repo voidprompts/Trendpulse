@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-23T05:01:36Z",
+  "generated_at": "2026-09-24T05:12:24Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "tommy edman",
+      "topic": "dodgers schedule",
       "tags": [
-        "tommyedman",
+        "dodgersschedule",
         "viral",
         "trending",
         "fyp"
@@ -17,20 +17,20 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "josue de paula",
+      "topic": "xbox",
       "tags": [
-        "josuedepaula",
-        "josuede",
+        "xbox",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "pop latino",
+      "topic": "lawrence tanter",
       "tags": [
-        "poplatino",
+        "lawrencetanter",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "edward cabrera",
+      "topic": "ethan salas",
       "tags": [
-        "edwardcabrera",
+        "ethansalas",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "jamie foxx",
+      "topic": "dodger game",
       "tags": [
-        "jamiefoxx",
+        "dodgergame",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "valkyries",
+      "topic": "jo koy",
       "tags": [
-        "valkyries",
+        "jokoy",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "ed gein",
+      "topic": "cara delevingne",
       "tags": [
-        "edgein",
+        "caradelevingne",
         "viral",
         "trending",
         "fyp"
@@ -83,20 +83,20 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "portland fire",
+      "topic": "dodgers game today",
       "tags": [
-        "portlandfire",
+        "dodgersgametoday",
+        "dodgersgame",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "padres score",
+      "topic": "dodgers",
       "tags": [
-        "padresscore",
+        "dodgers",
         "viral",
         "trending",
         "fyp"
