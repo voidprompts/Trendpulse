@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-09-24T05:12:24Z",
+  "generated_at": "2026-09-25T05:14:35Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "dodgers schedule",
+      "topic": "gta vice city",
       "tags": [
-        "dodgersschedule",
+        "gtavicecity",
+        "gtavice",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "xbox",
+      "topic": "mlb playoff bracket",
       "tags": [
-        "xbox",
+        "mlbplayoffbracket",
+        "mlbplayoff",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "lawrence tanter",
+      "topic": "mlb playoffs",
       "tags": [
-        "lawrencetanter",
+        "mlbplayoffs",
         "viral",
         "trending",
         "fyp"
@@ -39,20 +39,20 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "ethan salas",
+      "topic": "padres vs dodgers timeline",
       "tags": [
-        "ethansalas",
+        "padresvsdodgerstimeline",
+        "padresvs",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "dodger game",
+      "topic": "shohei ohtani",
       "tags": [
-        "dodgergame",
+        "shoheiohtani",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "jo koy",
+      "topic": "joe alwyn",
       "tags": [
-        "jokoy",
+        "joealwyn",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "cara delevingne",
+      "topic": "katie volynets",
       "tags": [
-        "caradelevingne",
+        "katievolynets",
         "viral",
         "trending",
         "fyp"
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "dodgers game today",
+      "topic": "noah kahan tour",
       "tags": [
-        "dodgersgametoday",
-        "dodgersgame",
+        "noahkahantour",
+        "noahkahan",
         "viral",
         "trending"
       ]
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "dodgers",
+      "topic": "astros standings",
       "tags": [
-        "dodgers",
+        "astrosstandings",
         "viral",
         "trending",
         "fyp"
