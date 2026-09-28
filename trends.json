@@ -1,48 +1,48 @@
 {
-  "generated_at": "2026-09-27T05:36:14Z",
+  "generated_at": "2026-09-28T05:43:56Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "stock market today",
+      "topic": "cycling",
       "tags": [
-        "stockmarkettoday",
-        "stockmarket",
+        "cycling",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "weather forecast today",
+      "topic": "swimming",
       "tags": [
-        "weatherforecasttoday",
-        "weatherforecast",
+        "swimming",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "mortgage rates today",
+      "topic": "russia",
       "tags": [
-        "mortgageratestoday",
-        "mortgagerates",
+        "russia",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "netflix new releases",
+      "topic": "eagles vs bears",
       "tags": [
-        "netflixnewreleases",
-        "netflixnew",
+        "eaglesvsbears",
+        "eaglesvs",
         "viral",
         "trending"
       ]
@@ -50,31 +50,31 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "the social reckoning",
+      "topic": "chihuahua",
       "tags": [
-        "thesocialreckoning",
-        "thesocial",
+        "chihuahua",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "who won mr olympia 2026",
+      "topic": "arthur fils",
       "tags": [
-        "whowonmrolympia2026",
-        "whowon",
+        "arthurfils",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "tucker carlson",
+      "topic": "case keenum",
       "tags": [
-        "tuckercarlson",
+        "casekeenum",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "anthropic",
+      "topic": "broncos coach",
       "tags": [
-        "anthropic",
+        "broncoscoach",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "scarlett johansson",
+      "topic": "sean mcvay wife",
       "tags": [
-        "scarlettjohansson",
+        "seanmcvaywife",
+        "seanmcvay",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
