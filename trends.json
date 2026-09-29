@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-28T05:43:56Z",
+  "generated_at": "2026-09-29T06:01:06Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "cycling",
+      "topic": "rui takahashi",
       "tags": [
-        "cycling",
+        "ruitakahashi",
         "viral",
         "trending",
         "fyp"
@@ -16,50 +16,6 @@
     },
     {
       "id": 2,
-      "category": "General Viral",
-      "topic": "swimming",
-      "tags": [
-        "swimming",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 3,
-      "category": "General Viral",
-      "topic": "russia",
-      "tags": [
-        "russia",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 4,
-      "category": "General Viral",
-      "topic": "eagles vs bears",
-      "tags": [
-        "eaglesvsbears",
-        "eaglesvs",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 5,
-      "category": "General Viral",
-      "topic": "chihuahua",
-      "tags": [
-        "chihuahua",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 6,
       "category": "General Viral",
       "topic": "arthur fils",
       "tags": [
@@ -70,22 +26,66 @@
       ]
     },
     {
-      "id": 7,
+      "id": 3,
       "category": "General Viral",
-      "topic": "case keenum",
+      "topic": "hurricane nolo",
       "tags": [
-        "casekeenum",
+        "hurricanenolo",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
+      "id": 4,
+      "category": "General Viral",
+      "topic": "jimmy kimmel",
+      "tags": [
+        "jimmykimmel",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "General Viral",
+      "topic": "josh hartnett",
+      "tags": [
+        "joshhartnett",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "ken paxton",
+      "tags": [
+        "kenpaxton",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "las vegas weather",
+      "tags": [
+        "lasvegasweather",
+        "lasvegas",
+        "viral",
+        "trending"
+      ]
+    },
+    {
       "id": 8,
       "category": "General Viral",
-      "topic": "broncos coach",
+      "topic": "kristen bell",
       "tags": [
-        "broncoscoach",
+        "kristenbell",
         "viral",
         "trending",
         "fyp"
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "sean mcvay wife",
+      "topic": "did jackie chan die",
       "tags": [
-        "seanmcvaywife",
-        "seanmcvay",
+        "didjackiechandie",
+        "didjackie",
         "viral",
         "trending"
       ]
