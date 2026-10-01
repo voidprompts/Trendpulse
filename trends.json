@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-30T05:50:26Z",
+  "generated_at": "2026-10-01T06:23:54Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "tommy paul",
+      "topic": "quentin halys",
       "tags": [
-        "tommypaul",
+        "quentinhalys",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "maya joint",
+      "topic": "lamelo ball",
       "tags": [
-        "mayajoint",
+        "lameloball",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "mason miller",
+      "topic": "frances tiafoe",
       "tags": [
-        "masonmiller",
+        "francestiafoe",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "sean burke",
+      "topic": "florence pugh",
       "tags": [
-        "seanburke",
+        "florencepugh",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "casino",
+      "topic": "jim carrey",
       "tags": [
-        "casino",
+        "jimcarrey",
         "viral",
         "trending",
         "fyp"
@@ -61,31 +61,31 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "joe musgrove",
+      "topic": "nlds schedule 2026",
       "tags": [
-        "joemusgrove",
+        "nldsschedule2026",
+        "nldsschedule",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "hailee steinfeld",
+      "topic": "mlb postseason bracket",
       "tags": [
-        "haileesteinfeld",
+        "mlbpostseasonbracket",
+        "mlbpostseason",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "amy schumer",
+      "topic": "pete crow-armstrong",
       "tags": [
-        "amyschumer",
+        "petecrowarmstrong",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "ty france",
+      "topic": "mlb bracket 2026",
       "tags": [
-        "tyfrance",
+        "mlbbracket2026",
+        "mlbbracket",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
