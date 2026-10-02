@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-01T06:23:54Z",
+  "generated_at": "2026-10-02T06:01:14Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "quentin halys",
+      "topic": "stefanos tsitsipas",
       "tags": [
-        "quentinhalys",
+        "stefanostsitsipas",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "lamelo ball",
+      "topic": "dave franco",
       "tags": [
-        "lameloball",
+        "davefranco",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "frances tiafoe",
+      "topic": "aftershock 2026",
       "tags": [
-        "francestiafoe",
+        "aftershock2026",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "florence pugh",
+      "topic": "zach galifianakis",
       "tags": [
-        "florencepugh",
+        "zachgalifianakis",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "jim carrey",
+      "topic": "drake",
       "tags": [
-        "jimcarrey",
+        "drake",
         "viral",
         "trending",
         "fyp"
@@ -61,21 +61,21 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "nlds schedule 2026",
+      "topic": "seth meyers",
       "tags": [
-        "nldsschedule2026",
-        "nldsschedule",
+        "sethmeyers",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "mlb postseason bracket",
+      "topic": "mexico vs usa",
       "tags": [
-        "mlbpostseasonbracket",
-        "mlbpostseason",
+        "mexicovsusa",
+        "mexicovs",
         "viral",
         "trending"
       ]
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "pete crow-armstrong",
+      "topic": "john oliver",
       "tags": [
-        "petecrowarmstrong",
+        "johnoliver",
         "viral",
         "trending",
         "fyp"
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "mlb bracket 2026",
+      "topic": "draw you out noah kahan",
       "tags": [
-        "mlbbracket2026",
-        "mlbbracket",
+        "drawyououtnoahkahan",
+        "drawyou",
         "viral",
         "trending"
       ]
