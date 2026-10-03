@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-02T06:01:14Z",
+  "generated_at": "2026-10-03T05:36:33Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "stefanos tsitsipas",
+      "topic": "vaibhav sooryavanshi",
       "tags": [
-        "stefanostsitsipas",
+        "vaibhavsooryavanshi",
         "viral",
         "trending",
         "fyp"
@@ -17,20 +17,20 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "dave franco",
+      "topic": "mater dei football",
       "tags": [
-        "davefranco",
+        "materdeifootball",
+        "materdei",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "aftershock 2026",
+      "topic": "payton talbott",
       "tags": [
-        "aftershock2026",
+        "paytontalbott",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "zach galifianakis",
+      "topic": "abhishek sharma",
       "tags": [
-        "zachgalifianakis",
+        "abhisheksharma",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "drake",
+      "topic": "liga mx femenil",
       "tags": [
-        "drake",
+        "ligamxfemenil",
+        "ligamx",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "seth meyers",
+      "topic": "october 3rd",
       "tags": [
-        "sethmeyers",
+        "october3rd",
         "viral",
         "trending",
         "fyp"
@@ -72,20 +72,20 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "mexico vs usa",
+      "topic": "carlos alcaraz",
       "tags": [
-        "mexicovsusa",
-        "mexicovs",
+        "carlosalcaraz",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "john oliver",
+      "topic": "cricinfo",
       "tags": [
-        "johnoliver",
+        "cricinfo",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "draw you out noah kahan",
+      "topic": "bernie sanders",
       "tags": [
-        "drawyououtnoahkahan",
-        "drawyou",
+        "berniesanders",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
