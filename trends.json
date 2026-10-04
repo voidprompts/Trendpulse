@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-03T05:36:33Z",
+  "generated_at": "2026-10-04T06:11:59Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "vaibhav sooryavanshi",
+      "topic": "f1 schedule",
       "tags": [
-        "vaibhavsooryavanshi",
+        "f1schedule",
         "viral",
         "trending",
         "fyp"
@@ -17,20 +17,20 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "mater dei football",
+      "topic": "karen khachanov",
       "tags": [
-        "materdeifootball",
-        "materdei",
+        "karenkhachanov",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "payton talbott",
+      "topic": "japan open",
       "tags": [
-        "paytontalbott",
+        "japanopen",
         "viral",
         "trending",
         "fyp"
@@ -39,38 +39,27 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "abhishek sharma",
+      "topic": "friday the 13th",
       "tags": [
-        "abhisheksharma",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 5,
-      "category": "General Viral",
-      "topic": "liga mx femenil",
-      "tags": [
-        "ligamxfemenil",
-        "ligamx",
+        "fridaythe13th",
+        "fridaythe",
         "viral",
         "trending"
       ]
     },
     {
-      "id": 6,
+      "id": 5,
       "category": "General Viral",
-      "topic": "october 3rd",
+      "topic": "thomas randolph",
       "tags": [
-        "october3rd",
+        "thomasrandolph",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
-      "id": 7,
+      "id": 6,
       "category": "General Viral",
       "topic": "carlos alcaraz",
       "tags": [
@@ -81,11 +70,22 @@
       ]
     },
     {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "michael che",
+      "tags": [
+        "michaelche",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
       "id": 8,
       "category": "General Viral",
-      "topic": "cricinfo",
+      "topic": "milwaukee weather",
       "tags": [
-        "cricinfo",
+        "milwaukeeweather",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "bernie sanders",
+      "topic": "iran currency",
       "tags": [
-        "berniesanders",
+        "irancurrency",
         "viral",
         "trending",
         "fyp"
