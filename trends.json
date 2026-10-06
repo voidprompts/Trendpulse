@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-05T06:04:38Z",
+  "generated_at": "2026-10-06T06:44:02Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "iva jovic",
+      "topic": "ny measles outbreak",
       "tags": [
-        "ivajovic",
+        "nymeaslesoutbreak",
+        "nymeasles",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "debt crisis",
+      "topic": "michael zheng",
       "tags": [
-        "debtcrisis",
+        "michaelzheng",
         "viral",
         "trending",
         "fyp"
@@ -28,20 +28,20 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "ecuador vs panama",
+      "topic": "diamond brown",
       "tags": [
-        "ecuadorvspanama",
-        "ecuadorvs",
+        "diamondbrown",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "iga świątek",
+      "topic": "bryn walker",
       "tags": [
-        "igaświątek",
+        "brynwalker",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "saints vs falcons",
+      "topic": "kristen wiig",
       "tags": [
-        "saintsvsfalcons",
-        "saintsvs",
+        "kristenwiig",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "alex rodriguez",
+      "topic": "chris mañon",
       "tags": [
-        "alexrodriguez",
+        "chrismañon",
         "viral",
         "trending",
         "fyp"
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "falcons vs saints",
+      "topic": "ghost seed round",
       "tags": [
-        "falconsvssaints",
-        "falconsvs",
+        "ghostseedround",
+        "ghostseed",
         "viral",
         "trending"
       ]
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "derek jeter",
+      "topic": "anojan sivarasa",
       "tags": [
-        "derekjeter",
+        "anojansivarasa",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "nfc south",
+      "topic": "revoke us citizenship",
       "tags": [
-        "nfcsouth",
+        "revokeuscitizenship",
+        "revokeus",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
