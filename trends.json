@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-07T06:19:48Z",
+  "generated_at": "2026-10-08T06:31:05Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "adrian mannarino",
+      "topic": "hubert hurkacz",
       "tags": [
-        "adrianmannarino",
+        "huberthurkacz",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "julio iglesias",
+      "topic": "matteo arnaldi",
       "tags": [
-        "julioiglesias",
+        "matteoarnaldi",
         "viral",
         "trending",
         "fyp"
@@ -28,20 +28,20 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "jaguar type 01",
+      "topic": "dylan sprouse",
       "tags": [
-        "jaguartype01",
-        "jaguartype",
+        "dylansprouse",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "iga swiatek",
+      "topic": "mlb schedule",
       "tags": [
-        "igaswiatek",
+        "mlbschedule",
         "viral",
         "trending",
         "fyp"
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "cia officer gold bars",
+      "topic": "fleet week sf",
       "tags": [
-        "ciaofficergoldbars",
-        "ciaofficer",
+        "fleetweeksf",
+        "fleetweek",
         "viral",
         "trending"
       ]
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "iva jovic",
+      "topic": "shanghai masters",
       "tags": [
-        "ivajovic",
+        "shanghaimasters",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "iga świątek",
+      "topic": "alex rodriguez",
       "tags": [
-        "igaświątek",
+        "alexrodriguez",
         "viral",
         "trending",
         "fyp"
@@ -83,21 +83,21 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "내일 날씨",
+      "topic": "anime zero codes",
       "tags": [
-        "내일날씨",
+        "animezerocodes",
+        "animezero",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "padres game tomorrow",
+      "topic": "us immigration and customs enforcement",
       "tags": [
-        "padresgametomorrow",
-        "padresgame",
+        "usimmigrationandcustomsenforcement",
+        "usimmigration",
         "viral",
         "trending"
       ]
