@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-08T06:31:05Z",
+  "generated_at": "2026-10-09T06:32:22Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "hubert hurkacz",
+      "topic": "kia tigers",
       "tags": [
-        "huberthurkacz",
+        "kiatigers",
         "viral",
         "trending",
         "fyp"
@@ -17,20 +17,20 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "matteo arnaldi",
+      "topic": "mw4 release date",
       "tags": [
-        "matteoarnaldi",
+        "mw4releasedate",
+        "mw4release",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "dylan sprouse",
+      "topic": "tom blyth",
       "tags": [
-        "dylansprouse",
+        "tomblyth",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "mlb schedule",
+      "topic": "brandon nakashima",
       "tags": [
-        "mlbschedule",
+        "brandonnakashima",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "fleet week sf",
+      "topic": "angela bassett",
       "tags": [
-        "fleetweeksf",
-        "fleetweek",
+        "angelabassett",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "shanghai masters",
+      "topic": "alexander blockx",
       "tags": [
-        "shanghaimasters",
+        "alexanderblockx",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "alex rodriguez",
+      "topic": "casey desantis",
       "tags": [
-        "alexrodriguez",
+        "caseydesantis",
         "viral",
         "trending",
         "fyp"
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "anime zero codes",
+      "topic": "new york times the",
       "tags": [
-        "animezerocodes",
-        "animezero",
+        "newyorktimesthe",
+        "newyork",
         "viral",
         "trending"
       ]
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "us immigration and customs enforcement",
+      "topic": "afg vs ban",
       "tags": [
-        "usimmigrationandcustomsenforcement",
-        "usimmigration",
+        "afgvsban",
+        "afgvs",
         "viral",
         "trending"
       ]
