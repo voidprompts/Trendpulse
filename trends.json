@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-09T06:32:22Z",
+  "generated_at": "2026-10-10T06:14:30Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "kia tigers",
+      "topic": "heidi horton",
       "tags": [
-        "kiatigers",
+        "heidihorton",
         "viral",
         "trending",
         "fyp"
@@ -17,16 +17,60 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "mw4 release date",
+      "topic": "new zealand vs australia",
       "tags": [
-        "mw4releasedate",
-        "mw4release",
+        "newzealandvsaustralia",
+        "newzealand",
         "viral",
         "trending"
       ]
     },
     {
       "id": 3,
+      "category": "General Viral",
+      "topic": "serie a",
+      "tags": [
+        "seriea",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "General Viral",
+      "topic": "psg",
+      "tags": [
+        "psg",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "General Viral",
+      "topic": "mrbeast",
+      "tags": [
+        "mrbeast",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "snapdragon stadium",
+      "tags": [
+        "snapdragonstadium",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 7,
       "category": "General Viral",
       "topic": "tom blyth",
       "tags": [
@@ -37,67 +81,23 @@
       ]
     },
     {
-      "id": 4,
-      "category": "General Viral",
-      "topic": "brandon nakashima",
-      "tags": [
-        "brandonnakashima",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 5,
-      "category": "General Viral",
-      "topic": "angela bassett",
-      "tags": [
-        "angelabassett",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 6,
-      "category": "General Viral",
-      "topic": "alexander blockx",
-      "tags": [
-        "alexanderblockx",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 7,
-      "category": "General Viral",
-      "topic": "casey desantis",
-      "tags": [
-        "caseydesantis",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
       "id": 8,
       "category": "General Viral",
-      "topic": "new york times the",
+      "topic": "cameron douglas",
       "tags": [
-        "newyorktimesthe",
-        "newyork",
+        "camerondouglas",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "afg vs ban",
+      "topic": "felix auger aliassime",
       "tags": [
-        "afgvsban",
-        "afgvs",
+        "felixaugeraliassime",
+        "felixauger",
         "viral",
         "trending"
       ]
