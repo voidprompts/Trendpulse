@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-10T06:14:30Z",
+  "generated_at": "2026-10-11T06:13:49Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "heidi horton",
+      "topic": "rhamondre stevenson",
       "tags": [
-        "heidihorton",
+        "rhamondrestevenson",
         "viral",
         "trending",
         "fyp"
@@ -17,42 +17,42 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "new zealand vs australia",
+      "topic": "ai games",
       "tags": [
-        "newzealandvsaustralia",
-        "newzealand",
+        "aigames",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "serie a",
+      "topic": "posiciones de club américa contra club de fútbol monterrey",
       "tags": [
-        "seriea",
+        "posicionesdeclubaméricacontraclubdefútbolmonterrey",
+        "posicionesde",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "psg",
+      "topic": "mw4 release date",
       "tags": [
-        "psg",
+        "mw4releasedate",
+        "mw4release",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "mrbeast",
+      "topic": "911",
       "tags": [
-        "mrbeast",
+        "911",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "snapdragon stadium",
+      "topic": "carlos álvarez",
       "tags": [
-        "snapdragonstadium",
+        "carlosálvarez",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "tom blyth",
+      "topic": "miguel borja",
       "tags": [
-        "tomblyth",
+        "miguelborja",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "cameron douglas",
+      "topic": "new girl",
       "tags": [
-        "camerondouglas",
+        "newgirl",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "felix auger aliassime",
+      "topic": "cristian borja",
       "tags": [
-        "felixaugeraliassime",
-        "felixauger",
+        "cristianborja",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
