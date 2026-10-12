@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-11T06:13:49Z",
+  "generated_at": "2026-10-12T06:21:41Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "rhamondre stevenson",
+      "topic": "blueface",
       "tags": [
-        "rhamondrestevenson",
+        "blueface",
         "viral",
         "trending",
         "fyp"
@@ -17,21 +17,21 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "ai games",
+      "topic": "united states midterm election",
       "tags": [
-        "aigames",
+        "unitedstatesmidtermelection",
+        "unitedstates",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "posiciones de club américa contra club de fútbol monterrey",
+      "topic": "nfl lamar jackson injury",
       "tags": [
-        "posicionesdeclubaméricacontraclubdefútbolmonterrey",
-        "posicionesde",
+        "nfllamarjacksoninjury",
+        "nfllamar",
         "viral",
         "trending"
       ]
@@ -39,20 +39,20 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "mw4 release date",
+      "topic": "hugh jackman",
       "tags": [
-        "mw4releasedate",
-        "mw4release",
+        "hughjackman",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "911",
+      "topic": "eugenio derbez",
       "tags": [
-        "911",
+        "eugenioderbez",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "carlos álvarez",
+      "topic": "1980s",
       "tags": [
-        "carlosálvarez",
+        "1980s",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "miguel borja",
+      "topic": "janice tjen",
       "tags": [
-        "miguelborja",
+        "janicetjen",
         "viral",
         "trending",
         "fyp"
@@ -83,20 +83,20 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "new girl",
+      "topic": "uefa champions league",
       "tags": [
-        "newgirl",
+        "uefachampionsleague",
+        "uefachampions",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "cristian borja",
+      "topic": "lakers news",
       "tags": [
-        "cristianborja",
+        "lakersnews",
         "viral",
         "trending",
         "fyp"
