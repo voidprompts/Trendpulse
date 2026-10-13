@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-12T06:21:41Z",
+  "generated_at": "2026-10-13T07:00:06Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "blueface",
+      "topic": "sorana cirstea",
       "tags": [
-        "blueface",
+        "soranacirstea",
         "viral",
         "trending",
         "fyp"
@@ -17,31 +17,31 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "united states midterm election",
+      "topic": "mayar sherif",
       "tags": [
-        "unitedstatesmidtermelection",
-        "unitedstates",
+        "mayarsherif",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "nfl lamar jackson injury",
+      "topic": "maja chwalińska",
       "tags": [
-        "nfllamarjacksoninjury",
-        "nfllamar",
+        "majachwalińska",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "hugh jackman",
+      "topic": "inundación",
       "tags": [
-        "hughjackman",
+        "inundación",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "eugenio derbez",
+      "topic": "lakers news",
       "tags": [
-        "eugenioderbez",
+        "lakersnews",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "1980s",
+      "topic": "kate winslet",
       "tags": [
-        "1980s",
+        "katewinslet",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "janice tjen",
+      "topic": "a20 lite",
       "tags": [
-        "janicetjen",
+        "a20lite",
         "viral",
         "trending",
         "fyp"
@@ -83,23 +83,23 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "uefa champions league",
+      "topic": "yulia putintseva",
       "tags": [
-        "uefachampionsleague",
-        "uefachampions",
+        "yuliaputintseva",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "lakers news",
+      "topic": "hunger games movies",
       "tags": [
-        "lakersnews",
+        "hungergamesmovies",
+        "hungergames",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
