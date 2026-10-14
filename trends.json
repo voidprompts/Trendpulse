@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-13T07:00:06Z",
+  "generated_at": "2026-10-14T05:14:21Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "sorana cirstea",
+      "topic": "jodar",
       "tags": [
-        "soranacirstea",
+        "jodar",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "mayar sherif",
+      "topic": "bob mackie",
       "tags": [
-        "mayarsherif",
+        "bobmackie",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "maja chwalińska",
+      "topic": "macklin celebrini",
       "tags": [
-        "majachwalińska",
+        "macklincelebrini",
         "viral",
         "trending",
         "fyp"
@@ -39,20 +39,20 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "inundación",
+      "topic": "kansas city tornado warning",
       "tags": [
-        "inundación",
+        "kansascitytornadowarning",
+        "kansascity",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "lakers news",
+      "topic": "marie bouzkova",
       "tags": [
-        "lakersnews",
+        "mariebouzkova",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "kate winslet",
+      "topic": "chicago weather",
       "tags": [
-        "katewinslet",
+        "chicagoweather",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "a20 lite",
+      "topic": "dalton knecht",
       "tags": [
-        "a20lite",
+        "daltonknecht",
         "viral",
         "trending",
         "fyp"
@@ -83,23 +83,23 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "yulia putintseva",
+      "topic": "botic van de zandschulp",
       "tags": [
-        "yuliaputintseva",
+        "boticvandezandschulp",
+        "boticvan",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "hunger games movies",
+      "topic": "the punisher",
       "tags": [
-        "hungergamesmovies",
-        "hungergames",
+        "thepunisher",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
