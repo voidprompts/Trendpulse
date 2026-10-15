@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-14T05:14:21Z",
+  "generated_at": "2026-10-15T05:01:30Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "jodar",
+      "topic": "jon jones",
       "tags": [
-        "jodar",
+        "jonjones",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "bob mackie",
+      "topic": "son heung-min",
       "tags": [
-        "bobmackie",
+        "sonheungmin",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "macklin celebrini",
+      "topic": "florence pugh",
       "tags": [
-        "macklincelebrini",
+        "florencepugh",
         "viral",
         "trending",
         "fyp"
@@ -39,20 +39,20 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "kansas city tornado warning",
+      "topic": "maria sakkari",
       "tags": [
-        "kansascitytornadowarning",
-        "kansascity",
+        "mariasakkari",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "marie bouzkova",
+      "topic": "natalie portman",
       "tags": [
-        "mariebouzkova",
+        "natalieportman",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "chicago weather",
+      "topic": "leighton meester",
       "tags": [
-        "chicagoweather",
+        "leightonmeester",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "dalton knecht",
+      "topic": "remain calm",
       "tags": [
-        "daltonknecht",
+        "remaincalm",
         "viral",
         "trending",
         "fyp"
@@ -83,23 +83,23 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "botic van de zandschulp",
+      "topic": "dean norris",
       "tags": [
-        "boticvandezandschulp",
-        "boticvan",
+        "deannorris",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "the punisher",
+      "topic": "atlético nacional - medellín",
       "tags": [
-        "thepunisher",
+        "atléticonacionalmedellín",
+        "atléticonacional",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
