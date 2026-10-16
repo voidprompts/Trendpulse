@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-15T05:01:30Z",
+  "generated_at": "2026-10-16T04:51:13Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "jon jones",
+      "topic": "coastal carolina football",
       "tags": [
-        "jonjones",
+        "coastalcarolinafootball",
+        "coastalcarolina",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "son heung-min",
+      "topic": "norm macdonald",
       "tags": [
-        "sonheungmin",
+        "normmacdonald",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "florence pugh",
+      "topic": "bulgaria",
       "tags": [
-        "florencepugh",
+        "bulgaria",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "maria sakkari",
+      "topic": "derek jeter",
       "tags": [
-        "mariasakkari",
+        "derekjeter",
         "viral",
         "trending",
         "fyp"
@@ -50,31 +50,31 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "natalie portman",
+      "topic": "northern lights tonight",
       "tags": [
-        "natalieportman",
+        "northernlightstonight",
+        "northernlights",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "leighton meester",
+      "topic": "nfl playoff picture",
       "tags": [
-        "leightonmeester",
+        "nflplayoffpicture",
+        "nflplayoff",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "remain calm",
+      "topic": "miguel rojas",
       "tags": [
-        "remaincalm",
+        "miguelrojas",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "dean norris",
+      "topic": "amanda seyfried",
       "tags": [
-        "deannorris",
+        "amandaseyfried",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "atlético nacional - medellín",
+      "topic": "kim kardashian",
       "tags": [
-        "atléticonacionalmedellín",
-        "atléticonacional",
+        "kimkardashian",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
