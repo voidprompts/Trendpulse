@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-18T04:58:42Z",
+  "generated_at": "2026-10-19T05:06:44Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "what did elizabeth holmes do",
+      "topic": "ufc 333",
       "tags": [
-        "whatdidelizabethholmesdo",
-        "whatdid",
+        "ufc333",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "tucker carlson",
+      "topic": "leylah fernandez",
       "tags": [
-        "tuckercarlson",
+        "leylahfernandez",
         "viral",
         "trending",
         "fyp"
@@ -28,20 +28,20 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "dario amodei",
+      "topic": "stephen a smith",
       "tags": [
-        "darioamodei",
+        "stephenasmith",
+        "stephena",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "training day",
+      "topic": "fume",
       "tags": [
-        "trainingday",
+        "fume",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "utah mammoth",
+      "topic": "caty mcnally",
       "tags": [
-        "utahmammoth",
+        "catymcnally",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "justin timberlake",
+      "topic": "winona ryder",
       "tags": [
-        "justintimberlake",
+        "winonaryder",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "quentin tarantino",
+      "topic": "ningbo open",
       "tags": [
-        "quentintarantino",
+        "ningboopen",
         "viral",
         "trending",
         "fyp"
@@ -83,23 +83,23 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "jason sudeikis",
+      "topic": "football player dies",
       "tags": [
-        "jasonsudeikis",
+        "footballplayerdies",
+        "footballplayer",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "ap poll predictions",
+      "topic": "sinja kraus",
       "tags": [
-        "appollpredictions",
-        "appoll",
+        "sinjakraus",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
