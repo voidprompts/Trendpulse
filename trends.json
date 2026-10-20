@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-19T05:06:44Z",
+  "generated_at": "2026-10-20T05:08:43Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "ufc 333",
+      "topic": "mini",
       "tags": [
-        "ufc333",
+        "mini",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "leylah fernandez",
+      "topic": "behati prinsloo",
       "tags": [
-        "leylahfernandez",
+        "behatiprinsloo",
         "viral",
         "trending",
         "fyp"
@@ -28,20 +28,20 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "stephen a smith",
+      "topic": "portos",
       "tags": [
-        "stephenasmith",
-        "stephena",
+        "portos",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "fume",
+      "topic": "brest",
       "tags": [
-        "fume",
+        "brest",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "caty mcnally",
+      "topic": "irina shayk",
       "tags": [
-        "catymcnally",
+        "irinashayk",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "winona ryder",
+      "topic": "blueface",
       "tags": [
-        "winonaryder",
+        "blueface",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "ningbo open",
+      "topic": "jayson tatum",
       "tags": [
-        "ningboopen",
+        "jaysontatum",
         "viral",
         "trending",
         "fyp"
@@ -83,20 +83,20 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "football player dies",
+      "topic": "nba schedule",
       "tags": [
-        "footballplayerdies",
-        "footballplayer",
+        "nbaschedule",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "sinja kraus",
+      "topic": "chandler riggs",
       "tags": [
-        "sinjakraus",
+        "chandlerriggs",
         "viral",
         "trending",
         "fyp"
