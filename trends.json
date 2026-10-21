@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-20T05:08:43Z",
+  "generated_at": "2026-10-21T05:10:02Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "mini",
+      "topic": "ana c reyes",
       "tags": [
-        "mini",
+        "anacreyes",
+        "anac",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "behati prinsloo",
+      "topic": "vgk",
       "tags": [
-        "behatiprinsloo",
+        "vgk",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "portos",
+      "topic": "погода завтра",
       "tags": [
-        "portos",
+        "погодазавтра",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "brest",
+      "topic": "andrew luster",
       "tags": [
-        "brest",
+        "andrewluster",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "irina shayk",
+      "topic": "toledo",
       "tags": [
-        "irinashayk",
+        "toledo",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "blueface",
+      "topic": "lilli tagger",
       "tags": [
-        "blueface",
+        "lillitagger",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "jayson tatum",
+      "topic": "thunder schedule",
       "tags": [
-        "jaysontatum",
+        "thunderschedule",
         "viral",
         "trending",
         "fyp"
@@ -83,20 +83,20 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "nba schedule",
+      "topic": "chain reaction jack reacher release",
       "tags": [
-        "nbaschedule",
+        "chainreactionjackreacherrelease",
+        "chainreaction",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "chandler riggs",
+      "topic": "zazie beetz",
       "tags": [
-        "chandlerriggs",
+        "zaziebeetz",
         "viral",
         "trending",
         "fyp"
