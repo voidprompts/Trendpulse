@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-21T05:10:02Z",
+  "generated_at": "2026-10-22T05:14:17Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "ana c reyes",
+      "topic": "liam neeson",
       "tags": [
-        "anacreyes",
-        "anac",
+        "liamneeson",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "vgk",
+      "topic": "nikola jokic",
       "tags": [
-        "vgk",
+        "nikolajokic",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "погода завтра",
+      "topic": "mahershala ali",
       "tags": [
-        "погодазавтра",
+        "mahershalaali",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "andrew luster",
+      "topic": "cleveland cavaliers",
       "tags": [
-        "andrewluster",
+        "clevelandcavaliers",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "toledo",
+      "topic": "caleb williams stats",
       "tags": [
-        "toledo",
+        "calebwilliamsstats",
+        "calebwilliams",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "lilli tagger",
+      "topic": "kobe bryant",
       "tags": [
-        "lillitagger",
+        "kobebryant",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "thunder schedule",
+      "topic": "precious achiuwa",
       "tags": [
-        "thunderschedule",
+        "preciousachiuwa",
         "viral",
         "trending",
         "fyp"
@@ -83,10 +83,10 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "chain reaction jack reacher release",
+      "topic": "final fantasy resonance",
       "tags": [
-        "chainreactionjackreacherrelease",
-        "chainreaction",
+        "finalfantasyresonance",
+        "finalfantasy",
         "viral",
         "trending"
       ]
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "zazie beetz",
+      "topic": "ultron",
       "tags": [
-        "zaziebeetz",
+        "ultron",
         "viral",
         "trending",
         "fyp"
