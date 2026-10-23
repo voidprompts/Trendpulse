@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-22T05:14:17Z",
+  "generated_at": "2026-10-23T05:12:47Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "liam neeson",
+      "topic": "ashlyn krueger",
       "tags": [
-        "liamneeson",
+        "ashlynkrueger",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "nikola jokic",
+      "topic": "talia gibson",
       "tags": [
-        "nikolajokic",
+        "taliagibson",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "mahershala ali",
+      "topic": "金正恩",
       "tags": [
-        "mahershalaali",
+        "金正恩",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "cleveland cavaliers",
+      "topic": "村上龍",
       "tags": [
-        "clevelandcavaliers",
+        "村上龍",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "caleb williams stats",
+      "topic": "taika waititi",
       "tags": [
-        "calebwilliamsstats",
-        "calebwilliams",
+        "taikawaititi",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "kobe bryant",
+      "topic": "blake griffin",
       "tags": [
-        "kobebryant",
+        "blakegriffin",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "precious achiuwa",
+      "topic": "kris jenner",
       "tags": [
-        "preciousachiuwa",
+        "krisjenner",
         "viral",
         "trending",
         "fyp"
@@ -83,20 +83,20 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "final fantasy resonance",
+      "topic": "joe manganiello",
       "tags": [
-        "finalfantasyresonance",
-        "finalfantasy",
+        "joemanganiello",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "ultron",
+      "topic": "chet holmgren",
       "tags": [
-        "ultron",
+        "chetholmgren",
         "viral",
         "trending",
         "fyp"
