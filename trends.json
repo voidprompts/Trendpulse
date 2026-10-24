@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-23T05:12:47Z",
+  "generated_at": "2026-10-24T04:55:18Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "ashlyn krueger",
+      "topic": "ja morant",
       "tags": [
-        "ashlynkrueger",
+        "jamorant",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "talia gibson",
+      "topic": "stephen curry",
       "tags": [
-        "taliagibson",
+        "stephencurry",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "金正恩",
+      "topic": "jrue holiday",
       "tags": [
-        "金正恩",
+        "jrueholiday",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "村上龍",
+      "topic": "kevon looney",
       "tags": [
-        "村上龍",
+        "kevonlooney",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "taika waititi",
+      "topic": "draymond green",
       "tags": [
-        "taikawaititi",
+        "draymondgreen",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "blake griffin",
+      "topic": "donna mills",
       "tags": [
-        "blakegriffin",
+        "donnamills",
         "viral",
         "trending",
         "fyp"
@@ -72,31 +72,31 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "kris jenner",
+      "topic": "warriors game today",
       "tags": [
-        "krisjenner",
+        "warriorsgametoday",
+        "warriorsgame",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "joe manganiello",
+      "topic": "jonathan taylor trade",
       "tags": [
-        "joemanganiello",
+        "jonathantaylortrade",
+        "jonathantaylor",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "chet holmgren",
+      "topic": "malik monk",
       "tags": [
-        "chetholmgren",
+        "malikmonk",
         "viral",
         "trending",
         "fyp"
