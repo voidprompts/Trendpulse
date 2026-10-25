@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-24T04:55:18Z",
+  "generated_at": "2026-10-25T05:07:27Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "ja morant",
+      "topic": "leonardo dicaprio",
       "tags": [
-        "jamorant",
+        "leonardodicaprio",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "stephen curry",
+      "topic": "willie fritz",
       "tags": [
-        "stephencurry",
+        "williefritz",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "jrue holiday",
+      "topic": "david eby",
       "tags": [
-        "jrueholiday",
+        "davideby",
         "viral",
         "trending",
         "fyp"
@@ -39,20 +39,20 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "kevon looney",
+      "topic": "gary payton ii",
       "tags": [
-        "kevonlooney",
+        "garypaytonii",
+        "garypayton",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "draymond green",
+      "topic": "luke kennard",
       "tags": [
-        "draymondgreen",
+        "lukekennard",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "donna mills",
+      "topic": "georges niang",
       "tags": [
-        "donnamills",
+        "georgesniang",
         "viral",
         "trending",
         "fyp"
@@ -72,31 +72,31 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "warriors game today",
+      "topic": "gui santos",
       "tags": [
-        "warriorsgametoday",
-        "warriorsgame",
+        "guisantos",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "jonathan taylor trade",
+      "topic": "sec standings",
       "tags": [
-        "jonathantaylortrade",
-        "jonathantaylor",
+        "secstandings",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "malik monk",
+      "topic": "from show",
       "tags": [
-        "malikmonk",
+        "fromshow",
         "viral",
         "trending",
         "fyp"
