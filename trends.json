@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-25T05:07:27Z",
+  "generated_at": "2026-10-26T05:10:04Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "leonardo dicaprio",
+      "topic": "kody brown",
       "tags": [
-        "leonardodicaprio",
+        "kodybrown",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "willie fritz",
+      "topic": "kirill kaprizov",
       "tags": [
-        "williefritz",
+        "kirillkaprizov",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "david eby",
+      "topic": "laika studios",
       "tags": [
-        "davideby",
+        "laikastudios",
         "viral",
         "trending",
         "fyp"
@@ -39,10 +39,10 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "gary payton ii",
+      "topic": "attack on titan",
       "tags": [
-        "garypaytonii",
-        "garypayton",
+        "attackontitan",
+        "attackon",
         "viral",
         "trending"
       ]
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "luke kennard",
+      "topic": "cyclist",
       "tags": [
-        "lukekennard",
+        "cyclist",
         "viral",
         "trending",
         "fyp"
@@ -61,20 +61,20 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "georges niang",
+      "topic": "xbox fifty new games release",
       "tags": [
-        "georgesniang",
+        "xboxfiftynewgamesrelease",
+        "xboxfifty",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "gui santos",
+      "topic": "canelo fight",
       "tags": [
-        "guisantos",
+        "canelofight",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "sec standings",
+      "topic": "canelo",
       "tags": [
-        "secstandings",
+        "canelo",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "from show",
+      "topic": "anaheim",
       "tags": [
-        "fromshow",
+        "anaheim",
         "viral",
         "trending",
         "fyp"
