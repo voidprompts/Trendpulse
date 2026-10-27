@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-26T05:10:04Z",
+  "generated_at": "2026-10-27T05:24:45Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "kody brown",
+      "topic": "aaron sorkin",
       "tags": [
-        "kodybrown",
+        "aaronsorkin",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "kirill kaprizov",
+      "topic": "diane parry",
       "tags": [
-        "kirillkaprizov",
+        "dianeparry",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "laika studios",
+      "topic": "liev schreiber",
       "tags": [
-        "laikastudios",
+        "lievschreiber",
         "viral",
         "trending",
         "fyp"
@@ -39,20 +39,20 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "attack on titan",
+      "topic": "kaitlin quevedo",
       "tags": [
-        "attackontitan",
-        "attackon",
+        "kaitlinquevedo",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "cyclist",
+      "topic": "nithya raman",
       "tags": [
-        "cyclist",
+        "nithyaraman",
         "viral",
         "trending",
         "fyp"
@@ -61,20 +61,20 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "xbox fifty new games release",
+      "topic": "connie britton",
       "tags": [
-        "xboxfiftynewgamesrelease",
-        "xboxfifty",
+        "conniebritton",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "canelo fight",
+      "topic": "kris jenner",
       "tags": [
-        "canelofight",
+        "krisjenner",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "canelo",
+      "topic": "efl cup",
       "tags": [
-        "canelo",
+        "eflcup",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "anaheim",
+      "topic": "cam whitmore",
       "tags": [
-        "anaheim",
+        "camwhitmore",
         "viral",
         "trending",
         "fyp"
