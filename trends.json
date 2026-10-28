@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-27T05:24:45Z",
+  "generated_at": "2026-10-28T06:05:20Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "aaron sorkin",
+      "topic": "jake laravia",
       "tags": [
-        "aaronsorkin",
+        "jakelaravia",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "diane parry",
+      "topic": "shaedon sharpe",
       "tags": [
-        "dianeparry",
+        "shaedonsharpe",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "liev schreiber",
+      "topic": "russell westbrook",
       "tags": [
-        "lievschreiber",
+        "russellwestbrook",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "kaitlin quevedo",
+      "topic": "war",
       "tags": [
-        "kaitlinquevedo",
+        "war",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "nithya raman",
+      "topic": "micah nori",
       "tags": [
-        "nithyaraman",
+        "micahnori",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "connie britton",
+      "topic": "snowfall",
       "tags": [
-        "conniebritton",
+        "snowfall",
         "viral",
         "trending",
         "fyp"
@@ -72,20 +72,20 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "kris jenner",
+      "topic": "the drop a snowfall saga episodes",
       "tags": [
-        "krisjenner",
+        "thedropasnowfallsagaepisodes",
+        "thedrop",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "efl cup",
+      "topic": "chris hemsworth",
       "tags": [
-        "eflcup",
+        "chrishemsworth",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "cam whitmore",
+      "topic": "caminero",
       "tags": [
-        "camwhitmore",
+        "caminero",
         "viral",
         "trending",
         "fyp"
