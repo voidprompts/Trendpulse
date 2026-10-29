@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-28T06:05:20Z",
+  "generated_at": "2026-10-29T06:16:21Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "jake laravia",
+      "topic": "final jeopardy today",
       "tags": [
-        "jakelaravia",
+        "finaljeopardytoday",
+        "finaljeopardy",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "shaedon sharpe",
+      "topic": "naomi osaka",
       "tags": [
-        "shaedonsharpe",
+        "naomiosaka",
         "viral",
         "trending",
         "fyp"
@@ -28,20 +28,20 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "russell westbrook",
+      "topic": "olimpia - cartaginés",
       "tags": [
-        "russellwestbrook",
+        "olimpiacartaginés",
+        "olimpia",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "war",
+      "topic": "gofundme",
       "tags": [
-        "war",
+        "gofundme",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "micah nori",
+      "topic": "dc universe",
       "tags": [
-        "micahnori",
+        "dcuniverse",
         "viral",
         "trending",
         "fyp"
@@ -61,21 +61,21 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "snowfall",
+      "topic": "steam ai games",
       "tags": [
-        "snowfall",
+        "steamaigames",
+        "steamai",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "the drop a snowfall saga episodes",
+      "topic": "san diego fc vs vancouver whitecaps fc standings",
       "tags": [
-        "thedropasnowfallsagaepisodes",
-        "thedrop",
+        "sandiegofcvsvancouverwhitecapsfcstandings",
+        "sandiego",
         "viral",
         "trending"
       ]
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "chris hemsworth",
+      "topic": "justin hartley",
       "tags": [
-        "chrishemsworth",
+        "justinhartley",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "caminero",
+      "topic": "zeynep sonmez",
       "tags": [
-        "caminero",
+        "zeynepsonmez",
         "viral",
         "trending",
         "fyp"
