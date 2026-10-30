@@ -1,47 +1,47 @@
 {
-  "generated_at": "2026-10-29T06:16:21Z",
+  "generated_at": "2026-10-30T06:17:13Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "final jeopardy today",
+      "topic": "mac",
       "tags": [
-        "finaljeopardytoday",
-        "finaljeopardy",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 2,
-      "category": "General Viral",
-      "topic": "naomi osaka",
-      "tags": [
-        "naomiosaka",
+        "mac",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
-      "id": 3,
+      "id": 2,
       "category": "General Viral",
-      "topic": "olimpia - cartaginés",
+      "topic": "fire detection system",
       "tags": [
-        "olimpiacartaginés",
-        "olimpia",
+        "firedetectionsystem",
+        "firedetection",
         "viral",
         "trending"
       ]
     },
     {
+      "id": 3,
+      "category": "General Viral",
+      "topic": "black friday",
+      "tags": [
+        "blackfriday",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
       "id": 4,
       "category": "General Viral",
-      "topic": "gofundme",
+      "topic": "cmg",
       "tags": [
-        "gofundme",
+        "cmg",
         "viral",
         "trending",
         "fyp"
@@ -50,42 +50,42 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "dc universe",
+      "topic": "cyber risk insurance",
       "tags": [
-        "dcuniverse",
+        "cyberriskinsurance",
+        "cyberrisk",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "dividend stocks",
+      "tags": [
+        "dividendstocks",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
-      "id": 6,
-      "category": "General Viral",
-      "topic": "steam ai games",
-      "tags": [
-        "steamaigames",
-        "steamai",
-        "viral",
-        "trending"
-      ]
-    },
-    {
       "id": 7,
       "category": "General Viral",
-      "topic": "san diego fc vs vancouver whitecaps fc standings",
+      "topic": "etf",
       "tags": [
-        "sandiegofcvsvancouverwhitecapsfcstandings",
-        "sandiego",
+        "etf",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "justin hartley",
+      "topic": "pokimane",
       "tags": [
-        "justinhartley",
+        "pokimane",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "zeynep sonmez",
+      "topic": "aj dybantsa stats",
       "tags": [
-        "zeynepsonmez",
+        "ajdybantsastats",
+        "ajdybantsa",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
