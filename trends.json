@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-30T06:17:13Z",
+  "generated_at": "2026-10-31T06:08:34Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "mac",
+      "topic": "state farm",
       "tags": [
-        "mac",
+        "statefarm",
         "viral",
         "trending",
         "fyp"
@@ -17,10 +17,10 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "fire detection system",
+      "topic": "hk vs pak",
       "tags": [
-        "firedetectionsystem",
-        "firedetection",
+        "hkvspak",
+        "hkvs",
         "viral",
         "trending"
       ]
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "black friday",
+      "topic": "ryan garcia",
       "tags": [
-        "blackfriday",
+        "ryangarcia",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "cmg",
+      "topic": "renato moicano",
       "tags": [
-        "cmg",
+        "renatomoicano",
         "viral",
         "trending",
         "fyp"
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "cyber risk insurance",
+      "topic": "evercold release date",
       "tags": [
-        "cyberriskinsurance",
-        "cyberrisk",
+        "evercoldreleasedate",
+        "evercoldrelease",
         "viral",
         "trending"
       ]
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "dividend stocks",
+      "topic": "bill skarsgård",
       "tags": [
-        "dividendstocks",
+        "billskarsgård",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "etf",
+      "topic": "diana shnaider",
       "tags": [
-        "etf",
+        "dianashnaider",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "pokimane",
+      "topic": "mia pohánková",
       "tags": [
-        "pokimane",
+        "miapohánková",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "aj dybantsa stats",
+      "topic": "hilary duff",
       "tags": [
-        "ajdybantsastats",
-        "ajdybantsa",
+        "hilaryduff",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
