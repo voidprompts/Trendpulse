@@ -1,80 +1,80 @@
 {
-  "generated_at": "2026-10-31T06:08:34Z",
+  "generated_at": "2026-11-01T06:39:14Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "state farm",
+      "topic": "aus vs afg",
       "tags": [
-        "statefarm",
+        "ausvsafg",
+        "ausvs",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "hk vs pak",
+      "topic": "bar",
       "tags": [
-        "hkvspak",
-        "hkvs",
+        "bar",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "ryan garcia",
+      "topic": "crimson desert game",
       "tags": [
-        "ryangarcia",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 4,
-      "category": "General Viral",
-      "topic": "renato moicano",
-      "tags": [
-        "renatomoicano",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 5,
-      "category": "General Viral",
-      "topic": "evercold release date",
-      "tags": [
-        "evercoldreleasedate",
-        "evercoldrelease",
+        "crimsondesertgame",
+        "crimsondesert",
         "viral",
         "trending"
       ]
     },
     {
-      "id": 6,
+      "id": 4,
       "category": "General Viral",
-      "topic": "bill skarsgård",
+      "topic": "winning powerball numbers",
       "tags": [
-        "billskarsgård",
+        "winningpowerballnumbers",
+        "winningpowerball",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "General Viral",
+      "topic": "rush hour",
+      "tags": [
+        "rushhour",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "oma vs pak",
+      "tags": [
+        "omavspak",
+        "omavs",
+        "viral",
+        "trending"
+      ]
+    },
+    {
       "id": 7,
       "category": "General Viral",
-      "topic": "diana shnaider",
+      "topic": "txst football",
       "tags": [
-        "dianashnaider",
+        "txstfootball",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "mia pohánková",
+      "topic": "bradley cooper",
       "tags": [
-        "miapohánková",
+        "bradleycooper",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "hilary duff",
+      "topic": "conor mcgregor",
       "tags": [
-        "hilaryduff",
+        "conormcgregor",
         "viral",
         "trending",
         "fyp"
