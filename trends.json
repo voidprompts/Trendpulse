@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-02T06:38:24Z",
+  "generated_at": "2026-11-03T07:07:52Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "fundraiser",
+      "topic": "talia gibson",
       "tags": [
-        "fundraiser",
+        "taliagibson",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "gta6",
+      "topic": "kamala harris",
       "tags": [
-        "gta6",
+        "kamalaharris",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "elsie hewitt",
+      "topic": "polymarket midterms",
       "tags": [
-        "elsiehewitt",
+        "polymarketmidterms",
         "viral",
         "trending",
         "fyp"
@@ -39,21 +39,21 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "last day to vote",
+      "topic": "jil teichmann",
       "tags": [
-        "lastdaytovote",
-        "lastday",
+        "jilteichmann",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "how to vote in the us midterms",
+      "topic": "dead by daylight",
       "tags": [
-        "howtovoteintheusmidterms",
-        "howto",
+        "deadbydaylight",
+        "deadby",
         "viral",
         "trending"
       ]
@@ -61,20 +61,20 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "stocks",
+      "topic": "la county measure a",
       "tags": [
-        "stocks",
+        "lacountymeasurea",
+        "lacounty",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "scoot",
+      "topic": "robin montgomery",
       "tags": [
-        "scoot",
+        "robinmontgomery",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "prop 43",
+      "topic": "stephen curry",
       "tags": [
-        "prop43",
+        "stephencurry",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "grambling state basketball",
+      "topic": "nba standings",
       "tags": [
-        "gramblingstatebasketball",
-        "gramblingstate",
+        "nbastandings",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
