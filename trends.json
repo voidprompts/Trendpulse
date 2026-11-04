@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-03T07:07:52Z",
+  "generated_at": "2026-11-04T06:54:04Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "talia gibson",
+      "topic": "ontario california election results",
       "tags": [
-        "taliagibson",
+        "ontariocaliforniaelectionresults",
+        "ontariocalifornia",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "kamala harris",
+      "topic": "bill huizenga",
       "tags": [
-        "kamalaharris",
+        "billhuizenga",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "polymarket midterms",
+      "topic": "brenton awa",
       "tags": [
-        "polymarketmidterms",
+        "brentonawa",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "jil teichmann",
+      "topic": "provisional ballots",
       "tags": [
-        "jilteichmann",
+        "provisionalballots",
         "viral",
         "trending",
         "fyp"
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "dead by daylight",
+      "topic": "street fighter film theater count drop",
       "tags": [
-        "deadbydaylight",
-        "deadby",
+        "streetfighterfilmtheatercountdrop",
+        "streetfighter",
         "viral",
         "trending"
       ]
@@ -61,20 +61,20 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "la county measure a",
+      "topic": "alina charaeva",
       "tags": [
-        "lacountymeasurea",
-        "lacounty",
+        "alinacharaeva",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "robin montgomery",
+      "topic": "katy tur",
       "tags": [
-        "robinmontgomery",
+        "katytur",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "stephen curry",
+      "topic": "mississippi senators",
       "tags": [
-        "stephencurry",
+        "mississippisenators",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "nba standings",
+      "topic": "runoff election",
       "tags": [
-        "nbastandings",
+        "runoffelection",
         "viral",
         "trending",
         "fyp"
