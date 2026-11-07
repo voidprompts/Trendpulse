@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-06T07:12:31Z",
+  "generated_at": "2026-11-07T06:26:14Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "when is black friday",
+      "topic": "angelina jolie",
       "tags": [
-        "whenisblackfriday",
-        "whenis",
+        "angelinajolie",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "tanker",
+      "topic": "cameron diaz",
       "tags": [
-        "tanker",
+        "camerondiaz",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "martin mcdonagh",
+      "topic": "lakers",
       "tags": [
-        "martinmcdonagh",
+        "lakers",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "michelle obama",
+      "topic": "austin reaves",
       "tags": [
-        "michelleobama",
+        "austinreaves",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "zeynep sonmez",
+      "topic": "stephon castle",
       "tags": [
-        "zeynepsonmez",
+        "stephoncastle",
         "viral",
         "trending",
         "fyp"
@@ -61,21 +61,21 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "did they vote",
+      "topic": "wilt chamberlain",
       "tags": [
-        "didtheyvote",
-        "didthey",
+        "wiltchamberlain",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "when is black friday 2026",
+      "topic": "trail blazers vs lakers",
       "tags": [
-        "whenisblackfriday2026",
-        "whenis",
+        "trailblazersvslakers",
+        "trailblazers",
         "viral",
         "trending"
       ]
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "claire liu",
+      "topic": "damian lillard",
       "tags": [
-        "claireliu",
+        "damianlillard",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "ryan clark",
+      "topic": "donovan clingan",
       "tags": [
-        "ryanclark",
+        "donovanclingan",
         "viral",
         "trending",
         "fyp"
