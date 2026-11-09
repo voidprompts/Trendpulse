@@ -1,58 +1,58 @@
 {
-  "generated_at": "2026-11-08T06:32:40Z",
+  "generated_at": "2026-11-09T07:01:51Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "ryan garcia",
+      "topic": "michaella love is blind",
       "tags": [
-        "ryangarcia",
+        "michaellaloveisblind",
+        "michaellalove",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "elon musk net worth",
+      "topic": "jimmy fallon",
       "tags": [
-        "elonmusknetworth",
-        "elonmusk",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 3,
-      "category": "General Viral",
-      "topic": "sunny deol",
-      "tags": [
-        "sunnydeol",
+        "jimmyfallon",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
-      "id": 4,
+      "id": 3,
       "category": "General Viral",
-      "topic": "i play rocky",
+      "topic": "rockstar gta 6 new screenshots",
       "tags": [
-        "iplayrocky",
-        "iplay",
+        "rockstargta6newscreenshots",
+        "rockstargta",
         "viral",
         "trending"
       ]
     },
     {
+      "id": 4,
+      "category": "General Viral",
+      "topic": "magda linette",
+      "tags": [
+        "magdalinette",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
       "id": 5,
       "category": "General Viral",
-      "topic": "connor mcdavid",
+      "topic": "杭州临平",
       "tags": [
-        "connormcdavid",
+        "杭州临平",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "dave chappelle",
+      "topic": "denzel washington",
       "tags": [
-        "davechappelle",
+        "denzelwashington",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "rey mysterio",
+      "topic": "janice tjen",
       "tags": [
-        "reymysterio",
+        "janicetjen",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "de'aaron fox",
+      "topic": "delhi aqi",
       "tags": [
-        "deaaronfox",
+        "delhiaqi",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "portland weather",
+      "topic": "claressa shields",
       "tags": [
-        "portlandweather",
+        "claressashields",
         "viral",
         "trending",
         "fyp"
