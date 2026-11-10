@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-09T07:01:51Z",
+  "generated_at": "2026-11-10T07:38:53Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "michaella love is blind",
+      "topic": "jamie dornan",
       "tags": [
-        "michaellaloveisblind",
-        "michaellalove",
+        "jamiedornan",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "jimmy fallon",
+      "topic": "leonardo dicaprio",
       "tags": [
-        "jimmyfallon",
+        "leonardodicaprio",
         "viral",
         "trending",
         "fyp"
@@ -28,20 +28,20 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "rockstar gta 6 new screenshots",
+      "topic": "pluto",
       "tags": [
-        "rockstargta6newscreenshots",
-        "rockstargta",
+        "pluto",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "magda linette",
+      "topic": "kayla harrison",
       "tags": [
-        "magdalinette",
+        "kaylaharrison",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "杭州临平",
+      "topic": "gabourey sidibe",
       "tags": [
-        "杭州临平",
+        "gaboureysidibe",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "denzel washington",
+      "topic": "disability",
       "tags": [
-        "denzelwashington",
+        "disability",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "janice tjen",
+      "topic": "adria arjona",
       "tags": [
-        "janicetjen",
+        "adriaarjona",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "delhi aqi",
+      "topic": "olivia cooke",
       "tags": [
-        "delhiaqi",
+        "oliviacooke",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "claressa shields",
+      "topic": "new zealand vs india",
       "tags": [
-        "claressashields",
+        "newzealandvsindia",
+        "newzealand",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
