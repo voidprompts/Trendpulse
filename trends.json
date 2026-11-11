@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-10T07:38:53Z",
+  "generated_at": "2026-11-11T06:57:18Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "jamie dornan",
+      "topic": "camp flog gnaw",
       "tags": [
-        "jamiedornan",
+        "campfloggnaw",
+        "campflog",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "leonardo dicaprio",
+      "topic": "ajay mitchell",
       "tags": [
-        "leonardodicaprio",
+        "ajaymitchell",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "pluto",
+      "topic": "amanda nunes",
       "tags": [
-        "pluto",
+        "amandanunes",
         "viral",
         "trending",
         "fyp"
@@ -39,20 +39,20 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "kayla harrison",
+      "topic": "ja morant injury",
       "tags": [
-        "kaylaharrison",
+        "jamorantinjury",
+        "jamorant",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "gabourey sidibe",
+      "topic": "larry ellison",
       "tags": [
-        "gaboureysidibe",
+        "larryellison",
         "viral",
         "trending",
         "fyp"
@@ -61,9 +61,9 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "disability",
+      "topic": "taye diggs",
       "tags": [
-        "disability",
+        "tayediggs",
         "viral",
         "trending",
         "fyp"
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "adria arjona",
+      "topic": "donovan clingan",
       "tags": [
-        "adriaarjona",
+        "donovanclingan",
         "viral",
         "trending",
         "fyp"
@@ -83,23 +83,23 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "olivia cooke",
+      "topic": "michigan senate abdul el sayed",
       "tags": [
-        "oliviacooke",
+        "michigansenateabdulelsayed",
+        "michigansenate",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "new zealand vs india",
+      "topic": "el nino",
       "tags": [
-        "newzealandvsindia",
-        "newzealand",
+        "elnino",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
