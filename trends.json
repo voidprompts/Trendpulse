@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-11T06:57:18Z",
+  "generated_at": "2026-11-12T07:33:50Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "camp flog gnaw",
+      "topic": "jeremiah smith ohio state football news",
       "tags": [
-        "campfloggnaw",
-        "campflog",
+        "jeremiahsmithohiostatefootballnews",
+        "jeremiahsmith",
         "viral",
         "trending"
       ]
@@ -17,20 +17,20 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "ajay mitchell",
+      "topic": "kylie jenner former staff lawsuits",
       "tags": [
-        "ajaymitchell",
+        "kyliejennerformerstafflawsuits",
+        "kyliejenner",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "amanda nunes",
+      "topic": "alexandra daddario",
       "tags": [
-        "amandanunes",
+        "alexandradaddario",
         "viral",
         "trending",
         "fyp"
@@ -39,31 +39,31 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "ja morant injury",
+      "topic": "philippine airlines",
       "tags": [
-        "jamorantinjury",
-        "jamorant",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 5,
-      "category": "General Viral",
-      "topic": "larry ellison",
-      "tags": [
-        "larryellison",
+        "philippineairlines",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
+      "id": 5,
+      "category": "General Viral",
+      "topic": "england vs croatia",
+      "tags": [
+        "englandvscroatia",
+        "englandvs",
+        "viral",
+        "trending"
+      ]
+    },
+    {
       "id": 6,
       "category": "General Viral",
-      "topic": "taye diggs",
+      "topic": "karla souza",
       "tags": [
-        "tayediggs",
+        "karlasouza",
         "viral",
         "trending",
         "fyp"
@@ -72,31 +72,31 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "donovan clingan",
+      "topic": "aspyn ovard 10 year secret",
       "tags": [
-        "donovanclingan",
+        "aspynovard10yearsecret",
+        "aspynovard",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "General Viral",
+      "topic": "hltv",
+      "tags": [
+        "hltv",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
-      "id": 8,
-      "category": "General Viral",
-      "topic": "michigan senate abdul el sayed",
-      "tags": [
-        "michigansenateabdulelsayed",
-        "michigansenate",
-        "viral",
-        "trending"
-      ]
-    },
-    {
       "id": 9,
       "category": "General Viral",
-      "topic": "el nino",
+      "topic": "slomw oc",
       "tags": [
-        "elnino",
+        "slomwoc",
         "viral",
         "trending",
         "fyp"
