@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-12T07:33:50Z",
+  "generated_at": "2026-11-13T07:05:21Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "jeremiah smith ohio state football news",
+      "topic": "cricbuzz",
       "tags": [
-        "jeremiahsmithohiostatefootballnews",
-        "jeremiahsmith",
+        "cricbuzz",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "kylie jenner former staff lawsuits",
+      "topic": "james webb space telescope",
       "tags": [
-        "kyliejennerformerstafflawsuits",
-        "kyliejenner",
+        "jameswebbspacetelescope",
+        "jameswebb",
         "viral",
         "trending"
       ]
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "alexandra daddario",
+      "topic": "harry truman",
       "tags": [
-        "alexandradaddario",
+        "harrytruman",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "philippine airlines",
+      "topic": "diane morgan",
       "tags": [
-        "philippineairlines",
+        "dianemorgan",
         "viral",
         "trending",
         "fyp"
@@ -50,42 +50,42 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "england vs croatia",
+      "topic": "matt henry",
       "tags": [
-        "englandvscroatia",
-        "englandvs",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 6,
-      "category": "General Viral",
-      "topic": "karla souza",
-      "tags": [
-        "karlasouza",
+        "matthenry",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
-      "id": 7,
+      "id": 6,
       "category": "General Viral",
-      "topic": "aspyn ovard 10 year secret",
+      "topic": "duran duran drummer roger taylor",
       "tags": [
-        "aspynovard10yearsecret",
-        "aspynovard",
+        "durandurandrummerrogertaylor",
+        "duranduran",
         "viral",
         "trending"
       ]
     },
     {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "sf weather",
+      "tags": [
+        "sfweather",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
       "id": 8,
       "category": "General Viral",
-      "topic": "hltv",
+      "topic": "bernard tomic",
       "tags": [
-        "hltv",
+        "bernardtomic",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "slomw oc",
+      "topic": "camp flog gnaw",
       "tags": [
-        "slomwoc",
+        "campfloggnaw",
+        "campflog",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
