@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-11-13T07:05:21Z",
+  "generated_at": "2026-11-14T06:53:55Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "cricbuzz",
+      "topic": "colorado football schedule",
       "tags": [
-        "cricbuzz",
+        "coloradofootballschedule",
+        "coloradofootball",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "General Viral",
+      "topic": "donte johnson",
+      "tags": [
+        "dontejohnson",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
-      "id": 2,
-      "category": "General Viral",
-      "topic": "james webb space telescope",
-      "tags": [
-        "jameswebbspacetelescope",
-        "jameswebb",
-        "viral",
-        "trending"
-      ]
-    },
-    {
       "id": 3,
       "category": "General Viral",
-      "topic": "harry truman",
+      "topic": "christian langmo",
       "tags": [
-        "harrytruman",
+        "christianlangmo",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "diane morgan",
+      "topic": "caio borralho",
       "tags": [
-        "dianemorgan",
+        "caioborralho",
         "viral",
         "trending",
         "fyp"
@@ -50,31 +50,31 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "matt henry",
+      "topic": "portugal vs denmark",
       "tags": [
-        "matthenry",
+        "portugalvsdenmark",
+        "portugalvs",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "conner weigman",
+      "tags": [
+        "connerweigman",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
-      "id": 6,
-      "category": "General Viral",
-      "topic": "duran duran drummer roger taylor",
-      "tags": [
-        "durandurandrummerrogertaylor",
-        "duranduran",
-        "viral",
-        "trending"
-      ]
-    },
-    {
       "id": 7,
       "category": "General Viral",
-      "topic": "sf weather",
+      "topic": "jim miller",
       "tags": [
-        "sfweather",
+        "jimmiller",
         "viral",
         "trending",
         "fyp"
@@ -83,21 +83,21 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "bernard tomic",
+      "topic": "cif football playoffs 2026",
       "tags": [
-        "bernardtomic",
+        "ciffootballplayoffs2026",
+        "ciffootball",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "camp flog gnaw",
+      "topic": "tahiti vs cook islands",
       "tags": [
-        "campfloggnaw",
-        "campflog",
+        "tahitivscookislands",
+        "tahitivs",
         "viral",
         "trending"
       ]
