@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-14T06:53:55Z",
+  "generated_at": "2026-11-15T06:59:44Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "colorado football schedule",
+      "topic": "travis barker",
       "tags": [
-        "coloradofootballschedule",
-        "coloradofootball",
+        "travisbarker",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "donte johnson",
+      "topic": "magnus carlsen",
       "tags": [
-        "dontejohnson",
+        "magnuscarlsen",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "christian langmo",
+      "topic": "james comey",
       "tags": [
-        "christianlangmo",
+        "jamescomey",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "caio borralho",
+      "topic": "boxing tonight",
       "tags": [
-        "caioborralho",
+        "boxingtonight",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "portugal vs denmark",
+      "topic": "ryan reynolds",
       "tags": [
-        "portugalvsdenmark",
-        "portugalvs",
+        "ryanreynolds",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "conner weigman",
+      "topic": "gus johnson",
       "tags": [
-        "connerweigman",
+        "gusjohnson",
         "viral",
         "trending",
         "fyp"
@@ -72,21 +72,21 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "jim miller",
+      "topic": "when does gta 6 online come out",
       "tags": [
-        "jimmiller",
+        "whendoesgta6onlinecomeout",
+        "whendoes",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "cif football playoffs 2026",
+      "topic": "spacex starship rocket launch",
       "tags": [
-        "ciffootballplayoffs2026",
-        "ciffootball",
+        "spacexstarshiprocketlaunch",
+        "spacexstarship",
         "viral",
         "trending"
       ]
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "tahiti vs cook islands",
+      "topic": "rhamondre stevenson",
       "tags": [
-        "tahitivscookislands",
-        "tahitivs",
+        "rhamondrestevenson",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
