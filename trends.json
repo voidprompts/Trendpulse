@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-15T06:59:44Z",
+  "generated_at": "2026-11-16T07:07:40Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "travis barker",
+      "topic": "fitness",
       "tags": [
-        "travisbarker",
+        "fitness",
         "viral",
         "trending",
         "fyp"
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "magnus carlsen",
+      "topic": "alex bolt",
       "tags": [
-        "magnuscarlsen",
+        "alexbolt",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "james comey",
+      "topic": "bill fennelly",
       "tags": [
-        "jamescomey",
+        "billfennelly",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "boxing tonight",
+      "topic": "jimmy fallon",
       "tags": [
-        "boxingtonight",
+        "jimmyfallon",
         "viral",
         "trending",
         "fyp"
@@ -50,20 +50,20 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "ryan reynolds",
+      "topic": "black friday sales",
       "tags": [
-        "ryanreynolds",
+        "blackfridaysales",
+        "blackfriday",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "gus johnson",
+      "topic": "future",
       "tags": [
-        "gusjohnson",
+        "future",
         "viral",
         "trending",
         "fyp"
@@ -72,31 +72,31 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "when does gta 6 online come out",
+      "topic": "jlo",
       "tags": [
-        "whendoesgta6onlinecomeout",
-        "whendoes",
+        "jlo",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "spacex starship rocket launch",
+      "topic": "apec",
       "tags": [
-        "spacexstarshiprocketlaunch",
-        "spacexstarship",
+        "apec",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "rhamondre stevenson",
+      "topic": "anthony mackie",
       "tags": [
-        "rhamondrestevenson",
+        "anthonymackie",
         "viral",
         "trending",
         "fyp"
