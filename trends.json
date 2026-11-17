@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-16T07:07:40Z",
+  "generated_at": "2026-11-17T08:20:14Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "fitness",
+      "topic": "danielle lopez dental records confirmation",
       "tags": [
-        "fitness",
+        "daniellelopezdentalrecordsconfirmation",
+        "daniellelopez",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "alex bolt",
+      "topic": "amc theaters",
       "tags": [
-        "alexbolt",
+        "amctheaters",
         "viral",
         "trending",
         "fyp"
@@ -28,27 +28,16 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "bill fennelly",
+      "topic": "kristina bogic age",
       "tags": [
-        "billfennelly",
+        "kristinabogicage",
+        "kristinabogic",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 4,
-      "category": "General Viral",
-      "topic": "jimmy fallon",
-      "tags": [
-        "jimmyfallon",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 5,
       "category": "General Viral",
       "topic": "black friday sales",
       "tags": [
@@ -59,33 +48,44 @@
       ]
     },
     {
-      "id": 6,
+      "id": 5,
       "category": "General Viral",
-      "topic": "future",
+      "topic": "tahiti",
       "tags": [
-        "future",
+        "tahiti",
         "viral",
         "trending",
         "fyp"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "los angeles weather",
+      "tags": [
+        "losangelesweather",
+        "losangeles",
+        "viral",
+        "trending"
       ]
     },
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "jlo",
+      "topic": "fox news politics",
       "tags": [
-        "jlo",
+        "foxnewspolitics",
+        "foxnews",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "apec",
+      "topic": "axios",
       "tags": [
-        "apec",
+        "axios",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "anthony mackie",
+      "topic": "san diego",
       "tags": [
-        "anthonymackie",
+        "sandiego",
         "viral",
         "trending",
         "fyp"
