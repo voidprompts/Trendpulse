@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-17T08:20:14Z",
+  "generated_at": "2026-11-18T07:51:19Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "danielle lopez dental records confirmation",
+      "topic": "nba standings",
       "tags": [
-        "daniellelopezdentalrecordsconfirmation",
-        "daniellelopez",
+        "nbastandings",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "amc theaters",
+      "topic": "cox",
       "tags": [
-        "amctheaters",
+        "cox",
         "viral",
         "trending",
         "fyp"
@@ -28,43 +28,43 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "kristina bogic age",
+      "topic": "fuel",
       "tags": [
-        "kristinabogicage",
-        "kristinabogic",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 4,
-      "category": "General Viral",
-      "topic": "black friday sales",
-      "tags": [
-        "blackfridaysales",
-        "blackfriday",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 5,
-      "category": "General Viral",
-      "topic": "tahiti",
-      "tags": [
-        "tahiti",
+        "fuel",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
+      "id": 4,
+      "category": "General Viral",
+      "topic": "gas",
+      "tags": [
+        "gas",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "General Viral",
+      "topic": "flash flooding florida",
+      "tags": [
+        "flashfloodingflorida",
+        "flashflooding",
+        "viral",
+        "trending"
+      ]
+    },
+    {
       "id": 6,
       "category": "General Viral",
-      "topic": "los angeles weather",
+      "topic": "medicare part b premium 2027",
       "tags": [
-        "losangelesweather",
-        "losangeles",
+        "medicarepartbpremium2027",
+        "medicarepart",
         "viral",
         "trending"
       ]
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "fox news politics",
+      "topic": "how long is gta 6 story mode",
       "tags": [
-        "foxnewspolitics",
-        "foxnews",
+        "howlongisgta6storymode",
+        "howlong",
         "viral",
         "trending"
       ]
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "axios",
+      "topic": "matisse thybulle",
       "tags": [
-        "axios",
+        "matissethybulle",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "san diego",
+      "topic": "adou thiero",
       "tags": [
-        "sandiego",
+        "adouthiero",
         "viral",
         "trending",
         "fyp"
