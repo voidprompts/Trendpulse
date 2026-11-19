@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-18T07:51:19Z",
+  "generated_at": "2026-11-19T07:46:45Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "nba standings",
+      "topic": "las vegas weather",
       "tags": [
-        "nbastandings",
+        "lasvegasweather",
+        "lasvegas",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "cox",
+      "topic": "app",
       "tags": [
-        "cox",
+        "app",
         "viral",
         "trending",
         "fyp"
@@ -28,20 +28,20 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "fuel",
+      "topic": "should i spare arnold gta 6",
       "tags": [
-        "fuel",
+        "shouldisparearnoldgta6",
+        "shouldi",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "gas",
+      "topic": "san diego",
       "tags": [
-        "gas",
+        "sandiego",
         "viral",
         "trending",
         "fyp"
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "flash flooding florida",
+      "topic": "gta 6 jason",
       "tags": [
-        "flashfloodingflorida",
-        "flashflooding",
+        "gta6jason",
+        "gta6",
         "viral",
         "trending"
       ]
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "medicare part b premium 2027",
+      "topic": "unwanted attention gta 6",
       "tags": [
-        "medicarepartbpremium2027",
-        "medicarepart",
+        "unwantedattentiongta6",
+        "unwantedattention",
         "viral",
         "trending"
       ]
@@ -72,10 +72,10 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "how long is gta 6 story mode",
+      "topic": "truck accident lawyer",
       "tags": [
-        "howlongisgta6storymode",
-        "howlong",
+        "truckaccidentlawyer",
+        "truckaccident",
         "viral",
         "trending"
       ]
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "matisse thybulle",
+      "topic": "qatar airways",
       "tags": [
-        "matissethybulle",
+        "qatarairways",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "adou thiero",
+      "topic": "tv",
       "tags": [
-        "adouthiero",
+        "tv",
         "viral",
         "trending",
         "fyp"
