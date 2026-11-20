@@ -1,76 +1,10 @@
 {
-  "generated_at": "2026-11-19T07:46:45Z",
+  "generated_at": "2026-11-20T07:39:09Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
-      "category": "General Viral",
-      "topic": "las vegas weather",
-      "tags": [
-        "lasvegasweather",
-        "lasvegas",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 2,
-      "category": "General Viral",
-      "topic": "app",
-      "tags": [
-        "app",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 3,
-      "category": "General Viral",
-      "topic": "should i spare arnold gta 6",
-      "tags": [
-        "shouldisparearnoldgta6",
-        "shouldi",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 4,
-      "category": "General Viral",
-      "topic": "san diego",
-      "tags": [
-        "sandiego",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 5,
-      "category": "General Viral",
-      "topic": "gta 6 jason",
-      "tags": [
-        "gta6jason",
-        "gta6",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 6,
-      "category": "General Viral",
-      "topic": "unwanted attention gta 6",
-      "tags": [
-        "unwantedattentiongta6",
-        "unwantedattention",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 7,
       "category": "General Viral",
       "topic": "truck accident lawyer",
       "tags": [
@@ -81,22 +15,88 @@
       ]
     },
     {
-      "id": 8,
+      "id": 2,
       "category": "General Viral",
-      "topic": "qatar airways",
+      "topic": "car accident attorney",
       "tags": [
-        "qatarairways",
+        "caraccidentattorney",
+        "caraccident",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "General Viral",
+      "topic": "5.4 magnitude earthquake",
+      "tags": [
+        "54magnitudeearthquake",
+        "54magnitude",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "General Viral",
+      "topic": "aleksandre topuria",
+      "tags": [
+        "aleksandretopuria",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
+      "id": 5,
+      "category": "General Viral",
+      "topic": "ksbw",
+      "tags": [
+        "ksbw",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "san diego",
+      "tags": [
+        "sandiego",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "apple store black friday deals",
+      "tags": [
+        "applestoreblackfridaydeals",
+        "applestore",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "General Viral",
+      "topic": "mama awards 2026",
+      "tags": [
+        "mamaawards2026",
+        "mamaawards",
+        "viral",
+        "trending"
+      ]
+    },
+    {
       "id": 9,
       "category": "General Viral",
-      "topic": "tv",
+      "topic": "navajo stirling",
       "tags": [
-        "tv",
+        "navajostirling",
         "viral",
         "trending",
         "fyp"
