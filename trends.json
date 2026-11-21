@@ -1,69 +1,69 @@
 {
-  "generated_at": "2026-11-20T07:39:09Z",
+  "generated_at": "2026-11-21T07:36:12Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "truck accident lawyer",
+      "topic": "future",
       "tags": [
-        "truckaccidentlawyer",
-        "truckaccident",
+        "future",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "car accident attorney",
+      "topic": "zoe saldana",
       "tags": [
-        "caraccidentattorney",
-        "caraccident",
+        "zoesaldana",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "5.4 magnitude earthquake",
+      "topic": "earthquake seattle",
       "tags": [
-        "54magnitudeearthquake",
-        "54magnitude",
+        "earthquakeseattle",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "aleksandre topuria",
+      "topic": "dom mar fan",
       "tags": [
-        "aleksandretopuria",
+        "dommarfan",
+        "dommar",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "ksbw",
+      "topic": "how many endings in gta 6",
       "tags": [
-        "ksbw",
+        "howmanyendingsingta6",
+        "howmany",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "san diego",
+      "topic": "bradley cooper",
       "tags": [
-        "sandiego",
+        "bradleycooper",
         "viral",
         "trending",
         "fyp"
@@ -72,21 +72,21 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "apple store black friday deals",
+      "topic": "jd",
       "tags": [
-        "applestoreblackfridaydeals",
-        "applestore",
+        "jd",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "mama awards 2026",
+      "topic": "black friday deals games",
       "tags": [
-        "mamaawards2026",
-        "mamaawards",
+        "blackfridaydealsgames",
+        "blackfriday",
         "viral",
         "trending"
       ]
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "navajo stirling",
+      "topic": "gta 6 brooks boatworks safe code",
       "tags": [
-        "navajostirling",
+        "gta6brooksboatworkssafecode",
+        "gta6",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     }
   ]
