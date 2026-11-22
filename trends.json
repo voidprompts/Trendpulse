@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T07:36:12Z",
+  "generated_at": "2026-11-22T07:18:16Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "future",
+      "topic": "powerball winner",
       "tags": [
-        "future",
+        "powerballwinner",
         "viral",
         "trending",
         "fyp"
@@ -17,32 +17,32 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "zoe saldana",
+      "topic": "criminal profile gta 6",
       "tags": [
-        "zoesaldana",
+        "criminalprofilegta6",
+        "criminalprofile",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "earthquake seattle",
+      "topic": "lucia voice actor",
       "tags": [
-        "earthquakeseattle",
+        "luciavoiceactor",
+        "luciavoice",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "dom mar fan",
+      "topic": "vicki gta 6 voice actor",
       "tags": [
-        "dommarfan",
-        "dommar",
+        "vickigta6voiceactor",
+        "vickigta",
         "viral",
         "trending"
       ]
@@ -50,10 +50,10 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "how many endings in gta 6",
+      "topic": "robert downey jr",
       "tags": [
-        "howmanyendingsingta6",
-        "howmany",
+        "robertdowneyjr",
+        "robertdowney",
         "viral",
         "trending"
       ]
@@ -61,43 +61,43 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "bradley cooper",
+      "topic": "metacritic gta vi",
       "tags": [
-        "bradleycooper",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 7,
-      "category": "General Viral",
-      "topic": "jd",
-      "tags": [
-        "jd",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 8,
-      "category": "General Viral",
-      "topic": "black friday deals games",
-      "tags": [
-        "blackfridaydealsgames",
-        "blackfriday",
+        "metacriticgtavi",
+        "metacriticgta",
         "viral",
         "trending"
       ]
     },
     {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "duke vs washington state",
+      "tags": [
+        "dukevswashingtonstate",
+        "dukevs",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "General Viral",
+      "topic": "wsu basketball",
+      "tags": [
+        "wsubasketball",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
       "id": 9,
       "category": "General Viral",
-      "topic": "gta 6 brooks boatworks safe code",
+      "topic": "donnie gta 6",
       "tags": [
-        "gta6brooksboatworkssafecode",
-        "gta6",
+        "donniegta6",
+        "donniegta",
         "viral",
         "trending"
       ]
