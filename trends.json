@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-22T07:18:16Z",
+  "generated_at": "2026-11-23T08:01:42Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "powerball winner",
+      "topic": "elon musk",
       "tags": [
-        "powerballwinner",
+        "elonmusk",
         "viral",
         "trending",
         "fyp"
@@ -17,54 +17,54 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "criminal profile gta 6",
+      "topic": "stranger things",
       "tags": [
-        "criminalprofilegta6",
-        "criminalprofile",
+        "strangerthings",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "lucia voice actor",
+      "topic": "swimming",
       "tags": [
-        "luciavoiceactor",
-        "luciavoice",
+        "swimming",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "vicki gta 6 voice actor",
+      "topic": "黎曼猜想",
       "tags": [
-        "vickigta6voiceactor",
-        "vickigta",
+        "黎曼猜想",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "robert downey jr",
+      "topic": "joe jonas",
       "tags": [
-        "robertdowneyjr",
-        "robertdowney",
+        "joejonas",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "metacritic gta vi",
+      "topic": "sa vs ban",
       "tags": [
-        "metacriticgtavi",
-        "metacriticgta",
+        "savsban",
+        "savs",
         "viral",
         "trending"
       ]
@@ -72,20 +72,20 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "duke vs washington state",
+      "topic": "paul walker",
       "tags": [
-        "dukevswashingtonstate",
-        "dukevs",
+        "paulwalker",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "wsu basketball",
+      "topic": "iowa",
       "tags": [
-        "wsubasketball",
+        "iowa",
         "viral",
         "trending",
         "fyp"
@@ -94,12 +94,12 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "donnie gta 6",
+      "topic": "og anunoby",
       "tags": [
-        "donniegta6",
-        "donniegta",
+        "oganunoby",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     }
   ]
