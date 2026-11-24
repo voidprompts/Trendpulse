@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-11-23T08:01:42Z",
+  "generated_at": "2026-11-24T10:17:12Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "elon musk",
+      "topic": "black friday sale deals",
       "tags": [
-        "elonmusk",
+        "blackfridaysaledeals",
+        "blackfriday",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "stranger things",
+      "topic": "volcano",
       "tags": [
-        "strangerthings",
+        "volcano",
         "viral",
         "trending",
         "fyp"
@@ -28,9 +28,9 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "swimming",
+      "topic": "atlanta braves",
       "tags": [
-        "swimming",
+        "atlantabraves",
         "viral",
         "trending",
         "fyp"
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "黎曼猜想",
+      "topic": "mirror",
       "tags": [
-        "黎曼猜想",
+        "mirror",
         "viral",
         "trending",
         "fyp"
@@ -50,9 +50,9 @@
     {
       "id": 5,
       "category": "General Viral",
-      "topic": "joe jonas",
+      "topic": "小豆",
       "tags": [
-        "joejonas",
+        "小豆",
         "viral",
         "trending",
         "fyp"
@@ -61,10 +61,10 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "sa vs ban",
+      "topic": "is fortnite down right now",
       "tags": [
-        "savsban",
-        "savs",
+        "isfortnitedownrightnow",
+        "isfortnite",
         "viral",
         "trending"
       ]
@@ -72,9 +72,9 @@
     {
       "id": 7,
       "category": "General Viral",
-      "topic": "paul walker",
+      "topic": "horse",
       "tags": [
-        "paulwalker",
+        "horse",
         "viral",
         "trending",
         "fyp"
@@ -83,9 +83,9 @@
     {
       "id": 8,
       "category": "General Viral",
-      "topic": "iowa",
+      "topic": "travel",
       "tags": [
-        "iowa",
+        "travel",
         "viral",
         "trending",
         "fyp"
@@ -94,9 +94,9 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "og anunoby",
+      "topic": "ticket",
       "tags": [
-        "oganunoby",
+        "ticket",
         "viral",
         "trending",
         "fyp"
