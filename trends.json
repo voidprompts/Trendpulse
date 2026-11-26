@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-25T08:59:21Z",
+  "generated_at": "2026-11-26T08:46:03Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "criminal profile gta 6",
+      "topic": "dominion power outage",
       "tags": [
-        "criminalprofilegta6",
-        "criminalprofile",
+        "dominionpoweroutage",
+        "dominionpower",
         "viral",
         "trending"
       ]
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "google play",
+      "topic": "dennys",
       "tags": [
-        "googleplay",
+        "dennys",
         "viral",
         "trending",
         "fyp"
@@ -28,10 +28,10 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "the mosquito bowl",
+      "topic": "in n out",
       "tags": [
-        "themosquitobowl",
-        "themosquito",
+        "innout",
+        "inn",
         "viral",
         "trending"
       ]
@@ -39,9 +39,9 @@
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "hltv",
+      "topic": "sam neill",
       "tags": [
-        "hltv",
+        "samneill",
         "viral",
         "trending",
         "fyp"
@@ -49,28 +49,6 @@
     },
     {
       "id": 5,
-      "category": "General Viral",
-      "topic": "how many kitty litter labs are there",
-      "tags": [
-        "howmanykittylitterlabsarethere",
-        "howmany",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 6,
-      "category": "General Viral",
-      "topic": "how to open vaults in gta 6",
-      "tags": [
-        "howtoopenvaultsingta6",
-        "howto",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 7,
       "category": "General Viral",
       "topic": "gta 6 chapter 2 mission list",
       "tags": [
@@ -81,11 +59,33 @@
       ]
     },
     {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "criminal profile gta 6",
+      "tags": [
+        "criminalprofilegta6",
+        "criminalprofile",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "james franco",
+      "tags": [
+        "jamesfranco",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
       "id": 8,
       "category": "General Viral",
-      "topic": "cameron brink",
+      "topic": "mcdonalds",
       "tags": [
-        "cameronbrink",
+        "mcdonalds",
         "viral",
         "trending",
         "fyp"
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "hunger games 2026",
+      "topic": "hayden panettiere cause of death",
       "tags": [
-        "hungergames2026",
-        "hungergames",
+        "haydenpanettierecauseofdeath",
+        "haydenpanettiere",
         "viral",
         "trending"
       ]
