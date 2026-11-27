@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-26T08:46:03Z",
+  "generated_at": "2026-11-27T08:57:00Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "dominion power outage",
+      "topic": "russian ukraine war",
       "tags": [
-        "dominionpoweroutage",
-        "dominionpower",
+        "russianukrainewar",
+        "russianukraine",
         "viral",
         "trending"
       ]
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "dennys",
+      "topic": "shead",
       "tags": [
-        "dennys",
+        "shead",
         "viral",
         "trending",
         "fyp"
@@ -28,32 +28,32 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "in n out",
+      "topic": "mirror",
       "tags": [
-        "innout",
-        "inn",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 4,
-      "category": "General Viral",
-      "topic": "sam neill",
-      "tags": [
-        "samneill",
+        "mirror",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
+      "id": 4,
+      "category": "General Viral",
+      "topic": "aus vs eng",
+      "tags": [
+        "ausvseng",
+        "ausvs",
+        "viral",
+        "trending"
+      ]
+    },
+    {
       "id": 5,
       "category": "General Viral",
-      "topic": "gta 6 chapter 2 mission list",
+      "topic": "gta6 pc port",
       "tags": [
-        "gta6chapter2missionlist",
-        "gta6",
+        "gta6pcport",
+        "gta6pc",
         "viral",
         "trending"
       ]
@@ -61,31 +61,31 @@
     {
       "id": 6,
       "category": "General Viral",
-      "topic": "criminal profile gta 6",
+      "topic": "daycare",
       "tags": [
-        "criminalprofilegta6",
-        "criminalprofile",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 7,
-      "category": "General Viral",
-      "topic": "james franco",
-      "tags": [
-        "jamesfranco",
+        "daycare",
         "viral",
         "trending",
         "fyp"
       ]
     },
     {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "iran attacks kuwait",
+      "tags": [
+        "iranattackskuwait",
+        "iranattacks",
+        "viral",
+        "trending"
+      ]
+    },
+    {
       "id": 8,
       "category": "General Viral",
-      "topic": "mcdonalds",
+      "topic": "seth meyers",
       "tags": [
-        "mcdonalds",
+        "sethmeyers",
         "viral",
         "trending",
         "fyp"
@@ -94,10 +94,10 @@
     {
       "id": 9,
       "category": "General Viral",
-      "topic": "hayden panettiere cause of death",
+      "topic": "ocelot jugular gta 6",
       "tags": [
-        "haydenpanettierecauseofdeath",
-        "haydenpanettiere",
+        "ocelotjugulargta6",
+        "ocelotjugular",
         "viral",
         "trending"
       ]
