@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-27T08:57:00Z",
+  "generated_at": "2026-11-28T08:17:36Z",
   "source": "google-trends-rss",
   "count": 9,
   "trends": [
     {
       "id": 1,
       "category": "General Viral",
-      "topic": "russian ukraine war",
+      "topic": "today wordle hints",
       "tags": [
-        "russianukrainewar",
-        "russianukraine",
+        "todaywordlehints",
+        "todaywordle",
         "viral",
         "trending"
       ]
@@ -17,9 +17,9 @@
     {
       "id": 2,
       "category": "General Viral",
-      "topic": "shead",
+      "topic": "demi lovato",
       "tags": [
-        "shead",
+        "demilovato",
         "viral",
         "trending",
         "fyp"
@@ -28,71 +28,27 @@
     {
       "id": 3,
       "category": "General Viral",
-      "topic": "mirror",
+      "topic": "gta 6 fits",
       "tags": [
-        "mirror",
+        "gta6fits",
+        "gta6",
         "viral",
-        "trending",
-        "fyp"
+        "trending"
       ]
     },
     {
       "id": 4,
       "category": "General Viral",
-      "topic": "aus vs eng",
+      "topic": "prisoners",
       "tags": [
-        "ausvseng",
-        "ausvs",
+        "prisoners",
         "viral",
-        "trending"
+        "trending",
+        "fyp"
       ]
     },
     {
       "id": 5,
-      "category": "General Viral",
-      "topic": "gta6 pc port",
-      "tags": [
-        "gta6pcport",
-        "gta6pc",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 6,
-      "category": "General Viral",
-      "topic": "daycare",
-      "tags": [
-        "daycare",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 7,
-      "category": "General Viral",
-      "topic": "iran attacks kuwait",
-      "tags": [
-        "iranattackskuwait",
-        "iranattacks",
-        "viral",
-        "trending"
-      ]
-    },
-    {
-      "id": 8,
-      "category": "General Viral",
-      "topic": "seth meyers",
-      "tags": [
-        "sethmeyers",
-        "viral",
-        "trending",
-        "fyp"
-      ]
-    },
-    {
-      "id": 9,
       "category": "General Viral",
       "topic": "ocelot jugular gta 6",
       "tags": [
@@ -100,6 +56,50 @@
         "ocelotjugular",
         "viral",
         "trending"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "General Viral",
+      "topic": "beach hazards statement",
+      "tags": [
+        "beachhazardsstatement",
+        "beachhazards",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "General Viral",
+      "topic": "xaivian lee",
+      "tags": [
+        "xaivianlee",
+        "viral",
+        "trending",
+        "fyp"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "General Viral",
+      "topic": "alaska earthquake center",
+      "tags": [
+        "alaskaearthquakecenter",
+        "alaskaearthquake",
+        "viral",
+        "trending"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "General Viral",
+      "topic": "gordon ramsay",
+      "tags": [
+        "gordonramsay",
+        "viral",
+        "trending",
+        "fyp"
       ]
     }
   ]
